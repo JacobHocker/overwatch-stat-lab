@@ -1,6 +1,9 @@
-body {
+@use './assets/partials/colors';
+@use './assets/partials/typography';
 
-  font-family: 'Times New Roman', Times, serif;
- 
+body {
+  background-color: colors.$primary-one;
+  color: colors.$text;
+  font-family: 'Zekton';
 }
 

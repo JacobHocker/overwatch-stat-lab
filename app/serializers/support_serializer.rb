@@ -1,0 +1,3 @@
+class SupportSerializer < ActiveModel::Serializer
+  attributes :id, :name, :age, :occupation, :base_of_operation, :affliation, :hero_story, :hero_image, :hero_gameplay_video, :hero_gameplay_description, :hp, :armor. :shields, :total_hp, :playstyle, :hero_difficulty, :weapon_one_image, :weapon_one_name, :weapon_one_type, :weapon_two_image, :weapon_two_name, :weapon_two_type, :passive_image, :passive_name, :passive_description, :ability_one_image, :ability_one_name, :ability_one_description, :ability_two_image, :ability_two_name, :ability_two_description, :ability_three_image, :ability_three_name, :ability_three_description, :ultimate_image, :ultimate_name, :ultimate_description, :healing_type  
+end

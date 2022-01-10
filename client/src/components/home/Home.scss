@@ -1,0 +1,23 @@
+@import '../../assets/partials/mixins';
+
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ow-logo{
+    width: 16rem;
+    
+    @include tablet {
+        width: 20.5rem;
+    }
+
+    @include desktop-medium {
+        width: 24.5rem;
+    }
+
+    @include desktop-large {
+        width: 28.5rem;
+    }
+}

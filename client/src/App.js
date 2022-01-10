@@ -1,13 +1,14 @@
 import React from 'react';
-
+import { Routes, Route } from 'react-router-dom';
+import AllHeroListContainer from './components/heroes/allHeroListContainer/AllHeroListContainer';
+import Home from './components/home/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='heroes' element={<AllHeroListContainer />} />
+    </Routes>
   );
 }
 

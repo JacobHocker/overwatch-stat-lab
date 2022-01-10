@@ -1,10 +1,12 @@
 import React from "react";
 import './AllHeroList.scss';
 
-function AllHeroList() {
+function AllHeroList({ name, heroCardImage, roleCardImage}) {
     return(
         <div className="all-hero-list-container">
-            <h1>Hero List</h1>
+            <img src={heroCardImage} alt={name} className='hero-card-image' />
+            <img src={roleCardImage} alt={name} className='role-card-image' />
+            <h1>{name}</h1>
         </div>
     )
 }

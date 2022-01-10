@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   
+  resources :characters, only: [:index, :create]
   resources :supports, only: [:index, :create]
   resources :tanks, only: [:index, :create]
   resources :damages, only: [:index, :create]

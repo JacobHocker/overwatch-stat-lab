@@ -1,0 +1,129 @@
+@use '../../assets/partials/colors';
+@import '../../assets/partials/mixins';
+
+
+.nav-container{
+    width: 100%;
+    background: colors.$primary-two;
+    display: flex;
+    border-bottom: 3px solid colors.$cta;
+}
+
+.nav-logo-img{
+    width: 4rem;
+    margin-left: 2rem;
+
+    @include tablet{
+        width: 5rem;
+    }
+
+    @include desktop{
+        width: 6rem;
+    }
+
+    @include desktop-large{
+        width: 7rem;
+    }
+}
+
+.nav-list-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    align-items: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    padding: 0;
+    padding-inline-start: 0;
+}
+
+.nav-list {
+    flex-direction: column;
+    height: auto;
+    list-style-type: none;
+    width: 100%;
+    position: relative;
+
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+.link-item{
+    text-decoration: none;
+    color:colors.$white;
+}
+
+.link-item:visited{
+    color:colors.$white;
+}
+
+.nav-items {
+    text-transform: uppercase;
+    cursor: pointer;
+    color: colors.$white;
+    width: 100%;
+    border-top: 1px solid colors.$white;
+    text-align: center;
+    margin-right: 0px;
+    padding: 1.25rem 0;
+    
+
+    &:hover{
+        background: linear-gradient( colors.$primary-two, #218ffe63, colors.$primary-two);
+        border-radius: 2px;
+        transition: transform 1.5s  ease-in-out;
+    }
+
+    @include tablet{
+        margin-right: 1.25rem;
+        font-size: 1.25rem;
+        border-top: none;
+    }
+
+    @include desktop {
+        font-size: 1.50rem;
+    }
+
+    @include desktop-large {
+        font-size: 1.75rem;
+    }
+    
+    
+}
+
+.nav-items:nth-child(1){
+    border-top: 1px solid colors.$white;
+   
+    @include tablet {
+        border-top: none;
+    }
+}
+
+.nav-btn {
+    display: block;
+    position: absolute;
+    right: 0.625rem;
+    top: 0.838rem;
+    padding: 0.313rem;
+    color: colors.$cta;
+    font-size: 3rem;
+    background: transparent;
+    border: none;
+
+    @include tablet{
+        display: none;
+    }
+}
+

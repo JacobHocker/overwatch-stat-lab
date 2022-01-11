@@ -24,7 +24,7 @@ function AllHeroListContainer() {
 
     console.log(heroes)
     return(
-        <div className="all-hero-page-container">
+        <div className="all-hero-list-container">
             {heroesToDisplay}
         </div>
     )

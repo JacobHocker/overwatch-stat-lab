@@ -17,19 +17,23 @@
         width: 5rem;
     }
 
-    @include desktop{
+    @include desktop-small{
         width: 6rem;
     }
 
-    @include desktop-large{
+    @include desktop{
         width: 7rem;
+    }
+
+    @include desktop-large{
+        width: 8rem;
     }
 }
 
 .nav-list-container{
     display: flex;
     justify-content: space-between;
-    margin-left: 20%;
+    margin-left: 10%;
     align-items: center;
     width: 100%;
 }
@@ -92,12 +96,19 @@ ul {
         border-top: none;
     }
 
+    @include desktop-small{
+        margin-right: 2rem;
+        font-size: 1.5rem;
+    }
+
     @include desktop {
-        font-size: 1.50rem;
+        margin-right: 2.75rem;
+        font-size: 1.75rem;
     }
 
     @include desktop-large {
-        font-size: 1.75rem;
+        margin-right: 3.25rem;
+        font-size: 2rem;
     }
     
     

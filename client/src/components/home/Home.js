@@ -1,13 +1,17 @@
 import React from 'react';
+import winReap from '../../assets/srcImages/winston-reaper-home-image.png';
 import './Home.scss'
 
 function Home() {
     return(
-        <div className='home-page-container'>
-            <div className='home-page-logo'>
-                <h1>Home Page</h1>
+        <section className='home-page-container'>
+            <div className='home-page-title'>
+                <h1>Overwatch Stat Lab</h1>
             </div>
-        </div>
+            <div className='home-page-img-one'>
+                <img src={winReap} className='win-reap' alt='winston-reaper' />
+            </div>
+        </section>
     )
 }
 

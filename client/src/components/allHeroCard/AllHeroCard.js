@@ -1,7 +1,7 @@
 import React from "react";
-import './AllHeroList.scss';
+import './AllHeroCard.scss';
 
-function AllHeroList({ name, heroCardImage, roleCardImage}) {
+function AllHeroCard({ name, heroCardImage, roleCardImage}) {
     return(
         <div className="all-hero-single-card">
             
@@ -19,4 +19,4 @@ function AllHeroList({ name, heroCardImage, roleCardImage}) {
     )
 }
 
-export default AllHeroList;
+export default AllHeroCard;

@@ -34,9 +34,11 @@ function NavBar() {
                {(toggleMenu || screenWidth > 600) && (
                     <ul className="nav-list">
                     <li className="nav-items">
-                        <NavLink to='/heroes' className='link-item'>Heroes</NavLink>    
+                        <NavLink to='/heroes' className='link-item'>Hero Gallery</NavLink>    
                     </li>
-                    <li className="nav-items">PlaceHolder</li>
+                    <li className="nav-items">Map Gallery</li>
+                    <li className="nav-items">Overwatch League</li>
+                    <li className="nav-items">Player</li>
                     </ul>
                 )}
                    <button className="nav-btn" onClick={toggleNav}>

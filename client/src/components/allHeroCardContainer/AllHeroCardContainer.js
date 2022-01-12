@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import AllHeroList from "../allHeroList/AllHeroList";
-import './AllHeroListContainer.scss';
+import AllHeroCard from "../allHeroCard/AllHeroCard";
+import './AllHeroCardContainer.scss';
 
 
-function AllHeroListContainer() {
+function AllHeroCardContainer() {
     const [heroes, setHeroes] = useState([]);
 
     useEffect(() => {
@@ -14,7 +14,7 @@ function AllHeroListContainer() {
     }, []);
 
     const heroesToDisplay = heroes.map((hero) => (
-        <AllHeroList
+        <AllHeroCard
         key={hero.id}
         name={hero.name}
         heroCardImage={hero.hero_card}
@@ -30,4 +30,4 @@ function AllHeroListContainer() {
     )
 }
 
-export default AllHeroListContainer;
+export default AllHeroCardContainer;

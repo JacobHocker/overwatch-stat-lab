@@ -1,7 +1,81 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
 @import '../../assets/partials/mixins';
 
-.all-hero-list-container{
+
+// Hero Gallery Page
+.hero-gallery-page-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero-gallery-header{
+    background-image: url('../../assets/srcImages/genji-home-page.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8rem;
+}
+
+.hero-gallery-header h1{
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(0.45turn, colors.$secondary , colors.$cta, colors.$secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include tablet {
+        font-size: 4.5rem;
+    }
+
+    @include desktop-small{
+        font-size: 5.5rem;
+    }
+
+    @include desktop{
+        font-size: 6.5rem;
+    }
+
+    @include desktop-large{
+        font-size: 7.5rem;
+    }
+}
+
+// Hero Card
+.all-hero-card-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
+// Tab Filter Section
+.tab-header-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.tab-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.tab-inactive{
+    padding: 1rem;
+    font-size: 1.25rem;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.tab-active{
+    color: aqua;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border: 1px solid white;
+    cursor: pointer;
+}
+

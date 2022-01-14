@@ -4,27 +4,29 @@
 .all-hero-single-card{
     margin: 0.5rem;
     border: 0.5px solid #f1eeee;
-    width: 9rem;
+    width: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     
 
-    &:hover{
-        cursor: pointer;
-        border-right: 6px solid #f1eeee9a;
-        border-top: 2px solid #f1eeee9a;
-        border-left: 2px solid #f1eeee9a;
-        border-bottom: 6px solid #f1eeee9a;
+    // &:hover{
+    //     cursor: pointer;
+    //     border-right: 6px solid #f1eeee9a;
+    //     border-top: 2px solid #f1eeee9a;
+    //     border-left: 2px solid #f1eeee9a;
+    //     border-bottom: 6px solid #f1eeee9a;
         
-    }
+    // }
     &:hover .all-hero-card-footer{
         background: #f1eeee9a;
+    }
+
+    &:hover .all-hero-card-footer a{
         color: colors.$primary-two;
     }
     
 }
-
 
 
 .all-hero-card-footer{
@@ -35,6 +37,15 @@
     font-size: 0.75rem;
     background: #218ffe49;
     width: 100%;
+}
+
+.all-hero-card-footer a{
+    text-decoration: none;
+    color: colors.$text-two;
+}
+
+.all-hero-card-footer a:visited{
+    color: colors.$text-two;
 }
 
 .hero-card-image{

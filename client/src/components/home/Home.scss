@@ -1,4 +1,5 @@
 @use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
 @import '../../assets/partials/mixins';
 
 .home-page-container {
@@ -38,12 +39,80 @@
     }
 }
 
-.home-page-img-one{
+.home-page-img-area-one{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.win-reap{
-    width: 17rem;
+.home-page-img-area-two{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.battle{
+    width: 100%;
+}
+
+.mei{
+    width: 50%;
+}
+
+.tracer{
+    width: 50%;
+}
+.features-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.features-section h1{
+    font-size: 2.5rem;
+
+    @include tablet{
+        font-size: 3.25rem;
+    }
+
+    @include desktop-small{
+        font-size: 4rem;
+    }
+
+    @include desktop{
+        font-size: 4.75rem;
+    }
+
+    @include desktop-large{
+        font-size: 5.5rem;
+    }
+}
+
+.feature-item{
+    font-family: 'SteelFish';
+    margin: 1.5rem;
+    list-style: none;
+    font-size: 1.75rem;
+
+    @include tablet{
+        margin: 1.75rem;
+        font-size: 2.25rem;
+    }
+
+    @include desktop-small{
+        margin: 2rem;
+        font-size: 2.75rem;
+    }
+
+    @include desktop{
+        margin: 2.25rem;
+        font-size: 3.25rem;
+    }
+
+    @include desktop-large{
+        margin: 2.5rem;
+        font-size: 3.75rem;
+    }
 }

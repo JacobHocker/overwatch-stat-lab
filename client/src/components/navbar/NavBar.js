@@ -39,6 +39,7 @@ function NavBar() {
                     <li className="nav-items">Map Gallery</li>
                     <li className="nav-items">Overwatch League</li>
                     <li className="nav-items">Player</li>
+                    <li className="nav-items">LFG</li>
                     </ul>
                 )}
                    <button className="nav-btn" onClick={toggleNav}>

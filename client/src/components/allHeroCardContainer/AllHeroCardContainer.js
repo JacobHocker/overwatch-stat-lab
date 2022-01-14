@@ -5,6 +5,18 @@ import './AllHeroCardContainer.scss';
 
 function AllHeroCardContainer() {
     const [heroes, setHeroes] = useState([]);
+    const [activeTab, setActiveTab] = useState('All');
+    
+    const tabs = [{id: 1, title: "All"}, {id: 2, title: "Tank"}, {id: 3, title: "Damage"}, {id: 4,  title: "Support"}]
+
+    const tabMap = tabs.map((tab) => (
+        <li className={activeTab === tab.title ? "tab-active" : "tab-inactive" }
+            key={tab.id}
+            onClick={() => setActiveTab(tab.title) }
+            >
+            {tab.title}
+        </li>)
+    )
 
     useEffect(() => {
         fetch("/characters")
@@ -12,20 +24,40 @@ function AllHeroCardContainer() {
         .then((heroes) => { setHeroes(heroes);
         });
     }, []);
-
-    const heroesToDisplay = heroes.map((hero) => (
-        <AllHeroCard
-        key={hero.id}
-        name={hero.name}
-        heroCardImage={hero.hero_card}
-        roleCardImage={hero.role_card}
-        />
-    ))
-
-    console.log(heroes)
+   
+    const heroFilterDisplay = activeTab === 'All' ? heroes.map((h) => (
+        <AllHeroCard 
+        key={h.id}
+        id={h.id}
+        name={h.name}
+        heroCardImage={h.hero_card}
+        roleCardImage={h.role_card}
+        />))
+         : 
+         heroes.filter(hero => hero.role === activeTab).map((h) => (
+         <AllHeroCard 
+        key={h.id}
+        id={h.id}
+        name={h.name}
+        heroCardImage={h.hero_card}
+        roleCardImage={h.role_card}
+        />)
+    )
+    
+    
     return(
-        <div className="all-hero-list-container">
-            {heroesToDisplay}
+        <div className="hero-gallery-page-container">
+            <div className="hero-gallery-header">
+                <h1>Hero Gallery</h1>
+            </div>
+            <div className="tab-header-container">
+                <ul className="tab-nav">
+                    {tabMap}
+                </ul>
+            </div>
+            <div className="all-hero-card-container">
+               {heroFilterDisplay}
+            </div>
         </div>
     )
 }

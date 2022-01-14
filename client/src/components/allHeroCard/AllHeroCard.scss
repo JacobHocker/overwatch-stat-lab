@@ -1,53 +1,50 @@
 @use '../../assets/partials/colors';
 @import '../../assets/partials/mixins';
 
+// Whole Hero Card
 .all-hero-single-card{
     margin: 0.5rem;
     border: 0.5px solid #f1eeee;
-    width: 7rem;
+    width: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     
+    &:hover{
+        cursor:default;
+        border: none;
+        background: linear-gradient( colors.$secondary, colors.$white, colors.$secondary);
+    }
 
-    // &:hover{
-    //     cursor: pointer;
-    //     border-right: 6px solid #f1eeee9a;
-    //     border-top: 2px solid #f1eeee9a;
-    //     border-left: 2px solid #f1eeee9a;
-    //     border-bottom: 6px solid #f1eeee9a;
-        
-    // }
     &:hover .all-hero-card-footer{
-        background: #f1eeee9a;
+        background: colors.$cta; 
     }
 
     &:hover .all-hero-card-footer a{
-        color: colors.$primary-two;
+        color: colors.$text;
     }
-    
 }
 
-
+// Footer Section
 .all-hero-card-footer{
     display: flex;
     justify-content: center;
-    color: colors.$text-two;
     align-items: center;
-    font-size: 0.75rem;
+    font-size: 0.5rem;
     background: #218ffe49;
     width: 100%;
 }
 
 .all-hero-card-footer a{
     text-decoration: none;
-    color: colors.$text-two;
+    color: cyan;
 }
 
 .all-hero-card-footer a:visited{
-    color: colors.$text-two;
+    color: cyan;
 }
 
+// Card Images
 .hero-card-image{
     width: 100%;
     height: 100%;  

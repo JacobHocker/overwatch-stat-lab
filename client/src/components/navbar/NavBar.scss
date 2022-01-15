@@ -33,9 +33,10 @@
 .nav-list-container{
     display: flex;
     justify-content: space-between;
-    margin-left: 10%;
+    margin-left: 5%;
     align-items: center;
     width: 100%;
+    transition: 5s;
 }
 
 nav {

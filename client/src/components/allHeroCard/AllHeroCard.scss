@@ -9,10 +9,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include tablet{
+        width: 7.5rem;
+    }
+
+    @include desktop-small{
+        width: 8.25rem;
+    }
+
+    @include desktop{
+        width: 9rem;
+    }
+
+    @include desktop-large{
+        width: 9.75rem;
+    }
     
     &:hover{
-        cursor:default;
-        border: none;
+        border: 1px solid colors.$cta;
         background: linear-gradient( colors.$secondary, colors.$white, colors.$secondary);
     }
 
@@ -20,9 +35,15 @@
         background: colors.$cta; 
     }
 
-    &:hover .all-hero-card-footer a{
-        color: colors.$text;
-    }
+}
+
+.all-hero-single-card a{
+    text-decoration: none;
+    color: cyan;
+}
+
+.all-hero-single-card a:visited{
+    color: cyan;
 }
 
 // Footer Section
@@ -33,21 +54,32 @@
     font-size: 0.5rem;
     background: #218ffe49;
     width: 100%;
+
+    @include tablet{ 
+        font-size: 0.65rem;
+    }
+
+    @include desktop-small{
+        font-size: 0.7rem;
+    }
+
+    @include desktop{
+        font-size: 0.75rem;
+    }
+
+    @include desktop-large{
+        font-size: 0.8rem;
+    }
 }
 
-.all-hero-card-footer a{
-    text-decoration: none;
-    color: cyan;
-}
-
-.all-hero-card-footer a:visited{
-    color: cyan;
-}
 
 // Card Images
+.hero-card-image-container{
+    width: 100%;
+    display: flex;
+}
 .hero-card-image{
     width: 100%;
-    height: 100%;  
 }
 
 .role-card-image{

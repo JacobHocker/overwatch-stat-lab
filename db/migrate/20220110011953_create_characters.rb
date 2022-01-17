@@ -9,7 +9,7 @@ class CreateCharacters < ActiveRecord::Migration[6.1]
       t.integer :age 
       t.string :occupation
       t.string :base_of_operation
-      t.string :affliation
+      t.string :affiliation
       t.string :hero_story
       t.string :hero_image_one
       t.string :hero_image_two
@@ -24,9 +24,11 @@ class CreateCharacters < ActiveRecord::Migration[6.1]
       t.string :weapon_one_image
       t.string :weapon_one_name 
       t.string :weapon_one_type 
+      t.string :weapon_one_description
       t.string :weapon_two_image
       t.string :weapon_two_name 
       t.string :weapon_two_type
+      t.string :weapon_two_description
       t.string :passive_image
       t.string :passive_name 
       t.string :passive_description 

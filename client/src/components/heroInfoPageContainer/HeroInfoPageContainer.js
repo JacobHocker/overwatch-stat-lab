@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams  } from 'react-router-dom';
-import './HeroInfoPage.scss';
+import HeroInfoPageTextContainer from '../heroInfoPageTextContainer/HeroInfoPageTextContainer';
+import './HeroInfoPageContainer.scss';
 
-function HeroInfoPage(){
+function HeroInfoPageContainer(){
     const [hero, setHero] = useState({})
     
    
@@ -17,11 +18,11 @@ function HeroInfoPage(){
 
     console.log(hero)
     return(
-        <div className='hero-info-page-container'>
-            <h1>{hero.name}</h1>
-            <h1>{hero.role}</h1>
-        </div>
+        <section className='hero-info-page-container'>
+           <h1>Full Hero Page</h1>
+           <HeroInfoPageTextContainer />
+        </section>
     )
 }
 
-export default HeroInfoPage;
+export default HeroInfoPageContainer;

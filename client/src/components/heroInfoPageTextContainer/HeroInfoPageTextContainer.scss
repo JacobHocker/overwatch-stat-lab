@@ -2,6 +2,37 @@
 @use "../../assets/partials/typography";
 @import "../../assets/partials/mixins";
 
+//Hero Page Whole Container
 .hero-info-page-text-container{
-    background: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+// Hero Header Area
+.hero-text-header-container{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.hero-text-header-active{
+    color: colors.$cta;
+    background: colors.$primary-two-opacity;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.hero-text-header-inactive{
+    color: colors.$text;
+    background: colors.$secondary-opacity;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }

@@ -2,6 +2,37 @@
 @use "../../assets/partials/typography";
 @import "../../assets/partials/mixins";
 
+//Whole Hero Story Page
 .hero-info-story-container{
-    background: red;
+    background: colors.$primary-two-opacity;
+    width: 85%;
 }
+
+// Story Font sizes
+.hero-info-story-container h1{
+    color: colors.$cta;
+    font-size: 2.25rem;
+    letter-spacing: 0.05rem;
+}
+.hero-info-story-container h2{
+    color: colors.$cta;
+    font-size: 1.75rem;
+}
+.hero-info-story-container p{
+    font-family: 'SteelFish';
+    letter-spacing: 0.075rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+//Hero Story Header
+.hero-story-header{
+    display: flex;
+}
+
+//Hero Story Body
+.hero-story-info{
+    display: flex;
+    align-items: center;
+}
+

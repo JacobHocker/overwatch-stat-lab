@@ -16,11 +16,16 @@ function HeroInfoPageContainer(){
         })
     }, [id]);
 
-    console.log(hero)
+    
     return(
         <section className='hero-info-page-container'>
-           <h1>Full Hero Page</h1>
-           <HeroInfoPageTextContainer />
+            <div className='hero-info-page-header'>
+                <h1>{hero.name}</h1>
+                <img src={hero.hero_image_one} className='hero-img-one' alt='hero-image-one' />
+            </div>
+            <div className='hero-info-page-text-area'>
+                <HeroInfoPageTextContainer hero={hero}/>
+           </div>
         </section>
     )
 }

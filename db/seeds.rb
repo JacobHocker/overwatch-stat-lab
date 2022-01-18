@@ -1,3 +1,7 @@
+puts "Destroying Data..."
+puts 
+Character.destroy_all 
+
 puts "Begining Seeding Database..."
 puts 
 

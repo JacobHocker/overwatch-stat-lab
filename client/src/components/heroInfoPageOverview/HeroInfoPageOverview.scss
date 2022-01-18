@@ -2,6 +2,34 @@
 @use "../../assets/partials/typography";
 @import "../../assets/partials/mixins";
 
+//Whole Overview Container
 .hero-info-overview-container{
-    background: green;
+    background: colors.$primary-two-opacity;
+    width: 85%;
+}
+
+// Overview Font sizes
+.hero-info-overview-container h2{
+    color: colors.$cta;
+    font-size: 1.75rem;
+}
+.hero-info-overview-container p{
+    font-family: 'SteelFish';
+    letter-spacing: 0.075rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+// Hero Overview Header
+.hero-overview-header{
+    display: flex;
+    align-items: center;
+}
+.hero-overview-role-image{
+    width: 2.5rem;
+}
+
+// Hero Overview Body
+.hero-overview-info{
+    display: flex;
 }

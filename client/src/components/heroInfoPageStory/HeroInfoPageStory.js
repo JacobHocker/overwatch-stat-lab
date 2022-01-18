@@ -1,10 +1,16 @@
 import React from "react";
 import './HeroInfoPageStory.scss';
 
-function HeroInfoPageStory(){
+function HeroInfoPageStory({ hero }){
     return(
         <div className="hero-info-story-container">
-            <h1>Where all Story Info Will Go</h1>
+            <div className="hero-story-header">
+                <h1>Biography{" "}</h1>
+            </div>
+            <div className="hero-story-info">
+                <h2>Full Name: </h2>
+                <p>{hero.name_two}</p>
+            </div>
         </div>
     )
 }

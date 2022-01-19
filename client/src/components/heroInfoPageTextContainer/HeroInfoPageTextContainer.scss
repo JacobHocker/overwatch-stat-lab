@@ -6,6 +6,7 @@
 .hero-info-page-text-container{
     display: flex;
     flex-direction: column;
+    
 }
 
 // Hero Header Area
@@ -14,25 +15,81 @@
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 100%;
+    @include tablet{
+        width: 90%;
+    }
+    @include desktop-small{
+        width: 80%;
+    }
+    @include desktop{
+        width: 70%;
+    }
+    @include desktop-large{
+        width: 60%;
+    }
 }
 
 .hero-text-header-active{
-    color: colors.$cta;
-    background: colors.$primary-two-opacity;
-    border: 1px solid white;
+    color: cyan;
+    background: colors.$primary-two;
+    border: 1px solid colors.$primary-two;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
+    font-size: 1rem;
+    @include tablet{
+        font-size: 1.25rem;
+    }
+    @include desktop-small{
+        font-size: 1.5rem;
+    }
+    @include desktop{
+        font-size: 1.75rem;
+    }
+    @include desktop-large{
+        font-size: 2rem;
+    }
 }
 
 .hero-text-header-inactive{
-    color: colors.$text;
-    background: colors.$secondary-opacity;
+    color: colors.$black;
+    background: colors.$white;
     border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
+    font-size: 1rem;
+    @include tablet{
+        font-size: 1.25rem;
+    }
+    @include desktop-small{
+        font-size: 1.5rem;
+    }
+    @include desktop{
+        font-size: 1.75rem;
+    }
+    @include desktop-large{
+        font-size: 2rem;
+    }
+}
+
+.hero-text-body-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include tablet{
+        width: 90%;
+    }
+    @include desktop-small{
+        width: 80%
+    }
+    @include desktop{
+        width: 70%;
+    }
+    @include desktop-large{
+        width: 60%;
+    }
 }

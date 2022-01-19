@@ -21,10 +21,13 @@ function HeroInfoPageContainer(){
         <section className='hero-info-page-container'>
             <div className='hero-info-page-header'>
                 <h1>{hero.name}</h1>
-                <img src={hero.hero_image_one} className='hero-img-one' alt='hero-image-one' />
+                <img src={hero.hero_image_one} className='hero-img-one' alt='hero-one' />
             </div>
             <div className='hero-info-page-text-area'>
                 <HeroInfoPageTextContainer hero={hero}/>
+           </div>
+           <div className='hero-info-page-footer'>
+             <img src={hero.hero_image_two} className='hero-img-two' alt='hero-two' />
            </div>
         </section>
     )

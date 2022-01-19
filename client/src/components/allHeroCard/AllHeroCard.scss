@@ -39,11 +39,11 @@
 
 .all-hero-single-card a{
     text-decoration: none;
-    color: cyan;
+    color: colors.$text;
 }
 
 .all-hero-single-card a:visited{
-    color: cyan;
+    color: colors.$text;
 }
 
 // Footer Section

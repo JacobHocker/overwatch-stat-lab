@@ -4,32 +4,239 @@
 
 //Whole Overview Container
 .hero-info-overview-container{
-    background: colors.$primary-two-opacity;
-    width: 85%;
+    background: colors.$primary-two;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 // Overview Font sizes
+.hero-info-overview-container h1{
+    color: colors.$blue-text;
+    font-size: 2.25rem;
+    letter-spacing: 0.05rem;
+    @include tablet{
+        font-size: 2.75rem;
+    }
+    @include desktop-small{
+        font-size: 3.25rem;
+    }
+    @include desktop{
+        font-size: 3.75rem;
+    }
+    @include desktop-large{
+        font-size: 4.25rem;
+    }
+}
+
 .hero-info-overview-container h2{
-    color: colors.$cta;
+    color: colors.$secondary;
     font-size: 1.75rem;
+    @include tablet{
+        font-size: 2.15rem;
+    }
+    @include desktop-small{
+        font-size: 2.65rem;
+    }
+    @include desktop{
+        font-size: 3.15rem;
+    }
+    @include desktop-large{
+        font-size: 3.65rem;
+    }
 }
 .hero-info-overview-container p{
     font-family: 'SteelFish';
     letter-spacing: 0.075rem;
     font-size: 1.5rem;
     margin-left: 1rem;
+    @include tablet{
+        font-size: 1.75rem;
+    }
+    @include desktop-small{
+        font-size: 2rem;
+    }
+    @include desktop{
+        font-size: 2.25rem;
+    }
+    @include desktop-large{
+        font-size: 2.75rem;
+    }
 }
 
 // Hero Overview Header
 .hero-overview-header{
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 .hero-overview-role-image{
-    width: 2.5rem;
+    width: 5.5rem;
+    @include tablet{
+        width: 6.5rem;
+    }
+    @include desktop-small{
+        width: 7.25rem;
+    }
+    @include desktop{
+        width: 7.5rem;
+    }
+    @include desktop-large{
+        width: 8rem;
+    }
 }
 
-// Hero Overview Body
-.hero-overview-info{
+.overview-role-display{
     display: flex;
+}
+.overview-gameplay-description {
+    margin-top: 1rem;
+    border-left: 5px solid cyan;
+    padding-left: 1rem;
+}
+.overview-playstyle{
+    padding-left: 1rem;
+}
+
+//Hero Overview Difficulty
+.overview-hero-difficulty{
+    margin-top: 2rem;
+    border-top: 3px solid colors.$secondary-opacity;
+    padding-left: 1rem;
+}
+
+//Hero Overview Weapons 
+.hero-overview-weapons{
+    background: colors.$primary-two-light;
+    margin: 0.5rem;
+}
+.overview-weapon-display{
+    margin-left: 5%;
+}
+.weapon-one-image{
+    margin-left: 25%;
+    width: 8.5rem;
+    @include tablet{
+        width: 10rem;
+    }
+    @include desktop-small{
+        width: 11.5rem;
+    }
+    @include desktop{
+        width: 13rem;
+    }
+    @include desktop-large{
+        width: 14.5rem;
+    }
+}
+.weapon-two-image{
+    margin-left: 25%;
+    width: 8.5rem;
+    @include tablet{
+        width: 10rem;
+    }
+    @include desktop-small{
+        width: 11.5rem;
+    }
+    @include desktop{
+        width: 13rem;
+    }
+    @include desktop-large{
+        width: 14.5rem;
+    }
+}
+
+//Hero Overview Abilities
+.hero-overview-abilities{
+    background: colors.$primary-two-light;
+    margin: 0.5rem;
+}
+.overview-abilities-display{
+    margin-left: 5%;
+}
+.passive-image{
+    margin-left: 25%;
+    width: 8.5rem;
+    @include tablet{
+        width: 10rem;
+    }
+    @include desktop-small{
+        width: 11.5rem;
+    }
+    @include desktop{
+        width: 13rem;
+    }
+    @include desktop-large{
+        width: 14.5rem;
+    }
+}
+.ability-one-image{
+    margin-left: 25%;
+    width: 8.5rem;
+    @include tablet{
+        width: 10rem;
+    }
+    @include desktop-small{
+        width: 11.5rem;
+    }
+    @include desktop{
+        width: 13rem;
+    }
+    @include desktop-large{
+        width: 14.5rem;
+    }
+}
+.ability-two-image{
+    margin-left: 25%;
+    width: 8.5rem;
+    @include tablet{
+        width: 10rem;
+    }
+    @include desktop-small{
+        width: 11.5rem;
+    }
+    @include desktop{
+        width: 13rem;
+    }
+    @include desktop-large{
+        width: 14.5rem;
+    }
+}
+.ability-three-image{
+    margin-left: 25%;
+    width: 8.5rem;
+    @include tablet{
+        width: 10rem;
+    }
+    @include desktop-small{
+        width: 11.5rem;
+    }
+    @include desktop{
+        width: 13rem;
+    }
+    @include desktop-large{
+        width: 14.5rem;
+    }
+}
+.ultimate-image{
+    margin-left: 25%;
+    width: 8.5rem;
+    @include tablet{
+        width: 10rem;
+    }
+    @include desktop-small{
+        width: 11.5rem;
+    }
+    @include desktop{
+        width: 13rem;
+    }
+    @include desktop-large{
+        width: 14.5rem;
+    }
+}
+
+
+// Hero Overview Health Breakdown
+.hero-overview-health{
+    display: flex;
+    flex-direction: column;
 }

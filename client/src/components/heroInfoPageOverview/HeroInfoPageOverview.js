@@ -40,22 +40,28 @@ function HeroInfoPageOverview({ hero }) {
                     <p>Weapon Type: {hero.weapon_one_type}</p>
                     <p>{hero.weapon_one_description}</p>
                  </div>
-                 <div className="overview-weapon-display">
+                 {hero.weapon_two_name === 'N/A' ?
+                 <div></div>
+                 :
+                <div className="overview-weapon-display">
                     < img src={hero.weapon_two_image} className="weapon-two-image" alt="weapon-two" />
-                   <h2>Secondary</h2>
+                    <h2>Secondary</h2>
                     <h2>{hero.weapon_two_name}</h2>
                     <p>Weapon Type: {hero.weapon_two_type}</p>
                     <p>{hero.weapon_two_description}</p>
-                 </div>
+                 </div>}
             </div>
             <div className="hero-overview-abilities">
                 <h1>Abilities</h1>
+                {hero.passive_name === 'N/A' ?
+                <div></div>
+                :
                 <div className="overview-abilities-display">
                     <h2>Passive Ability</h2>
                     < img src={hero.passive_image} className="passive-image" alt="passive" />
                     <h2>{hero.passive_name}</h2>
                     <p>{hero.passive_description}</p>
-                </div>
+                </div>}
                 <div className="overview-abilities-display">
                     <h2>Ability One</h2>
                     < img src={hero.ability_one_image} className="ability-one-image" alt="ability-one" />

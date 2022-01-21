@@ -27,12 +27,12 @@
     width: 55%;
 }
 .hero-info-page-header h1{
-    font-size: 4.5rem;
+    font-size: 3rem;
     background: -webkit-linear-gradient(0.45turn, colors.$cta , colors.$white, colors.$cta);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @include tablet{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
     @include desktop-small{
         font-size: 5.5rem;

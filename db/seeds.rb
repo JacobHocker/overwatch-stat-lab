@@ -10,6 +10,7 @@ puts
 ###DPS####
 puts "Creating DPS..."
 puts 
+#REAPER
 Character.create(
     name: "Reaper", 
     role: "Damage", 
@@ -59,7 +60,9 @@ Character.create(
     ultimate_description: "Damage all nearby enemies.",
     healing_type: "N/A",
     barrier: false,
-    barrier_health: 0  )
+    barrier_health: 0  
+)
+#WIDOWMAKER
 Character.create(
     name: "Widowmaker", 
     role: "Damage", 
@@ -110,7 +113,9 @@ Character.create(
     ultimate_description: "Provide your team with a view of the enemy's location.",
     healing_type: "N/A",
     barrier: false,
-    barrier_health: 0)
+    barrier_health: 0
+)
+#TRACER
 Character.create(
     name: "Tracer",
     role: "Damage", 
@@ -161,7 +166,9 @@ Character.create(
     ultimate_description: "Throw out a powerful sticky explosive.",
     healing_type: "N/A",
     barrier: false,
-    barrier_health: 0)
+    barrier_health: 0
+)
+#TORBJORN
 Character.create(
     name: "Torbjorn", 
     role: "Damage", 
@@ -211,7 +218,9 @@ Character.create(
     ultimate_description: "Create pools of molten slag that damage enemies. Deals additional damage to armor.",
     healing_type: "N/A",
     barrier: false,
-    barrier_health: 0)
+    barrier_health: 0
+)
+#SYMMETRA
 Character.create(
     name: "Symmetra", 
     role: "Damage", 
@@ -262,7 +271,9 @@ Character.create(
     ultimate_description: "Deploy a massive energy barrier. (5,000 HP)",
     healing_type: "N/A",
     barrier: false,
-    barrier_health: 0 )
+    barrier_health: 0 
+)
+#SOMBRA
 Character.create(
     name: "Sombra", 
     role: "Damage", 
@@ -314,7 +325,9 @@ Character.create(
     ultimate_description: "Hack enemies and destroy enemy shields and barriers around you.",
     healing_type: "N/A",
     barrier: false,
-    barrier_health: 0)
+    barrier_health: 0
+)
+#SOLDIER 76
 Character.create(
     name: "Soldier 76", 
     role: "Damage", 
@@ -364,7 +377,9 @@ Character.create(
     ultimate_description: "Automatically aims your weapon at targets in view.", 
     healing_type: "N/A", 
     barrier: false, 
-    barrier_health: 0 )
+    barrier_health: 0 
+)
+#PHARAH
 Character.create(
     name: "Pharah", 
     role: "Damage",
@@ -414,7 +429,9 @@ Character.create(
     ultimate_description: "Launch a continuous volley of mini-rockets.",
     healing_type: "N/A",
     barrier: false,
-    barrier_health: 0 )
+    barrier_health: 0 
+)
+#MEI
 Character.create(
     name: "Mei", 
     role: "Damage", 
@@ -465,7 +482,9 @@ Character.create(
     ultimate_description: "Launch a weather control drone that freezes enemies in a wide area.",
     healing_type: "N/A",
     barrier: false,
-    barrier_health: 0)
+    barrier_health: 0
+)
+#JUNKRAT
 Character.create(
     name: "Junkrat", 
     role: "Damage", 
@@ -516,8 +535,61 @@ Character.create(
     ultimate_description: "Drive and detonate an exploding tire.",
     healing_type: "N/A",
     barrier: false,
-    barrier_health: 0)
-Character.create(name: "Hanzo", role: "Damage", hero_card: '/images/icons/Icon-Hanzo.png', role_card: '/images/icons/Icon-Damage.png')
+    barrier_health: 0
+)
+#HANZO
+Character.create(
+    name: "Hanzo", 
+    role: "Damage", 
+    hero_card: '/images/icons/Icon-Hanzo.png', 
+    role_card: '/images/icons/Icon-Damage.png',
+    name_two: "Hanzo Shimada (島田 半蔵)",
+    age: 38,
+    occupation: "Mercenary, Assassin",
+    base_of_operation: "Hanamura, Japan (formerly)",
+    affiliation: "Shimada Clan (formerly)",
+    hero_story: "Mastering his skills as a bowman and an assassin, Hanzo Shimada strives to prove himself as a warrior without peer.
+    The Shimada family was established centuries ago, a clan of assassins whose power grew over the years, enabling them to build a vast criminal empire that profited from lucrative trade in arms and illegal substances. As the eldest son of the family's head, Hanzo was bound by duty to succeed his father and rule the Shimada empire. From a young age, he was trained for that responsibility, displaying a natural aptitude for leadership and possessing an innate understanding of strategy and tactics. He also excelled in more practical areas: he was a prodigy in martial arts, swordplay, and bowmanship.
+    Upon the death of his father, the clan elders instructed Hanzo to straighten out his wayward younger brother so that he, too, might help rule the Shimada empire. When his brother refused, Hanzo was forced to kill him. This act broke Hanzo's heart and drove him to reject his father's legacy, ultimately leading him to abandon the clan and all that he had worked so hard to attain.
+    Now, Hanzo travels the world, perfecting his skills as a warrior, attempting to restore his honor and put the ghosts of his past to rest.",
+    hero_image_one: "/images/heroImages/hanzo/Hanzo-page-one.png",
+    hero_image_two: "/images/heroImages/hanzo/Hanzo-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Hanzo's versatile arrows can reveal his enemies or fragment to strike multiple targets. He can scale walls to fire his bow from on high, or summon a titanic spirit dragon.",
+    hp: 200,
+    armor: 0,
+    shields: 0,
+    total_hp: 200,
+    playstyle: "Sniper/Projectile",
+    hero_difficulty: 3,
+    weapon_one_image: "/images/heroImages/hanzo/Hanzo-gun.png",
+    weapon_one_name: "Storm Bow",
+    weapon_one_description: "Hold to charge then release to launch arrows further.",
+    weapon_one_type: "Projectile",
+    weapon_two_image: "N/A",
+    weapon_two_name: "N/A",
+    weapon_two_description: "N/A",
+    weapon_two_type: "N/A",
+    passive_image: "/images/heroImages/hanzo/Hanzo-passive.png",
+    passive_name: "Wall Climb",
+    passive_description: "Jump at walls to climb up them",
+    ability_one_image: "/images/heroImages/hanzo/Hanzo-storm-arrow.png",
+    ability_one_name: "Storm Arrows",
+    ability_one_description: "The next 5 arrows fire instantly at reduced damage.",
+    ability_two_image: "/images/heroImages/hanzo/Hanzo-sonic.png",
+    ability_two_name: "Sonic Arrow",
+    ability_two_description: "Reveals enemies for a short time upon impact.",
+    ability_three_image: "/images/heroImages/hanzo/Hanzo-lunge.png",
+    ability_three_name: "Lunge",
+    ability_three_description: "Double jump.",
+    ultimate_image: "/images/heroImages/hanzo/Hanzo-dragon-strike.png",
+    ultimate_name: "Dragonstrike",
+    ultimate_description: "Launch a deadly Dragon Spirit that devastates enemies it passes through.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0
+)
+#GENJI
 Character.create(
     name: "Genji", 
     role: "Damage", 
@@ -564,36 +636,723 @@ Character.create(
     ultimate_description: "Unsheathe a deadly melee weapon.",
     healing_type: "N/A",
     barrier: false,
-    barrier_health: 0  
+    barrier_health: 0 
 )
-Character.create(name: "Echo", role: "Damage", hero_card: '/images/icons/Icon-Echo.png', role_card: '/images/icons/Icon-Damage.png')
-Character.create(name: "Doomfist", role: "Damage", hero_card: '/images/icons/Icon-Doomfist.png', role_card: '/images/icons/Icon-Damage.png')
-Character.create(name: "Cassidy", role: "Damage", hero_card: '/images/icons/Icon-Cassidy.png', role_card: '/images/icons/Icon-Damage.png')
-Character.create(name: "Bastion", role: "Damage", hero_card: '/images/icons/Icon-Bastion.png', role_card: '/images/icons/Icon-Damage.png')
-Character.create(name: "Ashe", role: "Damage", hero_card: '/images/icons/Icon-Ashe.png', role_card: '/images/icons/Icon-Damage.png')
+#ECHO
+Character.create(
+    name: "Echo", 
+    role: "Damage", 
+    hero_card: '/images/icons/Icon-Echo.png', 
+    role_card: '/images/icons/Icon-Damage.png',
+    name_two: "Echo",
+    age: 0,
+    occupation: "Multirole adaptive robot",
+    base_of_operation: "Watchpoint: Gibraltar",
+    affiliation: "Overwatch",
+    hero_story: "To chart the origins of the Echo project, it is important to delve into the personal history of Singaporean scientist Dr. Mina Liao, who would later become perhaps best known as one of the founding members of Overwatch. But prior to joining the organization, Dr. Liao was widely considered one of the preeminent experts in the fields of robotics and artificial intelligence, and an employee of Omnica Corporation. There she worked on the team that was responsible for the design and creation of the omnics that would ultimately wage war against humanity during the Omnic Crisis. Ultimately, it was this expertise that led her to be recruited into Overwatch to help stop her creations.
+    Even that catastrophe was not enough to dissuade Liao of her firmly held belief in the potential artificial life and its power to transform the lives of humanity for the better. She dreamed of improving upon the original omnic designs. These theories would become the foundation of the Echo project. However, due to Overwatch’s restrictions on artificial intelligence research and development after the Omnic Crisis, Liao was forced to limit Echo’s capabilities. What she created was a multirole, adaptive robot that could be programmed to learn different functions: anything from medical support to construction: but had serious limits to its independent decision making. Critically, Echo had multiple layers of protections, failsafes, and security to keep it under control. Echo was used successfully on test missions alongside Overwatch strike teams, but Overwatch leadership was reluctant to put it into full service.",
+    hero_image_one: "/images/heroImages/echo/Echo-page-one.png",
+    hero_image_two: "/images/heroImages/echo/Echo-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Echo is an evolutionary robot programmed with a rapidly adapting artificial intelligence, versatile enough to fill multiple battlefield combat roles.",
+    hp: 200,
+    armor: 0,
+    shields: 0,
+    total_hp: 200,
+    playstyle: "Flying/Projectile",
+    hero_difficulty: 2,
+    weapon_one_image: "/images/heroImages/echo/Echo-gun.png",
+    weapon_one_name: "Tri-Shot",
+    weapon_one_description: "Fires 3 shots at once, in a triangle pattern.",
+    weapon_one_type: "Projectile",
+    weapon_two_image: "N/A",
+    weapon_two_name: "N/A",
+    weapon_two_description: "N/A",
+    weapon_two_type: "N/A",
+    passive_image: "/images/heroImages/echo/Echo-glide.png",
+    passive_name: "Glide",
+    passive_description: "Hold jump to glide while falling",
+    ability_one_image: "/images/heroImages/echo/Echo-sticky.png",
+    ability_one_name: "Sticky Bombs",
+    ability_one_description: "Fire a volley of sticky bombs that detonate after a delay.",
+    ability_two_image: "/images/heroImages/echo/Echo-flight.png",
+    ability_two_name: "Flight",
+    ability_two_description: "Fly forward quickly and then free-fly briefly.",
+    ability_three_image: "/images/heroImages/echo/Echo-beam.png",
+    ability_three_name: "Focusing Beam",
+    ability_three_description: "Channel a beam for a few seconds. Deals very high damage to targets under half health.",
+    ultimate_image: "/images/heroImages/echo/Echo-duplicate.png",
+    ultimate_name: "Duplicate",
+    ultimate_description: "Become a copy of the targeted enemy hero. They cannot swap heroes for the duration.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0 
+)
+#DOOMFIST
+Character.create(
+    name: "Doomfist", 
+    role: "Damage", 
+    hero_card: '/images/icons/Icon-Doomfist.png',
+    role_card: '/images/icons/Icon-Damage.png',
+    name_two: "Akande Ogundimu",
+    age: 45,
+    occupation: "Mercenary, CEO, Talon Counsil",
+    base_of_operation: "Oyo, Nigeria",
+    affiliation: "Talon",
+    hero_story: "Recently freed from imprisonment, Doomfist is determined to plunge the world into a new conflict that he believes will make humanity stronger.
+    Akande Ogundimu was born into a well-regarded Nigerian family, heir to its prosthetic-technology company. A highly intelligent and charismatic figure, Ogundimu helped to expand his family's business and position it for the future while dedicating his free time to his first love: competitive martial arts. He trained in traditional African fighting styles, including Dambe and Gidigbo, as well as in wrestling and other modern combat systems, incorporating the most effective techniques into his repertoire. Ogundimu competed in tournaments all over the continent, utilizing his intuition and ability to read opponents alongside his tremendous speed and strength.
+    But when he lost his right arm in the aftermath of the Omnic Crisis, it seemed his martial arts career was finished before he had reached his prime. His company's cybernetic prosthetics allowed him to recover from his injuries, even making him stronger, but these enhancements rendered him ineligible for competition. He tried to devote himself to his business with the same zeal that he had for fighting, but he found nothing that could fill the void… until he was given a new opportunity by Akinjide Adeyemi, better known to the world as the second Doomfist, the Scourge of Numbani.
+    Adeyemi offered Ogundimu the chance to fight with him as a mercenary. Initially wary, Ogundimu accepted, and discovered that he now had an arena in which he could unleash his enhanced capabilities. Eventually, Adeyemi brought him into the Talon organization. Talon's belief that humanity would be made stronger through conflict resonated with Ogundimu's personal experiences. Moreover, Talon's power struggles presented a new challenge that allowed him to use his talent in the boardroom along with his cunning as a combatant.
+    Adeyemi was a useful asset to Talon, but the organization saw far greater potential in Ogundimu, with his intelligence and his ability to inspire as a commander. While Adeyemi was content to profit from raids on Numbani, Ogundimu had a grander vision. This difference in aspiration would lead Ogundimu to kill his teacher and take on the mantle of Doomfist, along with the eponymous gauntlet.
+    As the new Doomfist, Ogundimu rose high in Talon and helped to orchestrate a conflict that the organization hoped would someday engulf the world. However, before their plan came to fruition, Ogundimu was defeated and captured by an Overwatch strike team that included Tracer, Winston, and Genji. He was imprisoned in a maximum-security facility for years, where he waited patiently for events he had incited to play out.
+    Finally, he sensed that the time had come for him to return. He broke out of his prison and recovered Doomfist's gauntlet in a one-sided battle with Numbani's newly unveiled OR15 defense robots. Now, he has retaken his place in Talon's inner council, ready to spark a war that will consume the world once again.",
+    hero_image_one: "/images/heroImages/doomfist/Doomfist-page-one.png",
+    hero_image_two: "/images/heroImages/doomfist/Doomfist-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Doomfist’s cybernetics make him a highly-mobile, powerful frontline fighter. In addition to dealing ranged damage with his Hand Cannon, Doomfist can slam the ground, knock enemies into the air and off balance, or charge into the fray with his Rocket Punch. When facing a tightly packed group, Doomfist leaps out of view, then crashes down to earth with a spectacular Meteor Strike.",
+    hp: 250,
+    armor: 0,
+    shields: 0,
+    total_hp: 250,
+    playstyle: "Melee/Combo/Flanker/Dive",
+    hero_difficulty: 3,
+    weapon_one_image: "/images/heroImages/doomfist/Doomfist-gun.png",
+    weapon_one_name: "Hand Cannon",
+    weapon_one_description: "Short-range weapon with spread, Reloads automatically",
+    weapon_one_type: "Short-range hitscan shotgun",
+    weapon_two_image: "N/A",
+    weapon_two_name: "N/A",
+    weapon_two_description: "N/A",
+    weapon_two_type: "N/A",
+    passive_image: "/images/heroImages/doomfist/Doomfist-passive.png",
+    passive_name: "The Best Defense...",
+    passive_description: "Dealing damage with abilities creates temporary personal shields.",
+    ability_one_image: "/images/heroImages/doomfist/Doomfist-slam.png",
+    ability_one_name: "Seismic Slam",
+    ability_one_description: "Leap forward and smash the ground.",
+    ability_two_image: "/images/heroImages/doomfist/Doomfist-uppercut.png",
+    ability_two_name: "Rising Uppercut",
+    ability_two_description: "Knock an enemy into the air.",
+    ability_three_image: "/images/heroImages/doomfist/Doomfist-punch.png",
+    ability_three_name: "Rocket Punch",
+    ability_three_description: "Hold to charge then release to launch forward and knock an enemy back. Damage increases if the enemy hits a wall.",
+    ultimate_image: "/images/heroImages/doomfist/Doomfist-meteor.png",
+    ultimate_name: "Meteor Strike",
+    ultimate_description: "Press Q to leap up into the air. Move the targeting circle, then press ABILITY 3 to strike the targeted area.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0 
+)
+#CASSIDY
+Character.create(
+    name: "Cassidy", 
+    role: "Damage", 
+    hero_card: '/images/icons/Icon-Cassidy.png', 
+    role_card: '/images/icons/Icon-Damage.png',
+    name_two: "Cole Cassidy",
+    age: 35,
+    occupation: "Overwatch Agent, Bounty Hunter, Mercenary",
+    base_of_operation: "Santa Fe, New Mexico (formerly)",
+    affiliation: "Deadlock Gang (formerly), Blackwatch (formerly), Mercenary",
+    hero_story: "Armed with his Peacekeeper revolver, the outlaw Cole Cassidy doles out justice on his own terms.
+    On the run from the law as a young man, Cassidy became a founding member of the notorious Deadlock Gang, which trafficked in illicit weapons and military hardware throughout the American Southwest. Eventually, the gang’s luck ran out, and Overwatch busted Cassidy and several of his associates. With his expert marksmanship and resourcefulness, Cassidy was given the choice between rotting in a maximum-security lockup and joining Blackwatch, Overwatch's covert ops division. He chose the latter.
+    Although initially cynical, Cassidy came to believe that he could make amends for his past by righting the injustices of the world. He appreciated the flexibility afforded to the clandestine Blackwatch, unhindered by bureaucracy and red tape. But as Overwatch's influence waned, rogue elements within Blackwatch sought to bring down the organization and turn it to their own ends. Wanting no part of the infighting, Cassidy set off alone.
+    He resurfaced several years later as a gunslinger for hire. But while Cassidy's talents are sought after by parties great and small, he fights only for causes he believes are just.",
+    hero_image_one: "/images/heroImages/cassidy/Cassidy-page-one.png",
+    hero_image_two: "/images/heroImages/cassidy/Cassidy-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Armed with his Peacekeeper revolver, Cassidy takes out targets with deadeye precision and dives out of danger with eagle-like speed.",
+    hp: 225,
+    armor: 0,
+    shields: 0,
+    total_hp: 225,
+    playstyle: "Crowd Control/Medium-Short-range Hitscan",
+    hero_difficulty: 2,
+    weapon_one_image: "/images/heroImages/cassidy/Cassidy-gun.png",
+    weapon_one_name: "Peacekeeper",
+    weapon_one_description: "Accurate, powerful revolver.",
+    weapon_one_type: "Hitscan",
+    weapon_two_image: "/images/heroImages/cassidy/Cassidy-gun.png",
+    weapon_two_name: "Fan The Hammer",
+    weapon_two_description: "Wildly fire remaining rounds.",
+    weapon_two_type: "Hitscan",
+    passive_image: "N/A",
+    passive_name: "N/A",
+    passive_description: "N/A",
+    ability_one_image: "/images/heroImages/cassidy/Cassidy-roll.png",
+    ability_one_name: "Combat Roll",
+    ability_one_description: "Roll in the direction you're moving and reload.",
+    ability_two_image: "/images/heroImages/cassidy/Cassidy-flash.png",
+    ability_two_name: "Flashbang",
+    ability_two_description: "Stun enemies in front of you.",
+    ability_three_image: "N/A",
+    ability_three_name: "N/A",
+    ability_three_description: "N/A",
+    ultimate_image: "/images/heroImages/cassidy/Cassidy-deadeye.png",
+    ultimate_name: "Deadeye",
+    ultimate_description: "Face off against your enemies. Press Q to lock on, then Q or ABILITY 3 to fire.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0 
+)
+#BASTION
+Character.create(
+    name: "Bastion", 
+    role: "Damage", 
+    hero_card: '/images/icons/Icon-Bastion.png', 
+    role_card: '/images/icons/Icon-Damage.png',
+    name_two: "SST Laboratories Siege Automaton E54",
+    age: 30,
+    occupation: "Battle automaton (formerly), None",
+    base_of_operation: "Black Forrest, Germany (formerly",
+    affiliation: "None",
+    hero_story: "Once a frontline combatant in the devastating Omnic Crisis, this curious Bastion unit now explores the world, fascinated by nature but wary of a fearful humanity.
+    Originally created for peacekeeping purposes, Bastion robot units possessed the unique ability to rapidly reconfigure themselves into an assault-cannon mode. But during the Omnic Crisis, they were turned against their human makers, forming the bulk of the omnics' rebel army. Following the resolution of the crisis, nearly all of them were destroyed or disassembled. To this day, Bastion units still symbolize the horrors of the conflict.
+    One unique Bastion unit, severely damaged in the final battles of the war, was left forgotten for over a decade. It lay dormant, exposed to the elements and rusting while nature slowly reclaimed it. Overgrown with vines and roots and nested upon by small animals, the robot sat inert, seemingly unaware of the passing of time. That was until one fateful day, when it unexpectedly reactivated. With its combat programming all but lost, it instead displayed an intense curiosity about the natural world and its inhabitants. This inquisitive Bastion unit set out to explore its surroundings and discover its purpose on a war-ravaged planet.
+    Though 'Bastion' appears to be gentle—even harmless, at times—its core combat programming takes over when the unit senses danger, utilizing its entire arsenal to eliminate anything it perceives as a threat. This has led to instances of conflict with the few humans it has encountered, and has driven it to avoid populated areas in favor of the wild, uncharted regions of the world.",
+    hero_image_one: "/images/heroImages/bastion/Bastion-page-one.png",
+    hero_image_two: "/images/heroImages/bastion/Bastion-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Repair protocols and the ability to transform between stationary Assault, mobile Recon and devastating Tank configurations provide Bastion with a high probability of victory.",
+    hp: 200,
+    armor: 100,
+    shields: 0,
+    total_hp: 300,
+    playstyle: "Hitscan/Builder/Tank",
+    hero_difficulty: 1,
+    weapon_one_image: "/images/heroImages/bastion/Bastion-gun.png",
+    weapon_one_name: "Configuration: Sentry",
+    weapon_one_description: "Immobile with a powerful rotary cannon.",
+    weapon_one_type: "Hitscan",
+    weapon_two_image: "/images/heroImages/bastion/Bastion-gun-two.png",
+    weapon_two_name: "Configuration: Recon",
+    weapon_two_description: "Mobile with a light automatic weapon.",
+    weapon_two_type: "Hitscan",
+    passive_image: "/images/heroImages/bastion/Bastion-iron.png",
+    passive_name: "Ironclad",
+    passive_description: "Reduces damage taken while transformed.",
+    ability_one_image: "/images/heroImages/echo/Echo-sticky.png",
+    ability_one_name: "Self-Repair",
+    ability_one_description: "Hold to heal yourself.",
+    ability_two_image: "/images/heroImages/bastion/Bastion-reconfigure.png",
+    ability_two_name: "Reconfigure",
+    ability_two_description: "Switch between weapon configurations.",
+    ability_three_image: "N/A",
+    ability_three_name: "N/A",
+    ability_three_description: "N/A",
+    ultimate_image: "/images/heroImages/bastion/Bastion-tank.png",
+    ultimate_name: "Configuration: Tank",
+    ultimate_description: "Mobile with a powerful cannon.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0 
+)
+#ASHE
+Character.create(
+    name: "Ashe", 
+    role: "Damage", 
+    hero_card: '/images/icons/Icon-Ashe.png', 
+    role_card: '/images/icons/Icon-Damage.png',
+    name_two: "Elizabeth Caledonia 'Calamity' Ashe",
+    age: 39,
+    occupation: "Thief, gang leader",
+    base_of_operation: "Lead Rose Manor, Texas (formerly)",
+    affiliation: "Deadlock Gang",
+    hero_story: "Ashe is the ambitious and calculating leader of the Deadlock Gang and a respected figure in the criminal underworld.
+    Born into a wealthy family, Ashe grew up surrounded by privilege. Her parents were highly sought-after business consultants and coaches for powerful CEOs around the world. Though her parents paid little attention to her , they ensured that Ashe had every opportunity to succeed. But a chance meeting with a local ruffian, named Cole Cassidy, and an impromptu string of crimes committed together opened her eyes to her true calling. The satisfaction of outwitting her targets and the thrill of getting away with it set her on the outlaw path.
+    Along with the other three founders of the Deadlock Gang, Ashe started to make a name for herself with bigger and more extravagant heists. The Deadlock Gang’s rapid rise to prominence put them at odds with the other criminal organizations in the American Southwest; the encounters often became violent. After years of skirmishes and bloodshed, Ashe called the heads of the major groups together.
+    Ashe saw the potential to grow the influence of all. She used what she’d learned from her parents’ business to bring order to these groups. Her proposal was that the gangs could work together . Her principles: keep your word, don’t work with the law, respect each other’s territory, and always punish betrayal.
+    No longer having to focus her energies on squabbles with the other gangs, Ashe is now writing her name across the American Southwest with a string of audacious heists and operations that has put her at top of the authorities’ most-wanted lists and cemented her legacy as an outlaw legend.",
+    hero_image_one: "/images/heroImages/ashe/Ashe-page-one.png",
+    hero_image_two: "/images/heroImages/ashe/Ashe-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Ashe quickly fires her rifle from the hip or uses her weapon’s aim-down sights to line up a high damage shot. She blasts enemies by throwing dynamite, and her coach gun packs enough punch to put some distance between her and her foes. And Ashe is not alone, as she can call on her omnic ally Bob, to join the fray when the need arises.",
+    hp: 200,
+    armor: 0,
+    shields: 0,
+    total_hp: 200,
+    playstyle: "Medium-Long-range Hitscan",
+    hero_difficulty: 2,
+    weapon_one_image: "/images/heroImages/ashe/Ashe-gun.png",
+    weapon_one_name: "The Viper",
+    weapon_one_description: "Semi-automatic rifle.",
+    weapon_one_type: "Hitscan",
+    weapon_two_image: "/images/heroImages/ashe/Ashe-gun.png",
+    weapon_two_name: "Take Aim",
+    weapon_two_description: "Hold to zoom in, increasing damage and accuracy but slowing rate of fire.",
+    weapon_two_type: "Hitscan",
+    passive_image: "N/A",
+    passive_name: "N/A",
+    passive_description: "N/A",
+    ability_one_image: "/images/heroImages/ashe/Ashe-coach.png",
+    ability_one_name: "Coach Gun",
+    ability_one_description: "Blast enemies in front of you and knock yourself backwards.",
+    ability_two_image: "/images/heroImages/ashe/Ashe-dynamite.png",
+    ability_two_name: "Dynamite",
+    ability_two_description: "Throw an explosive that detonates after a short delay or immediately when shot.",
+    ability_three_image: "N/A",
+    ability_three_name: "N/A",
+    ability_three_description: "N/A",
+    ultimate_image: "/images/heroImages/ashe/Ashe-bob.png",
+    ultimate_name: "B.O.B",
+    ultimate_description: "Deploy Bob. He charges forward and knocks enemies into the air, then attacks with his arm cannons.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0 
+)
 
+
+   
+    
 ###Tanks###
+
 puts "Creating Tanks..."
 puts 
-Character.create(name: "D.Va", role: "Tank", hero_card: '/images/icons/Icon-D.Va.png', role_card: '/images/icons/Icon-Tank.png')
-Character.create(name: "Orisa", role: "Tank", hero_card: '/images/icons/Icon-Orisa.png', role_card: '/images/icons/Icon-Tank.png')
-Character.create(name: "Sigma", role: "Tank", hero_card: '/images/icons/Icon-Sigma.png', role_card: '/images/icons/Icon-Tank.png')
-Character.create(name: "Roadhog", role: "Tank", hero_card: '/images/icons/Icon-Roadhog.png', role_card: '/images/icons/Icon-Tank.png')
-Character.create(name: "Reinhardt", role: "Tank", hero_card: '/images/icons/Icon-Reinhardt.png', role_card: '/images/icons/Icon-Tank.png')
-Character.create(name: "Winston", role: "Tank", hero_card: '/images/icons/Icon-Winston.png', role_card: '/images/icons/Icon-Tank.png')
-Character.create(name: "Zarya", role: "Tank", hero_card: '/images/icons/Icon-Zarya.png', role_card: '/images/icons/Icon-Tank.png')
-Character.create(name: "Wrecking Ball", role: "Tank", hero_card: '/images/icons/Icon-Wrecking_Ball.png', role_card: '/images/icons/Icon-Tank.png')
+#DVA
+Character.create(
+    name: "D.Va", 
+    role: "Tank", 
+    hero_card: '/images/icons/Icon-D.Va.png', 
+    role_card: '/images/icons/Icon-Tank.png',
+    name_two: "Hana Song (송하나)",
+    age: 19,
+    occupation: "Mech Pilot, Actress",
+    base_of_operation: "Busan, South Korea",
+    affiliation: "Mobile Exo-Force of the Korean Army (MEKA)",
+    hero_story: "D.Va is a former professional gamer who now uses her skills to pilot a state-of-the-art mech in defense of her homeland.
+    Twenty years ago, South Korea was attacked by a colossal omnic monstrosity that rose from the depths of the East China Sea. The massive, lumbering construct caused catastrophic damage to coastal cities before it was driven back beneath the waves. In response, the South Korean government developed a mechanized armored drone unit, called MEKA, to protect urban environments in future engagements with the omnic threat.
+    The government's fears proved to be well founded, as a disturbing pattern of attacks emerged. Every few years, the monstrosity would rise from the sea to assault South Korea and its neighbors. The omnic learned from these encounters, often reconfiguring itself in a different form and appearing with new weapons and capabilities. Each incident ended in a stalemate, with the monstrosity defeated but not destroyed.
+    As the omnic continued to adapt, it eventually disrupted MEKA's drone-control networks, forcing the military to place pilots in the mechs. Scrambling to find suitable candidates, the government turned to the country's professional gamers, who possessed the necessary reflexes and instincts to operate the mechs' advanced weapons systems. Top stars were drafted, including reigning world champion Hana Song, also known as 'D.Va.' Famous for her elite skills, D.Va was a fierce competitor who played to win at all costs, and she had a well-earned reputation for showing no mercy to her opponents.
+    Seeing her new mission as a game, D.Va fearlessly charges into battle alongside the rest of her MEKA unit, ready to spring to her nation's defense at a moment's notice. Recently, she has begun to stream combat operations to her adoring fans, and her growing following has turned her into a global icon.",
+    hero_image_one: "/images/heroImages/dva/Dva-page-one.png",
+    hero_image_two: "/images/heroImages/dva/Dva-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "D.Va’s mech is nimble and powerful—its twin Fusion Cannons blast away with autofire at short range, and she can use its Boosters to barrel over enemies and obstacles, or deflect attacks with her projectile-dismantling Defense Matrix.",
+    hp: 300,
+    armor: 300,
+    shields: 0,
+    total_hp: 600,
+    playstyle: "Dive",
+    hero_difficulty: 2,
+    weapon_one_image: "/images/heroImages/dva/Dva-gun.png",
+    weapon_one_name: "Fusion Cannons",
+    weapon_one_description: "Automatic short-range spread weapons.",
+    weapon_one_type: "Hitscan",
+    weapon_two_image: "/images/heroImages/dva/Dva-gun-two.png",
+    weapon_two_name: "Light Gun",
+    weapon_two_description: "Hold to zoom in, increasing damage and accuracy but slowing rate of fire.",
+    weapon_two_type: "Hitscan",
+    passive_image: "/images/heroImages/dva/Dva-passive.png",
+    passive_name: "Eject!",
+    passive_description: "Eject out of your mech when it is destroyed.",
+    ability_one_image: "/images/heroImages/dva/Dva-boost.png",
+    ability_one_name: "Boosters",
+    ability_one_description: "Fly in the direction you are facing.",
+    ability_two_image: "/images/heroImages/dva/Dva-matrix.png",
+    ability_two_name: "Defense Matrix",
+    ability_two_description: "Block projectiles in an area in front of you.",
+    ability_three_image: "/images/heroImages/dva/Dva-missile.png",
+    ability_three_name: "Micro Missiles",
+    ability_three_description: "Launch a volley of explosive rockets.",
+    ultimate_image: "/images/heroImages/dva/Dva-self.png",
+    ultimate_name: "Self-Destruct",
+    ultimate_description: "Eject and overload your mech, causing it to explode after a short time.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0
+)
+#ORISA
+Character.create(
+    name: "Orisa", 
+    role: "Tank", 
+    hero_card: '/images/icons/Icon-Orisa.png', 
+    role_card: '/images/icons/Icon-Tank.png',
+    name_two: "Orisa",
+    age: 1,
+    occupation: "Guardian robot",
+    base_of_operation: "Numbani",
+    affiliation: "Numbani",
+    hero_story: "Built from parts of one of Numbani's short-lived OR15 defense robots, Orisa is the city's newest protector, though she still has much to learn.
+    Originally put into service before the Omnic Crisis, the OR14 'Idina' line of security robots was built in Nigeria's massive manufacturing omnium. After the war, they were taken out of production, along with many of the other models used during the crisis. Twenty years later, Numbani revived and recommissioned the OR14 program to protect the city from external threats. These new OR15s were deployed for a short time before they were destroyed in an attack by Doomfist.
+    Following the attack, the program was scrapped, and the civic government sold off the remaining OR15 inventory. Some parts were purchased by eleven-year-old Efi Oladele, a brilliant girl whose early accomplishments in robotics and artificial intelligence had already earned her the Adawe Foundation's 'genius grant.'
+    With the approval of her understanding and open-minded parents, Efi spent the bulk of her grant money to acquire one of the decommissioned OR15 bots. She believed that Numbani needed a protector and that an upgraded OR15 could do just that. Efi repaired and reconfigured the robot and installed a personality core that she had designed herself.
+    She named Numbani's newest hero Orisa.
+    Orisa has shown that she can be of service to the city, but she is still working toward finding her optimal protocols. The omnic's inexperience can cause her to be an occasional liability. Fortunately, between Efi's willingness to make the necessary modifications and Orisa's adaptive artificial intelligence, both robot and creator have always been able to set things right.
+    As Orisa starts her career as a guardian, she has much to learn about the world and her functionality. But as long as she is guided by Efi's boundless optimism and her own growing sense of honor and duty, Orisa stands ready to protect Numbani and her creator at any cost.",
+    hero_image_one: "/images/heroImages/orisa/Orisa-page-one.png",
+    hero_image_two: "/images/heroImages/orisa/Orisa-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Orisa serves as the central anchor of her team, and defends her teammates from the frontline with a protective barrier. She can attack from long range, fortify her own defenses, launch graviton charges to slow and move enemies, and deploy a Supercharger to boost the damage output of multiple allies at once.",
+    hp: 200,
+    armor: 0,
+    shields: 250,
+    total_hp: 450,
+    playstyle: "Anchor Tank",
+    hero_difficulty: 2,
+    weapon_one_image: "/images/heroImages/orisa/Orisa-gun.png",
+    weapon_one_name: "Fusion Driver",
+    weapon_one_description: "Automatic projectile weapon. Slows Orisa while firing.",
+    weapon_one_type: "Projectile",
+    weapon_two_image: "N/A",
+    weapon_two_name: "N/A",
+    weapon_two_description: "N/A",
+    weapon_two_type: "N/A",
+    passive_image: "N/A",
+    passive_name: "N/A",
+    passive_description: "N/A",
+    ability_one_image: "/images/heroImages/orisa/Orisa-barrier.png",
+    ability_one_name: "Protective Barrier",
+    ability_one_description: "Throw a device that creates a barrier.",
+    ability_two_image: "/images/heroImages/orisa/Orisa-fortify.png",
+    ability_two_name: "Fortify",
+    ability_two_description: "Reduce damage taken and you cannot be stopped.",
+    ability_three_image: "/images/heroImages/orisa/Orisa-pull.png",
+    ability_three_name: "Halt!",
+    ability_three_description: "Launch a graviton charge with Secondary Fire then detonate it with SECONDARY FIRE. The sphere slows and pulls nearby enemies to it.",
+    ultimate_image: "/images/heroImages/orisa/Orisa-super.png",
+    ultimate_name: "Super Charger",
+    ultimate_description: "Deploy a device that increases damage inflicted by your allies.",
+    healing_type: "N/A",
+    barrier: true,
+    barrier_health: 600
+)
+#SIGMA
+Character.create(
+    name: "Sigma", 
+    role: "Tank", 
+    hero_card: '/images/icons/Icon-Sigma.png', 
+    role_card: '/images/icons/Icon-Tank.png',
+    name_two: "Siebren de Kuiper",
+    age: 62,
+    occupation: "Astrophysicist",
+    base_of_operation: "The Hague, Netherlands (formerly)",
+    affiliation: "Talon",
+    hero_story: "Brilliant astrophysicist Dr. Siebren de Kuiper's life changed forever when an experiment gone wrong gave him the ability to control gravity; now, Talon manipulates him to their own ends.
+    De Kuiper was considered a pioneer in his field. His life's work involved devising a way to harness the power of gravity. Equally known for his groundbreaking research and eccentric personality, he conducted most of his studies from his lab in The Hague. Believing that he was close to achieving his goal, he performed his most important experiment on an international space station.
+    But something went wrong, triggering the brief formation of a black hole. De Kuiper was only exposed to its power for a moment, but he suffered serious psychological damage. The area around him began to experience strange fluctuations in gravity, peaking and dropping in time with his reactions. He had to be evacuated immediately.
+    Upon returning to Earth, De Kuiper was quarantined in a secret government facility. Between his ravings about the patterns of the universe, the psychic damage he sustained, and the gravitic anomalies happening around him, he was deemed unsafe and detained for years under the name 'Subject Sigma.' Isolated and unable to control his powers, De Kuiper retreated into his own mind. He thought he would never see the outside world again.
+    When Talon discovered De Kuiper's existence, they infiltrated the facility and broke him out, planning to use his brilliance and research to further their plans. In their custody, De Kuiper slowly gained control of his powers. Now, gravity moved according to his will, and he was closer than ever to achieving his life's goal. But the same experiment that had opened his mind had also fractured it, and he struggled to keep the pieces together.
+    De Kuiper continues to develop his powers in hopes of unlocking the secrets of the universe, unaware that Talon is using both him and his research.",
+    hero_image_one: "/images/heroImages/sigma/Sigma-page-one.png",
+    hero_image_two: "/images/heroImages/sigma/Sigma-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Sigma is an eccentric astrophysicist and volatile tank who gained the power to control gravity in an orbital experiment gone wrong. Manipulated by Talon and deployed as a living weapon, Sigma’s presence on the battlefield cannot be ignored.",
+    hp: 300,
+    armor: 0,
+    shields: 100,
+    total_hp: 400,
+    playstyle: "Off/Barrier Tank",
+    hero_difficulty: 3,
+    weapon_one_image: "/images/heroImages/sigma/Sigma-gun.png",
+    weapon_one_name: "Hyperspheres",
+    weapon_one_description: "Launch two charges which implode after a short duration, dealing damage in an area.",
+    weapon_one_type: "Projectile",
+    weapon_two_image: "N/A",
+    weapon_two_name: "N/A",
+    weapon_two_description: "N/A",
+    weapon_two_type: "N/A",
+    passive_image: "N/A",
+    passive_name: "N/A",
+    passive_description: "N/A",
+    ability_one_image: "/images/heroImages/sigma/Sigma-suck.png",
+    ability_one_name: "Kinetic Grasp",
+    ability_one_description: "Absorb projectiles in front of you and convert them into shields.",
+    ability_two_image: "/images/heroImages/sigma/Sigma-rock.png",
+    ability_two_name: "Accretion",
+    ability_two_description: "Gather a mass of debris and throw it at an enemy to knock them down.",
+    ability_three_image: "/images/heroImages/sigma/Sigma-barrier.png",
+    ability_three_name: "Experimental Barrier",
+    ability_three_description: "Hold to propel a floating barrier; release to stop. Press again to recall the barrier to you.",
+    ultimate_image: "/images/heroImages/sigma/Sigma-flux.png",
+    ultimate_name: "Gravitic Flux",
+    ultimate_description: "Manipulate gravity to lift enemies into the air and slam them back down.",
+    healing_type: "N/A",
+    barrier: true,
+    barrier_health: 700
+)
+#ROADHOG
+Character.create(
+    name: "Roadhog", 
+    role: "Tank", 
+    hero_card: '/images/icons/Icon-Roadhog.png', 
+    role_card: '/images/icons/Icon-Tank.png',
+    name_two: "Mako Rutledge",
+    age: 48,
+    occupation: "Bodyguard",
+    base_of_operation: "Junkertown, Australia (formerly)",
+    affiliation: "Junkers (formerly)",
+    hero_story: "Roadhog is a ruthless killer with a well-earned reputation for cruelty and wanton destruction.
+    After the Omnic Crisis, government officials gifted the Australian omnium and the surrounding area to the omnics that had nearly destroyed their country, hoping to establish a long-term peace accord. This arrangement permanently displaced Mako Rutledge and a large number of the Outback's residents, a scattered collection of survivalists, solar farmers, and people who just wanted to be left alone.
+    Furious over the loss of their homes, Mako and others turned to violent rebellion. They formed the Australian Liberation Front and struck against the omnium and its robot population to take back the lands that had been stolen. Events continued to escalate until the rebels sabotaged the omnium's fusion core, resulting in an explosion that destroyed the facility, irradiated the region, and littered the Outback with twisted metal and wreckage for kilometers around.
+    Mako watched as his home became an apocalyptic wasteland, and he was forever changed.
+    Adapting to his environment, he donned a mask and took to the broken highways of the Outback on his ramshackle chopper. Little by little, his humanity was forgotten. The last vestiges of Mako faded away and the ruthless killer Roadhog was born.",
+    hero_image_one: "/images/heroImages/roadhog/Roadhog-page-one.png",
+    hero_image_two: "/images/heroImages/roadhog/Roadhog-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Roadhog uses his signature Chain Hook to pull his enemies close before shredding them with blasts from his Scrap Gun. He’s hardy enough to withstand tremendous damage, and can recover his health with a short breather.",
+    hp: 600,
+    armor: 0,
+    shields: 0,
+    total_hp: 600,
+    playstyle: "Off/Crowd Control",
+    hero_difficulty: 1,
+    weapon_one_image: "/images/heroImages/roadhog/Roadhog-gun.png",
+    weapon_one_name: "Scrap Gun",
+    weapon_one_description: "Short-range spread weapon.",
+    weapon_one_type: "Projectile",
+    weapon_two_image: "/images/heroImages/roadhog/Roadhog-gun.png",
+    weapon_two_name: "Scrap Gun",
+    weapon_two_description: "Medium-range spread weapon.",
+    weapon_two_type: "Projectile",
+    passive_image: "N/A",
+    passive_name: "N/A",
+    passive_description: "N/A",
+    ability_one_image: "/images/heroImages/roadhog/Roadhog-hook.png",
+    ability_one_name: "Chain Hook",
+    ability_one_description: "Drag a targeted enemy to you.",
+    ability_two_image: "/images/heroImagesroadhog/Roadhog-heal.png",
+    ability_two_name: "Take a Breather",
+    ability_two_description: "Heal yourself and reduce damage taken over a short time.",
+    ability_three_image: "N/A",
+    ability_three_name: "N/A",
+    ability_three_description: "N/A",
+    ultimate_image: "/images/heroImages/roadhog/Roadhog-hog.png",
+    ultimate_name: "Whole Hog",
+    ultimate_description: "Damage and knock back enemies in front of you.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0
+)
+#REINHARDT
+Character.create(
+    name: "Reinhardt", 
+    role: "Tank", 
+    hero_card: '/images/icons/Icon-Reinhardt.png', 
+    role_card: '/images/icons/Icon-Tank.png',
+    name_two: "Elizabeth Caledonia 'Calamity' Ashe",
+    age: 39,
+    occupation: "Thief, gang leader",
+    base_of_operation: "Lead Rose Manor, Texas (formerly)",
+    affiliation: "Deadlock Gang",
+    hero_story: "Ashe is the ambitious and calculating leader of the Deadlock Gang and a respected figure in the criminal underworld.
+    Born into a wealthy family, Ashe grew up surrounded by privilege. Her parents were highly sought-after business consultants and coaches for powerful CEOs around the world. Though her parents paid little attention to her , they ensured that Ashe had every opportunity to succeed. But a chance meeting with a local ruffian, named Cole Cassidy, and an impromptu string of crimes committed together opened her eyes to her true calling. The satisfaction of outwitting her targets and the thrill of getting away with it set her on the outlaw path.
+    Along with the other three founders of the Deadlock Gang, Ashe started to make a name for herself with bigger and more extravagant heists. The Deadlock Gang’s rapid rise to prominence put them at odds with the other criminal organizations in the American Southwest; the encounters often became violent. After years of skirmishes and bloodshed, Ashe called the heads of the major groups together.
+    Ashe saw the potential to grow the influence of all. She used what she’d learned from her parents’ business to bring order to these groups. Her proposal was that the gangs could work together . Her principles: keep your word, don’t work with the law, respect each other’s territory, and always punish betrayal.
+    No longer having to focus her energies on squabbles with the other gangs, Ashe is now writing her name across the American Southwest with a string of audacious heists and operations that has put her at top of the authorities’ most-wanted lists and cemented her legacy as an outlaw legend.",
+    hero_image_one: "/images/heroImages/ashe/Ashe-page-one.png",
+    hero_image_two: "/images/heroImages/ashe/Ashe-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Ashe quickly fires her rifle from the hip or uses her weapon’s aim-down sights to line up a high damage shot. She blasts enemies by throwing dynamite, and her coach gun packs enough punch to put some distance between her and her foes. And Ashe is not alone, as she can call on her omnic ally Bob, to join the fray when the need arises.",
+    hp: 200,
+    armor: 0,
+    shields: 0,
+    total_hp: 200,
+    playstyle: "Medium-Long-range Hitscan",
+    hero_difficulty: 2,
+    weapon_one_image: "/images/heroImages/ashe/Ashe-gun.png",
+    weapon_one_name: "The Viper",
+    weapon_one_description: "Semi-automatic rifle.",
+    weapon_one_type: "Hitscan",
+    weapon_two_image: "/images/heroImages/ashe/Ashe-gun.png",
+    weapon_two_name: "Take Aim",
+    weapon_two_description: "Hold to zoom in, increasing damage and accuracy but slowing rate of fire.",
+    weapon_two_type: "Hitscan",
+    passive_image: "N/A",
+    passive_name: "N/A",
+    passive_description: "N/A",
+    ability_one_image: "/images/heroImages/ashe/Ashe-coach.png",
+    ability_one_name: "Coach Gun",
+    ability_one_description: "Blast enemies in front of you and knock yourself backwards.",
+    ability_two_image: "/images/heroImages/ashe/Ashe-dynamite.png",
+    ability_two_name: "Dynamite",
+    ability_two_description: "Throw an explosive that detonates after a short delay or immediately when shot.",
+    ability_three_image: "N/A",
+    ability_three_name: "N/A",
+    ability_three_description: "N/A",
+    ultimate_image: "/images/heroImages/ashe/Ashe-bob.png",
+    ultimate_name: "B.O.B",
+    ultimate_description: "Deploy Bob. He charges forward and knocks enemies into the air, then attacks with his arm cannons.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0
+)
+#WINSTON
+Character.create(
+    name: "Winston", 
+    role: "Tank", 
+    hero_card: '/images/icons/Icon-Winston.png', 
+    role_card: '/images/icons/Icon-Tank.png',
+    name_two: "Elizabeth Caledonia 'Calamity' Ashe",
+    age: 39,
+    occupation: "Thief, gang leader",
+    base_of_operation: "Lead Rose Manor, Texas (formerly)",
+    affiliation: "Deadlock Gang",
+    hero_story: "Ashe is the ambitious and calculating leader of the Deadlock Gang and a respected figure in the criminal underworld.
+    Born into a wealthy family, Ashe grew up surrounded by privilege. Her parents were highly sought-after business consultants and coaches for powerful CEOs around the world. Though her parents paid little attention to her , they ensured that Ashe had every opportunity to succeed. But a chance meeting with a local ruffian, named Cole Cassidy, and an impromptu string of crimes committed together opened her eyes to her true calling. The satisfaction of outwitting her targets and the thrill of getting away with it set her on the outlaw path.
+    Along with the other three founders of the Deadlock Gang, Ashe started to make a name for herself with bigger and more extravagant heists. The Deadlock Gang’s rapid rise to prominence put them at odds with the other criminal organizations in the American Southwest; the encounters often became violent. After years of skirmishes and bloodshed, Ashe called the heads of the major groups together.
+    Ashe saw the potential to grow the influence of all. She used what she’d learned from her parents’ business to bring order to these groups. Her proposal was that the gangs could work together . Her principles: keep your word, don’t work with the law, respect each other’s territory, and always punish betrayal.
+    No longer having to focus her energies on squabbles with the other gangs, Ashe is now writing her name across the American Southwest with a string of audacious heists and operations that has put her at top of the authorities’ most-wanted lists and cemented her legacy as an outlaw legend.",
+    hero_image_one: "/images/heroImages/ashe/Ashe-page-one.png",
+    hero_image_two: "/images/heroImages/ashe/Ashe-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Ashe quickly fires her rifle from the hip or uses her weapon’s aim-down sights to line up a high damage shot. She blasts enemies by throwing dynamite, and her coach gun packs enough punch to put some distance between her and her foes. And Ashe is not alone, as she can call on her omnic ally Bob, to join the fray when the need arises.",
+    hp: 200,
+    armor: 0,
+    shields: 0,
+    total_hp: 200,
+    playstyle: "Medium-Long-range Hitscan",
+    hero_difficulty: 2,
+    weapon_one_image: "/images/heroImages/ashe/Ashe-gun.png",
+    weapon_one_name: "The Viper",
+    weapon_one_description: "Semi-automatic rifle.",
+    weapon_one_type: "Hitscan",
+    weapon_two_image: "/images/heroImages/ashe/Ashe-gun.png",
+    weapon_two_name: "Take Aim",
+    weapon_two_description: "Hold to zoom in, increasing damage and accuracy but slowing rate of fire.",
+    weapon_two_type: "Hitscan",
+    passive_image: "N/A",
+    passive_name: "N/A",
+    passive_description: "N/A",
+    ability_one_image: "/images/heroImages/ashe/Ashe-coach.png",
+    ability_one_name: "Coach Gun",
+    ability_one_description: "Blast enemies in front of you and knock yourself backwards.",
+    ability_two_image: "/images/heroImages/ashe/Ashe-dynamite.png",
+    ability_two_name: "Dynamite",
+    ability_two_description: "Throw an explosive that detonates after a short delay or immediately when shot.",
+    ability_three_image: "N/A",
+    ability_three_name: "N/A",
+    ability_three_description: "N/A",
+    ultimate_image: "/images/heroImages/ashe/Ashe-bob.png",
+    ultimate_name: "B.O.B",
+    ultimate_description: "Deploy Bob. He charges forward and knocks enemies into the air, then attacks with his arm cannons.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0
+)
+#ZARYA
+Character.create(
+    name: "Zarya", 
+    role: "Tank", 
+    hero_card: '/images/icons/Icon-Zarya.png', 
+    role_card: '/images/icons/Icon-Tank.png',
+    name_two: "Elizabeth Caledonia 'Calamity' Ashe",
+    age: 39,
+    occupation: "Thief, gang leader",
+    base_of_operation: "Lead Rose Manor, Texas (formerly)",
+    affiliation: "Deadlock Gang",
+    hero_story: "Ashe is the ambitious and calculating leader of the Deadlock Gang and a respected figure in the criminal underworld.
+    Born into a wealthy family, Ashe grew up surrounded by privilege. Her parents were highly sought-after business consultants and coaches for powerful CEOs around the world. Though her parents paid little attention to her , they ensured that Ashe had every opportunity to succeed. But a chance meeting with a local ruffian, named Cole Cassidy, and an impromptu string of crimes committed together opened her eyes to her true calling. The satisfaction of outwitting her targets and the thrill of getting away with it set her on the outlaw path.
+    Along with the other three founders of the Deadlock Gang, Ashe started to make a name for herself with bigger and more extravagant heists. The Deadlock Gang’s rapid rise to prominence put them at odds with the other criminal organizations in the American Southwest; the encounters often became violent. After years of skirmishes and bloodshed, Ashe called the heads of the major groups together.
+    Ashe saw the potential to grow the influence of all. She used what she’d learned from her parents’ business to bring order to these groups. Her proposal was that the gangs could work together . Her principles: keep your word, don’t work with the law, respect each other’s territory, and always punish betrayal.
+    No longer having to focus her energies on squabbles with the other gangs, Ashe is now writing her name across the American Southwest with a string of audacious heists and operations that has put her at top of the authorities’ most-wanted lists and cemented her legacy as an outlaw legend.",
+    hero_image_one: "/images/heroImages/ashe/Ashe-page-one.png",
+    hero_image_two: "/images/heroImages/ashe/Ashe-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Ashe quickly fires her rifle from the hip or uses her weapon’s aim-down sights to line up a high damage shot. She blasts enemies by throwing dynamite, and her coach gun packs enough punch to put some distance between her and her foes. And Ashe is not alone, as she can call on her omnic ally Bob, to join the fray when the need arises.",
+    hp: 200,
+    armor: 0,
+    shields: 0,
+    total_hp: 200,
+    playstyle: "Medium-Long-range Hitscan",
+    hero_difficulty: 2,
+    weapon_one_image: "/images/heroImages/ashe/Ashe-gun.png",
+    weapon_one_name: "The Viper",
+    weapon_one_description: "Semi-automatic rifle.",
+    weapon_one_type: "Hitscan",
+    weapon_two_image: "/images/heroImages/ashe/Ashe-gun.png",
+    weapon_two_name: "Take Aim",
+    weapon_two_description: "Hold to zoom in, increasing damage and accuracy but slowing rate of fire.",
+    weapon_two_type: "Hitscan",
+    passive_image: "N/A",
+    passive_name: "N/A",
+    passive_description: "N/A",
+    ability_one_image: "/images/heroImages/ashe/Ashe-coach.png",
+    ability_one_name: "Coach Gun",
+    ability_one_description: "Blast enemies in front of you and knock yourself backwards.",
+    ability_two_image: "/images/heroImages/ashe/Ashe-dynamite.png",
+    ability_two_name: "Dynamite",
+    ability_two_description: "Throw an explosive that detonates after a short delay or immediately when shot.",
+    ability_three_image: "N/A",
+    ability_three_name: "N/A",
+    ability_three_description: "N/A",
+    ultimate_image: "/images/heroImages/ashe/Ashe-bob.png",
+    ultimate_name: "B.O.B",
+    ultimate_description: "Deploy Bob. He charges forward and knocks enemies into the air, then attacks with his arm cannons.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0
+)
+#WRECKING BALL
+Character.create(
+    name: "Wrecking Ball", 
+    role: "Tank", 
+    hero_card: '/images/icons/Icon-Wrecking_Ball.png', 
+    role_card: '/images/icons/Icon-Tank.png', 
+    name_two: "Elizabeth Caledonia 'Calamity' Ashe",
+    age: 39,
+    occupation: "Thief, gang leader",
+    base_of_operation: "Lead Rose Manor, Texas (formerly)",
+    affiliation: "Deadlock Gang",
+    hero_story: "Ashe is the ambitious and calculating leader of the Deadlock Gang and a respected figure in the criminal underworld.
+    Born into a wealthy family, Ashe grew up surrounded by privilege. Her parents were highly sought-after business consultants and coaches for powerful CEOs around the world. Though her parents paid little attention to her , they ensured that Ashe had every opportunity to succeed. But a chance meeting with a local ruffian, named Cole Cassidy, and an impromptu string of crimes committed together opened her eyes to her true calling. The satisfaction of outwitting her targets and the thrill of getting away with it set her on the outlaw path.
+    Along with the other three founders of the Deadlock Gang, Ashe started to make a name for herself with bigger and more extravagant heists. The Deadlock Gang’s rapid rise to prominence put them at odds with the other criminal organizations in the American Southwest; the encounters often became violent. After years of skirmishes and bloodshed, Ashe called the heads of the major groups together.
+    Ashe saw the potential to grow the influence of all. She used what she’d learned from her parents’ business to bring order to these groups. Her proposal was that the gangs could work together . Her principles: keep your word, don’t work with the law, respect each other’s territory, and always punish betrayal.
+    No longer having to focus her energies on squabbles with the other gangs, Ashe is now writing her name across the American Southwest with a string of audacious heists and operations that has put her at top of the authorities’ most-wanted lists and cemented her legacy as an outlaw legend.",
+    hero_image_one: "/images/heroImages/ashe/Ashe-page-one.png",
+    hero_image_two: "/images/heroImages/ashe/Ashe-page-two.png",
+    hero_gameplay_video: "Placeholder",
+    hero_gameplay_description: "Ashe quickly fires her rifle from the hip or uses her weapon’s aim-down sights to line up a high damage shot. She blasts enemies by throwing dynamite, and her coach gun packs enough punch to put some distance between her and her foes. And Ashe is not alone, as she can call on her omnic ally Bob, to join the fray when the need arises.",
+    hp: 200,
+    armor: 0,
+    shields: 0,
+    total_hp: 200,
+    playstyle: "Medium-Long-range Hitscan",
+    hero_difficulty: 2,
+    weapon_one_image: "/images/heroImages/ashe/Ashe-gun.png",
+    weapon_one_name: "The Viper",
+    weapon_one_description: "Semi-automatic rifle.",
+    weapon_one_type: "Hitscan",
+    weapon_two_image: "/images/heroImages/ashe/Ashe-gun.png",
+    weapon_two_name: "Take Aim",
+    weapon_two_description: "Hold to zoom in, increasing damage and accuracy but slowing rate of fire.",
+    weapon_two_type: "Hitscan",
+    passive_image: "N/A",
+    passive_name: "N/A",
+    passive_description: "N/A",
+    ability_one_image: "/images/heroImages/ashe/Ashe-coach.png",
+    ability_one_name: "Coach Gun",
+    ability_one_description: "Blast enemies in front of you and knock yourself backwards.",
+    ability_two_image: "/images/heroImages/ashe/Ashe-dynamite.png",
+    ability_two_name: "Dynamite",
+    ability_two_description: "Throw an explosive that detonates after a short delay or immediately when shot.",
+    ability_three_image: "N/A",
+    ability_three_name: "N/A",
+    ability_three_description: "N/A",
+    ultimate_image: "/images/heroImages/ashe/Ashe-bob.png",
+    ultimate_name: "B.O.B",
+    ultimate_description: "Deploy Bob. He charges forward and knocks enemies into the air, then attacks with his arm cannons.",
+    healing_type: "N/A",
+    barrier: false,
+    barrier_health: 0
+)
 
 
 ###Supports###
 puts "Creating Supports..."
 puts 
+#BAPTISTE
 Character.create(name: "Baptiste", role: "Support", hero_card: '/images/icons/Icon-Baptiste.png', role_card: '/images/icons/Icon-Support.png')
+#ANA
 Character.create(name: "Ana", role: "Support", hero_card: '/images/icons/Icon-Ana.png', role_card: '/images/icons/Icon-Support.png')
+#MERCY
 Character.create(name: "Mercy", role: "Support", hero_card: '/images/icons/Icon-Mercy.png', role_card: '/images/icons/Icon-Support.png')
+#ZENYATTA
 Character.create(name: "Zenyatta", role: "Support", hero_card: '/images/icons/Icon-Zenyatta.png', role_card: '/images/icons/Icon-Support.png')
+#BRIGITTE
 Character.create(name: "Brigitte", role: "Support", hero_card: '/images/icons/Icon-Brigitte.png', role_card: '/images/icons/Icon-Support.png')
+#MOIRA
 Character.create(name: "Moira", role: "Support", hero_card: '/images/icons/Icon-Moira.png', role_card: '/images/icons/Icon-Support.png')
+#LUCIO
 Character.create(name: "Lucio", role: "Support", hero_card: '/images/icons/Icon-Lucio.png', role_card: '/images/icons/Icon-Support.png')
 
 

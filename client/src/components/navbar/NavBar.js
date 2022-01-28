@@ -36,9 +36,11 @@ function NavBar() {
                     <li className="nav-items">
                         <NavLink to='/heroes' className='link-item'>Hero Gallery</NavLink>    
                     </li>
-                    <li className="nav-items">Map Gallery</li>
+                    <li className="nav-items">
+                        <NavLink to='/maps' className='link-item'>Maps</NavLink>
+                    </li>
                     <li className="nav-items">Overwatch League</li>
-                    <li className="nav-items">Player</li>
+                    <li className="nav-items">Player Data</li>
                     <li className="nav-items">LFG</li>
                     </ul>
                 )}

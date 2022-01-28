@@ -1,0 +1,47 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+// WHOLE MAP CARD
+.map-card{
+    width: 19rem;
+    background: colors.$card-color;
+    display: flex;
+    flex-direction: column;
+   box-shadow: 0 0 2px 3px black;
+    
+    margin: 2rem;
+}
+
+.map-card a{
+    text-decoration: none;
+    color: colors.$blue-text;
+}
+
+// MAP CARD IMAGE AREA
+.map-card-img-container{
+    width: 100%;
+}
+
+.map-card-img{
+    width: 100%;
+}
+
+// MAP CARD INFORMATION
+.map-card-info-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map-card-information h2{
+    font-size: 1.75rem;
+}
+
+.map-icon{
+    width: 3rem;
+}
+
+.flag-icon{
+    width: 3rem;
+}

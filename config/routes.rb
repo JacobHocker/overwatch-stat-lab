@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   
   
-  resources :characters
+  resources :maps, only: [:index, :show]
+  resources :characters, only: [:index, :show]
   
 
   #Custom Routes 

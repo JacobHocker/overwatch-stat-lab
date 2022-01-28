@@ -1,6 +1,7 @@
 puts "Destroying Data..."
 puts 
 Character.destroy_all 
+Map.destroy_all
 
 puts "Begining Seeding Database..."
 puts 
@@ -1714,6 +1715,71 @@ Character.create(
     barrier: false,
     barrier_health: 0
 )
+puts "Completed Hero Seeding!"
+puts 
+### MAPS 
+puts "Creating Map Seeding..."
+puts
+# #CONTROL
+#BUSAN
+Map.create(
+    name: "Busan", 
+    country: "South Korea", 
+    country_flag: "/images/maps/control/busan/south-korea.png",
+    map_type: "Control",
+    map_type_icon: "/images/maps/mapIcons/control-icon.png",
+    card: "/images/maps/control/busan/Busan-card.jpg",
+    image_one: "/images/maps/control/busan/Busan-one.jpg",
+    image_two: "/images/maps/control/busan/Busan-two.png",
+    image_three: "/images/maps/control/busan/Busan-three.jpg",
+    top_down: "/images/maps/control/busan/Busan-top-down.jpg"
+)
+##ASSAULT
+#HANAMURA
+Map.create(
+    name: "Hanamura", 
+    country: "Japan", 
+    country_flag: "/images/maps/assault/hanamura/japan.png",
+    map_type: "Assault",
+    map_type_icon: "/images/maps/mapIcons/assault-icon.png",
+    card: "/images/maps/assault/hanamura/Hanamura-card.jpg",
+    image_one: "/images/maps/assault/hanamura/Hanamura-one.jpg",
+    image_two: "/images/maps/assault/hanamura/Hanamura-two.jpg",
+    image_three: "/images/maps/assault/hanamura/Hanamura-three.jpg",
+    top_down: "/images/maps/assault/hanamura/Hanamura-top-down.jpg"
+)
+##ESCORT
+#DORADO
+Map.create(
+    name: "Dorado", 
+    country: "Mexico", 
+    country_flag: "/images/maps/escort/dorado/mexico.png",
+    map_type: "Escort",
+    map_type_icon: "/images/maps/mapIcons/escort-icon.png",
+    card: "/images/maps/escort/dorado/Dorado-card.jpg",
+    image_one: "/images/maps/escort/dorado/Dorado-one.jpg",
+    image_two: "/images/maps/escort/dorado/Dorado-two.jpg",
+    image_three: "/images/maps/escort/dorado/Dorado-three.jpg",
+    top_down: "/images/maps/escort/dorado/Dorado-top-down.jpg"
+)
+##HYBRID
+#KINGS ROW
+Map.create(
+    name: "Kings Row", 
+    country: "England",
+    country_flag: "/images/maps/hybrid/kingsRow/england.png",
+    map_type: "Hybrid",
+    map_type_icon: "/images/maps/mapIcons/hybrid-icon.png",
+    card: "/images/maps/hybrid/kingsRow/KingsRow-card.png",
+    image_one: "/images/maps/hybrid/kingsRow/KingsRow-one.jpg",
+    image_two: "/images/maps/hybrid/kingsRow/KingsRow-two.jpg",
+    image_three: "/images/maps/hybrid/kingsRow/KingsRow-three.png",
+    top_down: "/images/maps/hybrid/kingsRow/KingsRow-top-down.jpg"
+)
+
+
+puts "Maps Seeding Complete!"
+puts
 
 
 puts "Seeding Complete!"

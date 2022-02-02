@@ -1,0 +1,112 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+
+// Whole Page Container
+.map-info-page-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: url('https://overwatch2-static.playoverwatch.com/a38a816d1c18852caa3de8dcee694643f1555d1d/static/images/parallax/menu/menu-bg-sky-XL.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding-bottom: 10rem;
+}
+
+// Page Header
+.map-image-page-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.map-info-page-header h1{
+    font-size: 3rem;
+    background: -webkit-linear-gradient(0.45turn, colors.$white , colors.$secondary, colors.$white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include tablet{
+        font-size: 4rem;
+    }
+    @include desktop-small{
+        font-size: 5rem;
+    }
+    @include desktop{
+        font-size: 6rem;
+    }
+    @include desktop-large{
+        font-size: 7rem;
+    }
+}
+
+// Page Information
+.map-info-page-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-info-flag{
+    width: 7rem;
+    @include tablet{
+        width: 9rem;
+    }
+    @include desktop-small{
+        width: 11rem;
+    }
+    @include desktop{
+        width: 13rem;
+    }
+    @include desktop-large{
+        width: 15rem;
+    }
+}
+// Page Images
+.map-info-img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.map-info-img-container h1{
+    font-size: 1.75rem;
+    color: colors.$secondary;
+    @include tablet{
+        font-size: 2rem;
+    }
+    @include desktop-small{
+        font-size: 3rem;
+    }
+    @include desktop{
+        font-size: 4rem;
+    }
+    @include desktop-large{
+        font-size: 5rem;
+    }
+    
+}
+
+.map-image{
+    width: 18rem;
+    margin-top: 1rem;
+    @include tablet{
+        width: 22rem;
+    }
+    @include desktop-small{
+        width: 26rem;
+    }
+    @include desktop{
+        width: 30rem;
+    }
+    @include desktop-large{
+        width: 34rem;
+    }
+}

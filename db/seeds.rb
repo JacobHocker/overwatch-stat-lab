@@ -1734,6 +1734,58 @@ Map.create(
     image_three: "/images/maps/control/busan/Busan-three.jpg",
     top_down: "/images/maps/control/busan/Busan-top-down.jpg"
 )
+#ILIOS
+Map.create(
+    name: "Ilios", 
+    country: "Greece", 
+    country_flag: "/images/maps/control/ilios/greece.png",
+    map_type: "Control",
+    map_type_icon: "/images/maps/mapIcons/control-icon.png",
+    card: "/images/maps/control/ilios/Ilios-card.png",
+    image_one: "/images/maps/control/ilios/Ilios-one-one.jpg",
+    image_two: "/images/maps/control/ilios/Ilios-two-two.jpg",
+    image_three: "/images/maps/control/ilios/Ilios-three-three.png",
+    top_down: "/images/maps/control/ilios/Ilios-top-down.jpg"
+)
+#LIJIANG TOWER
+Map.create(
+    name: "Lijiang Tower", 
+    country: "Greece", 
+    country_flag: "/images/maps/control/lijiang/china.png",
+    map_type: "Control",
+    map_type_icon: "/images/maps/mapIcons/control-icon.png",
+    card: "/images/maps/control/lijiang/Lijiang-card.jpg",
+    image_one: "/images/maps/control/lijiang/Lijiang-one-one.jpg",
+    image_two: "/images/maps/control/lijiang/Lijiang-two-two-two.jpg",
+    image_three: "/images/maps/control/lijiang/Lijiang-three.png",
+    top_down: "/images/maps/control/lijiang/Lijiang-top-down.jpg"
+)
+#NEPAL
+Map.create(
+    name: "Nepal", 
+    country: "Monastery, Nepal", 
+    country_flag: "/images/maps/control/nepal/nepal.png",
+    map_type: "Control",
+    map_type_icon: "/images/maps/mapIcons/control-icon.png",
+    card: "/images/maps/control/nepal/Nepal-card.jpg",
+    image_one: "/images/maps/control/nepal/Nepal-one.png",
+    image_two: "/images/maps/control/nepal/Nepal-two-two-two.jpg",
+    image_three: "/images/maps/control/nepal/Nepal-three.jpg",
+    top_down: "/images/maps/control/nepal/Nepal-top-down.jpg"
+)
+#OASIS
+Map.create(
+    name: "Oasis", 
+    country: "Iraq", 
+    country_flag: "/images/maps/control/oasis/iraq.png",
+    map_type: "Control",
+    map_type_icon: "/images/maps/mapIcons/control-icon.png",
+    card: "/images/maps/control/oasis/Oasis-card.jpg",
+    image_one: "/images/maps/control/oasis/Oasis-one.jpg",
+    image_two: "/images/maps/control/oasis/Oasis-two.jpg",
+    image_three: "/images/maps/control/oasis/Oasis-three.png",
+    top_down: "/images/maps/control/oasis/Oasis-top-down.jpg"
+)
 ##ASSAULT
 #HANAMURA
 Map.create(
@@ -1747,6 +1799,58 @@ Map.create(
     image_two: "/images/maps/assault/hanamura/Hanamura-two.jpg",
     image_three: "/images/maps/assault/hanamura/Hanamura-three.jpg",
     top_down: "/images/maps/assault/hanamura/Hanamura-top-down.jpg"
+)
+#HORIZON LUNAR COLONY
+Map.create(
+    name: "Horizon Lunar Colony", 
+    country: "Lunar Ops Facility, Moon", 
+    country_flag: "/images/maps/assault/horizon/lunar.png",
+    map_type: "Assault",
+    map_type_icon: "/images/maps/mapIcons/assault-icon.png",
+    card: "/images/maps/assault/horizon/Lunar-card.jpeg",
+    image_one: "/images/maps/assault/horizon/Lunar-one.png",
+    image_two: "/images/maps/assault/horizon/Lunar-two.jpg",
+    image_three: "/images/maps/assault/horizon/Lunar-three.jpg",
+    top_down: "/images/maps/assault/horizon/Lunar-top-down.jpg"
+)
+#PARIS
+Map.create(
+    name: "Paris", 
+    country: "France", 
+    country_flag: "/images/maps/assault/paris/france.png",
+    map_type: "Assault",
+    map_type_icon: "/images/maps/mapIcons/assault-icon.png",
+    card: "/images/maps/assault/paris/Paris-card.jpg",
+    image_one: "/images/maps/assault/paris/Paris-one.jpeg",
+    image_two: "/images/maps/assault/paris/Paris-two.png",
+    image_three: "/images/maps/assault/paris/Paris-three.jpg",
+    top_down: "/images/maps/assault/paris/Paris-top-down.jpg"
+)
+#TEMPLE OF ANUBIS
+Map.create(
+    name: "Temple Of Anubis", 
+    country: "Egypt", 
+    country_flag: "/images/maps/assault/anubis/egypt.png",
+    map_type: "Assault",
+    map_type_icon: "/images/maps/mapIcons/assault-icon.png",
+    card: "/images/maps/assault/anubis/Anubis-card.png",
+    image_one: "/images/maps/assault/anubis/Anubis-one.png",
+    image_two: "/images/maps/assault/anubis/Anubis-two.jpeg",
+    image_three: "/images/maps/assault/anubis/Anubis-three.jpg",
+    top_down: "/images/maps/assault/anubis/Anubis-top-down.jpg"
+)
+#VOLSKAYA INDUSTRIES
+Map.create(
+    name: "Volskaya Industries", 
+    country: "Russia", 
+    country_flag: "/images/maps/assault/volskaya/russia.png",
+    map_type: "Assault",
+    map_type_icon: "/images/maps/mapIcons/assault-icon.png",
+    card: "/images/maps/assault/volskaya/Volskaya-card.jpg",
+    image_one: "/images/maps/assault/volskaya/Volskaya-one.jpg",
+    image_two: "/images/maps/assault/volskaya/Volskaya-two.jpg",
+    image_three: "/images/maps/assault/volskaya/Volskaya-three.jpg",
+    top_down: "/images/maps/assault/volskaya/Volskaya-top-down.jpg"
 )
 ##ESCORT
 #DORADO
@@ -1762,6 +1866,75 @@ Map.create(
     image_three: "/images/maps/escort/dorado/Dorado-three.jpg",
     top_down: "/images/maps/escort/dorado/Dorado-top-down.jpg"
 )
+#Havana
+Map.create(
+    name: "Havana", 
+    country: "Cuba", 
+    country_flag: "/images/maps/escort/havana/cuba.png",
+    map_type: "Escort",
+    map_type_icon: "/images/maps/mapIcons/escort-icon.png",
+    card: "/images/maps/escort/havana/Havana-card.png",
+    image_one: "/images/maps/escort/havana/Havana-one.png",
+    image_two: "/images/maps/escort/havana/Havana-two.jpg",
+    image_three: "/images/maps/escort/havana/Havana-three.jpg",
+    top_down: "/images/maps/escort/havana/Havana-top-down.jpg"
+)
+
+#Junkertown
+Map.create(
+    name: "Junkertown", 
+    country: "Australia", 
+    country_flag: "/images/maps/escort/junkertown/australia.png",
+    map_type: "Escort",
+    map_type_icon: "/images/maps/mapIcons/escort-icon.png",
+    card: "/images/maps/escort/junkertown/Junkertown-card.jpg",
+    image_one: "/images/maps/escort/junkertown/Junkertown-one.jpg",
+    image_two: "/images/maps/escort/junkertown/Junkertown-two.jpg",
+    image_three: "/images/maps/escort/junkertown/Junkertown-three.png",
+    top_down: "/images/maps/escort/junkertown/Junkertown-top-down.jpg"
+)
+
+#Rialto
+Map.create(
+    name: "Rialto", 
+    country: "Italy", 
+    country_flag: "/images/maps/escort/rialto/italy.png",
+    map_type: "Escort",
+    map_type_icon: "/images/maps/mapIcons/escort-icon.png",
+    card: "/images/maps/escort/rialto/Rialto-card.jpg",
+    image_one: "/images/maps/escort/rialto/Rialto-one.jpeg",
+    image_two: "/images/maps/escort/rialto/Rialto-two.jpeg",
+    image_three: "/images/maps/escort/rialto/Rialto-three.jpg",
+    top_down: "/images/maps/escort/rialto/Rialto-top-down.jpg"
+)
+
+#Route 66
+Map.create(
+    name: "Route 66", 
+    country: "United States", 
+    country_flag: "/images/maps/escort/route/usa.png",
+    map_type: "Escort",
+    map_type_icon: "/images/maps/mapIcons/escort-icon.png",
+    card: "/images/maps/escort/route/Route-card.jpg",
+    image_one: "/images/maps/escort/route/Route-one.jpg",
+    image_two: "/images/maps/escort/route/Route-two.jpg",
+    image_three: "/images/maps/escort/route/Route-three.jpg",
+    top_down: "/images/maps/escort/route/Route-top-down.jpg"
+)
+
+#Watchpoint Gibraltar
+Map.create(
+    name: "Watchpoint Gibraltar", 
+    country: "Overwatch Base", 
+    country_flag: "/images/maps/escort/watchpoint/ow.png",
+    map_type: "Escort",
+    map_type_icon: "/images/maps/mapIcons/escort-icon.png",
+    card: "/images/maps/escort/watchpoint/Watchpoint-card.jpg",
+    image_one: "/images/maps/escort/watchpoint/Watchpoint-one-one.jpg",
+    image_two: "/images/maps/escort/watchpoint/Watchpoint-two.jpg",
+    image_three: "/images/maps/escort/watchpoint/Watchpoint-three.jpg",
+    top_down: "/images/maps/escort/watchpoint/Watchpoint-top-down.jpg"
+)
 ##HYBRID
 #KINGS ROW
 Map.create(
@@ -1776,7 +1949,130 @@ Map.create(
     image_three: "/images/maps/hybrid/kingsRow/KingsRow-three.png",
     top_down: "/images/maps/hybrid/kingsRow/KingsRow-top-down.jpg"
 )
+#EICHENWALDE
+Map.create(
+    name: "Eichenwalde", 
+    country: "Germany",
+    country_flag: "/images/maps/hybrid/eichenwalde/germany.png",
+    map_type: "Hybrid",
+    map_type_icon: "/images/maps/mapIcons/hybrid-icon.png",
+    card: "/images/maps/hybrid/eichenwalde/Eichenwalde-card.png",
+    image_one: "/images/maps/hybrid/eichenwalde/Eichenwalde-one.jpg",
+    image_two: "/images/maps/hybrid/eichenwalde/Eichenwalde-two.jpg",
+    image_three: "/images/maps/hybrid/eichenwalde/Eichenwalde-three.png",
+    top_down: "/images/maps/hybrid/eichenwalde/Eichenwalde-top-down.jpg"
+)
+#HOLLYWOOD
+Map.create(
+    name: "Hollywood", 
+    country: "United States",
+    country_flag: "/images/maps/hybrid/hollywood/usa.png",
+    map_type: "Hybrid",
+    map_type_icon: "/images/maps/mapIcons/hybrid-icon.png",
+    card: "/images/maps/hybrid/hollywood/Hollywood-card.jpg",
+    image_one: "/images/maps/hybrid/hollywood/Hollywood-one.jpg",
+    image_two: "/images/maps/hybrid/hollywood/Hollywood-two.png",
+    image_three: "/images/maps/hybrid/hollywood/Hollywood-three.png",
+    top_down: "/images/maps/hybrid/hollywood/Hollywood-top-down.jpg"
+)
+#BLIZZARD WORLD
+Map.create(
+    name: "Blizzard World", 
+    country: "United States",
+    country_flag: "/images/maps/hybrid/blizzard/usa.png",
+    map_type: "Hybrid",
+    map_type_icon: "/images/maps/mapIcons/hybrid-icon.png",
+    card: "/images/maps/hybrid/blizzard/Blizzard-card.jpg",
+    image_one: "/images/maps/hybrid/blizzard/Blizzard-one.jpg",
+    image_two: "/images/maps/hybrid/blizzard/Blizzard-two.jpg",
+    image_three: "/images/maps/hybrid/blizzard/Blizzard-three.jpg",
+    top_down: "/images/maps/hybrid/blizzard/Blizzard-top-down.jpg"
+)
+#NUMBANI
+Map.create(
+    name: "Numbani", 
+    country: "Numbani",
+    country_flag: "/images/maps/hybrid/numbani/numbani.png",
+    map_type: "Hybrid",
+    map_type_icon: "/images/maps/mapIcons/hybrid-icon.png",
+    card: "/images/maps/hybrid/numbani/Numbani-card.jpg",
+    image_one: "/images/maps/hybrid/numbani/Numbani-one.jpeg",
+    image_two: "/images/maps/hybrid/numbani/Numbani-two.jpg",
+    image_three: "/images/maps/hybrid/numbani/Numbani-three.jpg",
+    top_down: "/images/maps/hybrid/numbani/Numbani-top-down.jpg"
+)
 
+##Deathmatch
+#KANEZAKA
+Map.create(
+    name: "Kanezaka", 
+    country: "Japan",
+    country_flag: "/images/maps/deathmatch/kanezaka/japan.png",
+    map_type: "Deathmatch",
+    map_type_icon: "/images/maps/mapIcons/deathmatch-icon.png",
+    card: "/images/maps/deathmatch/kanezaka/Kanezaka-card.jpg",
+    image_one: "/images/maps/deathmatch/kanezaka/Kanezaka-one.jpg",
+    image_two: "/images/maps/deathmatch/kanezaka/Kanezaka-two.png",
+    image_three: "/images/maps/deathmatch/kanezaka/Kanezaka-three.jpg",
+    top_down: "N/A"
+)
+
+#PETRA
+Map.create(
+    name: "Petra", 
+    country: "Jordan",
+    country_flag: "/images/maps/deathmatch/petra/jordan.png",
+    map_type: "Deathmatch",
+    map_type_icon: "/images/maps/mapIcons/deathmatch-icon.png",
+    card: "/images/maps/deathmatch/petra/Petra-card.jpg",
+    image_one: "/images/maps/deathmatch/petra/Petra-one.jpg",
+    image_two: "/images/maps/deathmatch/petra/Petra-two.png",
+    image_three: "/images/maps/deathmatch/petra/Petra-three.jpg",
+    top_down: "N/A"
+)
+
+#MALEVENTO
+Map.create(
+    name: "Malevento", 
+    country: "Italy",
+    country_flag: "/images/maps/deathmatch/malevento/italy.png",
+    map_type: "Deathmatch",
+    map_type_icon: "/images/maps/mapIcons/deathmatch-icon.png",
+    card: "/images/maps/deathmatch/malevento/Malevento-card.jpg",
+    image_one: "/images/maps/deathmatch/malevento/Malevento-one.png",
+    image_two: "/images/maps/deathmatch/malevento/Malevento-two-two.png",
+    image_three: "/images/maps/deathmatch/malevento/Malevento-three.jpg",
+    top_down: "N/A"
+)
+
+#CHATEAU GUILLARD
+Map.create(
+    name: "Chateau Guillard", 
+    country: "France",
+    country_flag: "/images/maps/deathmatch/chateau/france.png",
+    map_type: "Deathmatch",
+    map_type_icon: "/images/maps/mapIcons/deathmatch-icon.png",
+    card: "/images/maps/deathmatch/chateau/Chateau-card.jpg",
+    image_one: "/images/maps/deathmatch/chateau/Chateau-one.jpg",
+    image_two: "/images/maps/deathmatch/chateau/Chateau-two.jpg",
+    image_three: "/images/maps/deathmatch/chateau/Chateau-three.jpg",
+    top_down: "N/A"
+)
+
+##Capture The Flag
+#Ayutthaya
+Map.create(
+    name: "Ayutthaya", 
+    country: "Thailand",
+    country_flag: "/images/maps/capture/ayutthaya/thailand.png",
+    map_type: "Capture The Flag",
+    map_type_icon: "/images/maps/mapIcons/ctf-icon.png",
+    card: "/images/maps/capture/ayutthaya/Ayutthaya-card.png",
+    image_one: "/images/maps/capture/ayutthaya/Ayutthaya-one.png",
+    image_two: "/images/maps/capture/ayutthaya/Ayutthaya-two.jpg",
+    image_three: "/images/maps/capture/ayutthaya/Ayutthaya-three.jpg",
+    top_down: "N/A"
+)
 
 puts "Maps Seeding Complete!"
 puts

@@ -6,18 +6,26 @@ function MapCard({id, name, country, mapType, cardImage, mapTypeIcon, countryFla
     return(
         <div className='map-card'>
             <Link to={`/maps/${id}`}>
-                <div className='map-card-img-container'>
-                    <img src={cardImage} className='map-card-img' alt={name} />
-                </div>
-                <div className='map-card-info-container'>
-                    <div className='map-card-information'>
-                        <img src={mapTypeIcon} className='map-icon' alt={mapType} />
+                <div className='map-card-inner'>
+                    <div className='map-card-front'>
+                        <div className='map-card-img-container'>
+                            <img src={cardImage} className='map-card-img' alt={name} />
+                        </div>
                     </div>
-                    <div className='map-card-information'>
-                        <h2>{name}</h2>
-                    </div>
-                    <div className='map-card-information'>
-                        <img src={countryFlag} className='flag-icon' alt={country} />
+                    <div className='map-card-back'>
+                        <div className='map-card-back-info'>
+                            <div className='map-card-info-container'>
+                                <div className='map-card-information'>
+                                    <img src={mapTypeIcon} className='map-icon' alt={mapType} />
+                                </div>
+                                <div className='map-card-information'>
+                                    <h2>{name}</h2>
+                                </div>
+                                <div className='map-card-information'>
+                                    <img src={countryFlag} className='flag-icon' alt={country} />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Link>

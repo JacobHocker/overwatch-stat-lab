@@ -1729,9 +1729,9 @@ Map.create(
     map_type: "Control",
     map_type_icon: "/images/maps/mapIcons/control-icon.png",
     card: "/images/maps/control/busan/Busan-card.jpg",
-    image_one: "/images/maps/control/busan/Busan-one.jpg",
-    image_two: "/images/maps/control/busan/Busan-two.png",
-    image_three: "/images/maps/control/busan/Busan-three.jpg",
+    image_one: "https://cdn.vox-cdn.com/thumbor/Vchz_V5pqofz3VWCBrP36pmSmfA=/0x0:1024x576/1200x800/filters:focal(431x207:593x369)/cdn.vox-cdn.com/uploads/chorus_image/image/60978423/OVR_BusanMap_AnnouncementMap_XA_012.0.jpg",
+    image_two: "https://static.invenglobal.com/upload/image/2018/08/22/i1534927533076824.jpeg",
+    image_three: "https://www.gamespot.com/a/uploads/original/1578/15787979/3437047-3107387298-34285.png",
     top_down: "/images/maps/control/busan/Busan-top-down.jpg"
 )
 #ILIOS

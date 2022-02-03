@@ -1888,9 +1888,9 @@ Map.create(
     map_type: "Escort",
     map_type_icon: "/images/maps/mapIcons/escort-icon.png",
     card: "/images/maps/escort/junkertown/Junkertown-card.jpg",
-    image_one: "/images/maps/escort/junkertown/Junkertown-one.jpg",
-    image_two: "/images/maps/escort/junkertown/Junkertown-two.jpg",
-    image_three: "/images/maps/escort/junkertown/Junkertown-three.png",
+    image_one: "https://cdn.vox-cdn.com/thumbor/M0SMow2OXuHipCKN7djRG9AfcXQ=/0x0:3840x2160/1200x800/filters:focal(1031x1546:1645x2160)/cdn.vox-cdn.com/uploads/chorus_image/image/56756693/OVR_Junkertown_009.0.jpg",
+    image_two: "https://www.destructoid.com//ul/462087-Overwatch-New-Map-Junkertown-Trailer-t.jpg",
+    image_three: "https://gamingbolt.com/wp-content/uploads/2017/09/Overwatch_Junkertown.jpg",
     top_down: "/images/maps/escort/junkertown/Junkertown-top-down.jpg"
 )
 
@@ -1902,9 +1902,9 @@ Map.create(
     map_type: "Escort",
     map_type_icon: "/images/maps/mapIcons/escort-icon.png",
     card: "/images/maps/escort/rialto/Rialto-card.jpg",
-    image_one: "/images/maps/escort/rialto/Rialto-one.jpeg",
-    image_two: "/images/maps/escort/rialto/Rialto-two.jpeg",
-    image_three: "/images/maps/escort/rialto/Rialto-three.jpg",
+    image_one: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2018/05/02/35587467-c0d4-41ca-bda9-94fadfbfd60d/overwatch-rialto-map",
+    image_two: "https://cdn.wccftech.com/wp-content/uploads/2018/05/Overwatch-Rialto.jpeg",
+    image_three: "https://cdn.vox-cdn.com/thumbor/umYflcYAglH8CiiHEqIDfwaEfyw=/0x0:5120x2880/1200x800/filters:focal(1762x1087:2580x1905)/cdn.vox-cdn.com/uploads/chorus_image/image/60847973/OVR_Rialto_Presskit_JPA_006.0.png",
     top_down: "/images/maps/escort/rialto/Rialto-top-down.jpg"
 )
 
@@ -1916,9 +1916,9 @@ Map.create(
     map_type: "Escort",
     map_type_icon: "/images/maps/mapIcons/escort-icon.png",
     card: "/images/maps/escort/route/Route-card.jpg",
-    image_one: "/images/maps/escort/route/Route-one.jpg",
-    image_two: "/images/maps/escort/route/Route-two.jpg",
-    image_three: "/images/maps/escort/route/Route-three.jpg",
+    image_one: "https://cdna.artstation.com/p/assets/images/images/031/074/312/4k/martin-holmberg-route66-06.jpg?1602527108",
+    image_two: "https://www.dexerto.com/wp-content/uploads/2021/07/01/overwatch-route-66-diner.jpg",
+    image_three: "http://imgur.com/U0g01yQ.png",
     top_down: "/images/maps/escort/route/Route-top-down.jpg"
 )
 
@@ -1930,9 +1930,9 @@ Map.create(
     map_type: "Escort",
     map_type_icon: "/images/maps/mapIcons/escort-icon.png",
     card: "/images/maps/escort/watchpoint/Watchpoint-card.jpg",
-    image_one: "/images/maps/escort/watchpoint/Watchpoint-one-one.jpg",
-    image_two: "/images/maps/escort/watchpoint/Watchpoint-two.jpg",
-    image_three: "/images/maps/escort/watchpoint/Watchpoint-three.jpg",
+    image_one: "https://www.dexerto.com/wp-content/uploads/thumbnails/_thumbnailLarge/gibraltar-overwatch-camera-trick-spawn.jpg",
+    image_two: "https://www.owfire.com/images/maps/watchpoint-gibraltar-6.jpg",
+    image_three: "https://assets.tentonhammer.com/guides/attached_images/000/011/304/medium/OWWatchpointGibraltar.jpg?1469202759",
     top_down: "/images/maps/escort/watchpoint/Watchpoint-top-down.jpg"
 )
 ##HYBRID
@@ -1944,9 +1944,9 @@ Map.create(
     map_type: "Hybrid",
     map_type_icon: "/images/maps/mapIcons/hybrid-icon.png",
     card: "/images/maps/hybrid/kingsRow/KingsRow-card.png",
-    image_one: "/images/maps/hybrid/kingsRow/KingsRow-one.jpg",
-    image_two: "/images/maps/hybrid/kingsRow/KingsRow-two.jpg",
-    image_three: "/images/maps/hybrid/kingsRow/KingsRow-three.png",
+    image_one: "https://assets.tentonhammer.com/articles/attached_images/000/025/042/large/KingsRow.jpg?1468378046",
+    image_two: "https://images.squarespace-cdn.com/content/v1/59af2189c534a58c97bd63b3/1530555857623-44Z39PLCYLNU7652M01C/King%27s+Row+Widowmaker+best+sniping+spots+Overwatch.jpg?format=2500w",
+    image_three: "https://i.pinimg.com/originals/0e/86/e7/0e86e7e1e373992a3ee7a7b7a4ec9ed5.png",
     top_down: "/images/maps/hybrid/kingsRow/KingsRow-top-down.jpg"
 )
 #EICHENWALDE
@@ -1957,9 +1957,9 @@ Map.create(
     map_type: "Hybrid",
     map_type_icon: "/images/maps/mapIcons/hybrid-icon.png",
     card: "/images/maps/hybrid/eichenwalde/Eichenwalde-card.png",
-    image_one: "/images/maps/hybrid/eichenwalde/Eichenwalde-one.jpg",
-    image_two: "/images/maps/hybrid/eichenwalde/Eichenwalde-two.jpg",
-    image_three: "/images/maps/hybrid/eichenwalde/Eichenwalde-three.png",
+    image_one: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2016/08/31/1331815127129_2/a-rocket-powered-payload-for-a-supercharged-map",
+    image_two: "https://img.redbull.com/images/q_auto,f_auto/redbullcom/2016/08/31/1331815129740_8/eichenwalde-isn%E2%80%99t-as-big-as-it-looks",
+    image_three: "https://www.slashgear.com/wp-content/uploads/2016/08/eichenwalde-one-980x420.png",
     top_down: "/images/maps/hybrid/eichenwalde/Eichenwalde-top-down.jpg"
 )
 #HOLLYWOOD
@@ -1970,9 +1970,9 @@ Map.create(
     map_type: "Hybrid",
     map_type_icon: "/images/maps/mapIcons/hybrid-icon.png",
     card: "/images/maps/hybrid/hollywood/Hollywood-card.jpg",
-    image_one: "/images/maps/hybrid/hollywood/Hollywood-one.jpg",
-    image_two: "/images/maps/hybrid/hollywood/Hollywood-two.png",
-    image_three: "/images/maps/hybrid/hollywood/Hollywood-three.png",
+    image_one: "https://overwatch.wiki.fextralife.com/file/Overwatch/hollywood.jpg",
+    image_two: "https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2020/08/12052713/0e0f9349926847bf5ea0526e6846d5c0a09ce7b4c9e3bd223c2e02d29c.jpg",
+    image_three: "https://i.pinimg.com/originals/b2/da/37/b2da370317c6f65be70af00e5bd847e5.png",
     top_down: "/images/maps/hybrid/hollywood/Hollywood-top-down.jpg"
 )
 #BLIZZARD WORLD
@@ -1983,9 +1983,9 @@ Map.create(
     map_type: "Hybrid",
     map_type_icon: "/images/maps/mapIcons/hybrid-icon.png",
     card: "/images/maps/hybrid/blizzard/Blizzard-card.jpg",
-    image_one: "/images/maps/hybrid/blizzard/Blizzard-one.jpg",
-    image_two: "/images/maps/hybrid/blizzard/Blizzard-two.jpg",
-    image_three: "/images/maps/hybrid/blizzard/Blizzard-three.jpg",
+    image_one: "https://cdn.vox-cdn.com/thumbor/Si_s953Fspw91EOT06b80epTqfU=/0x0:4978x2800/1200x800/filters:focal(1614x661:2410x1457)/cdn.vox-cdn.com/uploads/chorus_image/image/57488921/Overwatch_BlizzardWorld_001_png_jpgcopy.0.jpg",
+    image_two: "https://s.yimg.com/uu/api/res/1.2/glNkJsk7QYtfDbrCKrYj_A--~B/aD0xMDgwO3c9MTkyMDthcHBpZD15dGFjaHlvbg--/https://o.aolcdn.com/hss/storage/midas/b09c549ab048f9a8aa2e5b9cd3ea72c2/206083909/Overwatch_BlizzardWorld_Snaxxramas.jpg",
+    image_three: "https://cdn.mos.cms.futurecdn.net/gSxmZ5qzfQRjzrUi9ZkkZd.jpg",
     top_down: "/images/maps/hybrid/blizzard/Blizzard-top-down.jpg"
 )
 #NUMBANI
@@ -1996,9 +1996,9 @@ Map.create(
     map_type: "Hybrid",
     map_type_icon: "/images/maps/mapIcons/hybrid-icon.png",
     card: "/images/maps/hybrid/numbani/Numbani-card.jpg",
-    image_one: "/images/maps/hybrid/numbani/Numbani-one.jpeg",
-    image_two: "/images/maps/hybrid/numbani/Numbani-two.jpg",
-    image_three: "/images/maps/hybrid/numbani/Numbani-three.jpg",
+    image_one: "https://images2.minutemediacdn.com/image/upload/c_fill,w_912,h_516,f_auto,q_auto,g_auto/shape/cover/sport/5c2bad07d208a80efc000001.jpeg",
+    image_two: "https://staticr1.blastingcdn.com/media/photogallery/2017/8/11/660x290/b_1200x675/the-numbani-map-in-overwatch-image-source-youtubeoverwatch-brasil_1502759.jpg",
+    image_three: "https://preview.redd.it/cj7snh26dsj21.jpg?width=1805&format=pjpg&auto=webp&s=0b9f798741420341dd005333c54ed6d0a62f2aaa",
     top_down: "/images/maps/hybrid/numbani/Numbani-top-down.jpg"
 )
 

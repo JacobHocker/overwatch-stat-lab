@@ -1795,9 +1795,9 @@ Map.create(
     map_type: "Assault",
     map_type_icon: "/images/maps/mapIcons/assault-icon.png",
     card: "/images/maps/assault/hanamura/Hanamura-card.jpg",
-    image_one: "/images/maps/assault/hanamura/Hanamura-one.jpg",
-    image_two: "/images/maps/assault/hanamura/Hanamura-two.jpg",
-    image_three: "/images/maps/assault/hanamura/Hanamura-three.jpg",
+    image_one: "https://lh3.googleusercontent.com/-QlfCEHdLSlo/VxIQj3B2k6I/AAAAAAAAdjQ/dv964Xjx7Qwnv2gmPXBwHcS82ybPbDZFgCCo/s740-Ic42/Hanamura1.jpg",
+    image_two: "https://i.pinimg.com/originals/9c/df/a9/9cdfa9e33e72f0911371f16f2d2ab39a.jpg",
+    image_three: "https://thumbor.forbes.com/thumbor/711x442/https://specials-images.forbesimg.com/imageserve/5f225bef04bc8bd13b1f8127/Overwatch-map-Hanamura/960x0.jpg?fit=scale",
     top_down: "/images/maps/assault/hanamura/Hanamura-top-down.jpg"
 )
 #HORIZON LUNAR COLONY
@@ -1808,9 +1808,9 @@ Map.create(
     map_type: "Assault",
     map_type_icon: "/images/maps/mapIcons/assault-icon.png",
     card: "/images/maps/assault/horizon/Lunar-card.jpeg",
-    image_one: "/images/maps/assault/horizon/Lunar-one.png",
-    image_two: "/images/maps/assault/horizon/Lunar-two.jpg",
-    image_three: "/images/maps/assault/horizon/Lunar-three.jpg",
+    image_one: "https://www.gamespot.com/a/uploads/screen_kubrick/123/1239113/3240505-hor.jpg",
+    image_two: "https://www.pcgamesn.com/wp-content/uploads/legacy/overwatch_horizon_lunar_colony_rework-1200x675.jpg",
+    image_three: "https://cdn.vox-cdn.com/thumbor/Pl9DvwnxVGE0bzFUouMgf2btC_8=/0x0:1280x720/1400x1400/filters:focal(538x258:742x462):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/55237131/overwatch_horizon_lunary_colony.0.jpeg",
     top_down: "/images/maps/assault/horizon/Lunar-top-down.jpg"
 )
 #PARIS
@@ -1821,9 +1821,9 @@ Map.create(
     map_type: "Assault",
     map_type_icon: "/images/maps/mapIcons/assault-icon.png",
     card: "/images/maps/assault/paris/Paris-card.jpg",
-    image_one: "/images/maps/assault/paris/Paris-one.jpeg",
-    image_two: "/images/maps/assault/paris/Paris-two.png",
-    image_three: "/images/maps/assault/paris/Paris-three.jpg",
+    image_one: "https://static.invenglobal.com/upload/image/2021/03/24/i1616616778918137.jpeg",
+    image_two: "https://static.invenglobal.com/upload/image/2021/03/24/i1616617366261341.png",
+    image_three: "https://i.pinimg.com/originals/f0/ac/5d/f0ac5dc689c2721b656f9d535572b700.jpg",
     top_down: "/images/maps/assault/paris/Paris-top-down.jpg"
 )
 #TEMPLE OF ANUBIS
@@ -1834,9 +1834,9 @@ Map.create(
     map_type: "Assault",
     map_type_icon: "/images/maps/mapIcons/assault-icon.png",
     card: "/images/maps/assault/anubis/Anubis-card.png",
-    image_one: "/images/maps/assault/anubis/Anubis-one.png",
-    image_two: "/images/maps/assault/anubis/Anubis-two.jpeg",
-    image_three: "/images/maps/assault/anubis/Anubis-three.jpg",
+    image_one: "https://blog.gamersensei.com/wp-content/uploads/2017/07/Header1080-1.png",
+    image_two: "https://cdn1.dotesports.com/wp-content/uploads/2021/11/23111303/Temple-of-Anubis-768x432.jpg",
+    image_three: "https://cdnb.artstation.com/p/assets/images/images/022/415/203/4k/helder-pinto-hp-temple-anubis-01.jpg?1575362565",
     top_down: "/images/maps/assault/anubis/Anubis-top-down.jpg"
 )
 #VOLSKAYA INDUSTRIES
@@ -1847,9 +1847,9 @@ Map.create(
     map_type: "Assault",
     map_type_icon: "/images/maps/mapIcons/assault-icon.png",
     card: "/images/maps/assault/volskaya/Volskaya-card.jpg",
-    image_one: "/images/maps/assault/volskaya/Volskaya-one.jpg",
-    image_two: "/images/maps/assault/volskaya/Volskaya-two.jpg",
-    image_three: "/images/maps/assault/volskaya/Volskaya-three.jpg",
+    image_one: "https://cdnb.artstation.com/p/assets/images/images/022/591/013/4k/helder-pinto-5rssa.jpg?1576000687",
+    image_two: "https://cdnb.artstation.com/p/assets/images/images/022/591/021/large/helder-pinto-2rssa.jpg?1575999886",
+    image_three: "https://cdnb.artstation.com/p/assets/images/images/037/380/417/large/philip-klevestav-overwatch-volskaya-01.jpg?1620227836",
     top_down: "/images/maps/assault/volskaya/Volskaya-top-down.jpg"
 )
 ##ESCORT
@@ -1861,9 +1861,9 @@ Map.create(
     map_type: "Escort",
     map_type_icon: "/images/maps/mapIcons/escort-icon.png",
     card: "/images/maps/escort/dorado/Dorado-card.jpg",
-    image_one: "/images/maps/escort/dorado/Dorado-one.jpg",
-    image_two: "/images/maps/escort/dorado/Dorado-two.jpg",
-    image_three: "/images/maps/escort/dorado/Dorado-three.jpg",
+    image_one: "https://cdnb.artstation.com/p/assets/images/images/022/751/553/4k/helder-pinto-1mexico.jpg?1576906738",
+    image_two: "https://i.ytimg.com/vi/PRbeYQpknS4/maxresdefault.jpg",
+    image_three: "https://www.owfire.com/images/maps/dorado-4.jpg",
     top_down: "/images/maps/escort/dorado/Dorado-top-down.jpg"
 )
 #Havana
@@ -1874,9 +1874,9 @@ Map.create(
     map_type: "Escort",
     map_type_icon: "/images/maps/mapIcons/escort-icon.png",
     card: "/images/maps/escort/havana/Havana-card.png",
-    image_one: "/images/maps/escort/havana/Havana-one.png",
-    image_two: "/images/maps/escort/havana/Havana-two.jpg",
-    image_three: "/images/maps/escort/havana/Havana-three.jpg",
+    image_one: "https://www.dexerto.com/wp-content/uploads/thumbnails/_thumbnailLarge/overwatch-havana-map-details-storm-rising.jpg",
+    image_two: "https://assets2.rockpapershotgun.com/overwatch-havana.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/overwatch-havana.jpg",
+    image_three: "https://cdna.artstation.com/p/assets/images/images/020/053/062/large/simon-fuchs-havana-02.jpg?1566167951",
     top_down: "/images/maps/escort/havana/Havana-top-down.jpg"
 )
 

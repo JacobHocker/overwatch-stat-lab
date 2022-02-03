@@ -1742,9 +1742,9 @@ Map.create(
     map_type: "Control",
     map_type_icon: "/images/maps/mapIcons/control-icon.png",
     card: "/images/maps/control/ilios/Ilios-card.png",
-    image_one: "/images/maps/control/ilios/Ilios-one-one.jpg",
-    image_two: "/images/maps/control/ilios/Ilios-two-two.jpg",
-    image_three: "/images/maps/control/ilios/Ilios-three-three.png",
+    image_one: "http://vignette1.wikia.nocookie.net/overwatch/images/d/d2/Ilios_screenshot_19.png/revision/latest?cb=20160712054824",
+    image_two: "https://cdn1.dotesports.com/wp-content/uploads/2022/01/04130951/Ilios_screenshot_9-768x432.png",
+    image_three: "https://staticr1.blastingcdn.com/media/photogallery/2017/7/26/660x290/b_1200x630/blizzard-is-set-to-introduce-some-changes-to-one-of-the-maps-in-overwatch-via-youtubeplayoverwatch_1468637.jpg",
     top_down: "/images/maps/control/ilios/Ilios-top-down.jpg"
 )
 #LIJIANG TOWER
@@ -1755,9 +1755,9 @@ Map.create(
     map_type: "Control",
     map_type_icon: "/images/maps/mapIcons/control-icon.png",
     card: "/images/maps/control/lijiang/Lijiang-card.jpg",
-    image_one: "/images/maps/control/lijiang/Lijiang-one-one.jpg",
-    image_two: "/images/maps/control/lijiang/Lijiang-two-two-two.jpg",
-    image_three: "/images/maps/control/lijiang/Lijiang-three.png",
+    image_one: "http://media.esportsedition.com/wp-content/uploads/2016/03/Lijiang-Tower-1-1.jpg",
+    image_two: "http://vignette3.wikia.nocookie.net/overwatch/images/3/3c/Lijiang_screenshot_6.jpg/revision/latest?cb=20160521222340",
+    image_three: "http://vignette2.wikia.nocookie.net/overwatch/images/6/6a/Lijiang_screenshot_24.jpg/revision/latest?cb=20160521224446",
     top_down: "/images/maps/control/lijiang/Lijiang-top-down.jpg"
 )
 #NEPAL
@@ -1768,9 +1768,9 @@ Map.create(
     map_type: "Control",
     map_type_icon: "/images/maps/mapIcons/control-icon.png",
     card: "/images/maps/control/nepal/Nepal-card.jpg",
-    image_one: "/images/maps/control/nepal/Nepal-one.png",
-    image_two: "/images/maps/control/nepal/Nepal-two-two-two.jpg",
-    image_three: "/images/maps/control/nepal/Nepal-three.jpg",
+    image_one: "http://vignette1.wikia.nocookie.net/overwatch/images/7/78/Nepal_screenshot_3.png/revision/latest?cb=20160711231334",
+    image_two: "http://vignette2.wikia.nocookie.net/overwatch/images/6/62/Nepal_screenshot_16.png/revision/latest?cb=20160711233016",
+    image_three: "https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2020/01/25203038/R3nu8dA.jpg",
     top_down: "/images/maps/control/nepal/Nepal-top-down.jpg"
 )
 #OASIS
@@ -1781,9 +1781,9 @@ Map.create(
     map_type: "Control",
     map_type_icon: "/images/maps/mapIcons/control-icon.png",
     card: "/images/maps/control/oasis/Oasis-card.jpg",
-    image_one: "/images/maps/control/oasis/Oasis-one.jpg",
-    image_two: "/images/maps/control/oasis/Oasis-two.jpg",
-    image_three: "/images/maps/control/oasis/Oasis-three.png",
+    image_one: "https://cdna.artstation.com/p/assets/images/images/022/897/156/4k/thiago-klafke-screenshot-19-12-23-14-04-53-000-copy.jpg?1577142455",
+    image_two: "https://cdnb.artstation.com/p/assets/images/images/037/383/731/large/philip-klevestav-overwatch-oasis-05.jpg?1620233158&dl=1",
+    image_three: "https://www.owfire.com/images/maps/oasis-1.jpg",
     top_down: "/images/maps/control/oasis/Oasis-top-down.jpg"
 )
 ##ASSAULT

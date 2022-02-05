@@ -2,6 +2,8 @@ puts "Destroying Data..."
 puts 
 Character.destroy_all 
 Map.destroy_all
+Team.destroy_all 
+Player.destroy_all
 
 puts "Begining Seeding Database..."
 puts 
@@ -2076,6 +2078,582 @@ Map.create(
 
 puts "Maps Seeding Complete!"
 puts
+
+puts "Seeding OWL Data..."
+puts 
+
+puts "Creating Teams..."
+puts 
+outlaws = Team.create(
+    team_name: "Outlaws", 
+    team_city: "Houston",
+    team_logo: "/images/owl/teams/outlaws/outlaws-logo.png",
+    team_skin_home: "/images/owl/teams/outlaws/outlaws-uni.jpg"
+)
+fuel = Team.create(
+    team_name: "Fuel",
+    team_city: "Dallas",
+    team_logo: "/images/owl/teams/fuel/fuel-logo.png",
+    team_skin_home: "/images/owl/teams/fuel/fuel-uni.jpg"
+)
+shock = Team.create(
+    team_name: "Shock",
+    team_city: "San Francisco",
+    team_logo: "/images/owl/teams/shock/shock-logo.png",
+    team_skin_home: "/images/owl/teams/shock/shock-uni.jpg"
+)
+titans = Team.create(
+    team_name: "Titans",
+    team_city: "Vancouver",
+    team_logo: "/images/owl/teams/titans/titans-logo.png",
+    team_skin_home: "/images/owl/teams/titans/titans-uni.jpg"
+)
+dragons = Team.create(
+    team_name: "Dragons",
+    team_city: "Shanghai",
+    team_logo: "/images/owl/teams/dragons/dragons-logo.png",
+    team_skin_home: "/images/owl/teams/dragons/dragons-uni.jpg"
+)
+uprising = Team.create(
+    team_name: "Uprising",
+    team_city: "Boston",
+    team_logo: "/images/owl/teams/uprising/uprising-logo.png",
+    team_skin_home: "/images/owl/teams/uprising/uprising-uni.jpg"
+)
+reign = Team.create(
+    team_name: "Reign",
+    team_city: "Atlanta",
+    team_logo: "/images/owl/teams/reign/reign-logo.png",
+    team_skin_home: "/images/owl/teams/reign/reign-uni.jpg"
+)
+mayhem = Team.create(
+    team_name: "Mayhem",
+    team_city: "Florida",
+    team_logo: "/images/owl/teams/mayhem/mayhem-logo.png",
+    team_skin_home: "/images/owl/teams/mayhem/mayhem-uni.jpg"
+)
+hunters = Team.create(
+    team_name: "Hunters",
+    team_city: "Chengdu",
+    team_logo: "/images/owl/teams/hunters/hunters-logo.png",
+    team_skin_home: "/images/owl/teams/hunters/hunters-uni.jpg"
+)
+charge = Team.create(
+    team_name: "Charge",
+    team_city: "Guangzhou",
+    team_logo: "/images/owl/teams/charge/charge-logo.png",
+    team_skin_home: "/images/owl/teams/charge/charge-uni.jpg"
+)
+spark = Team.create(
+    team_name: "Spark",
+    team_city: "Hangzhou",
+    team_logo: "/images/owl/teams/spark/spark-logo.png",
+    team_skin_home: "/images/owl/teams/spark/spark-uni.jpg"
+)
+spitfire = Team.create(
+    team_name: "Spitfire",
+    team_city: "London",
+    team_logo: "/images/owl/teams/spitfire/spitfire-logo.png",
+    team_skin_home: "/images/owl/teams/spitfire/spitfire-uni.jpg"
+)
+gladiators = Team.create(
+    team_name: "Gladiators",
+    team_city: "Los Angeles",
+    team_logo: "/images/owl/teams/valiant/valiant-logo.png",
+    team_skin_home: "/images/owl/teams/valiant/valiant-uni.jpg"
+)
+valiant = Team.create(
+    team_name: "Valiant",
+    team_city: "Los Angeles",
+    team_logo: "/images/owl/teams/valiant/valiant-logo.png",
+    team_skin_home: "/images/owl/teams/valiant/valiant-uni.jpg"
+)
+excelsior = Team.create(
+    team_name: "Excelsior",
+    team_city: "New York",
+    team_logo: "/images/owl/teams/excelsior/excelsior-logo.png",
+    team_skin_home: "/images/owl/teams/excelsior/excelsior-uni.jpg"
+)
+eternal = Team.create(
+    team_name: "Eternal",
+    team_city: "Paris",
+    team_logo: "/images/owl/teams/eternal/eternal-logo.png",
+    team_skin_home: "/images/owl/teams/eternal/eternal-uni.jpg"
+)
+fusion = Team.create(
+    team_name: "Fuson",
+    team_city: "Philadelphia",
+    team_logo: "/images/owl/teams/fusion/fusion-logo.png",
+    team_skin_home: "/images/owl/teams/fusion/fusion-uni.jpg"
+)
+dynasty = Team.create(
+    team_name: "Dynasty",
+    team_city: "Seoul",
+    team_logo: "/images/owl/teams/dynasty/dynasty-logo.png",
+    team_skin_home: "/images/owl/teams/dynasty/dynasty-uni.jpg"
+)
+defiant = Team.create(
+    team_name: "Defiant",
+    team_city: "Toronto",
+    team_logo: "/images/owl/teams/defiant/defiant-logo.png",
+    team_skin_home: "/images/owl/teams/defiant/defiant-uni.jpg"
+)
+justice = Team.create(
+    team_name: "Justice",
+    team_city: "Washington",
+    team_logo: "/images/owl/teams/justice/justice-logo.png",
+    team_skin_home: "/images/owl/teams/justice/justice-uni.jpg"
+)
+
+
+puts "Completed Team Creation!"
+puts 
+
+puts "Creating Players..."
+puts 
+
+## Altanta Reign
+Player.create(
+    name: "Gator", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: reign.id
+)
+Player.create(
+    name: "Hawk", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: reign.id
+)
+Player.create(
+    name: "Kai", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: reign.id
+)
+Player.create(
+    name: "Nero", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: reign.id
+)
+Player.create(
+    name: "Venom", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: reign.id
+)
+Player.create(
+    name: "Ojee", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: reign.id
+)
+
+## Boston Uprising
+Player.create(
+    name: "Punk", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: uprising.id
+)
+Player.create(
+    name: "Faith", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: uprising.id
+)
+Player.create(
+    name: "Valentine", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: uprising.id
+)
+Player.create(
+    name: "Crimzo", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: uprising.id
+)
+Player.create(
+    name: "Striker", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: uprising.id
+)
+Player.create(
+    name: "Marve1", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: uprising.id
+)
+Player.create(
+    name: "MCD", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: uprising.id
+)
+Player.create(
+    name: "Victoria", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: uprising.id
+)
+
+## Chengdu Hunters
+Player.create(
+    name: "Yveltal", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: hunters.id
+)
+Player.create(
+    name: "JinMu", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: hunters.id
+)
+Player.create(
+    name: "Leave", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: hunters.id
+)
+Player.create(
+    name: "Nisha", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: hunters.id
+)
+Player.create(
+    name: "GA9A", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: hunters.id
+)
+Player.create(
+    name: "Farway1987", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: hunters.id
+)
+Player.create(
+    name: "Mmonk", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: hunters.id
+)
+
+## Dallas Fuel
+Player.create(
+    name: "Doha", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: fuel.id
+)
+Player.create(
+    name: "Sp9rk1e", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: fuel.id
+)
+Player.create(
+    name: "Hanbin", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: fuel.id
+)
+Player.create(
+    name: "Fielder", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: fuel.id
+)
+Player.create(
+    name: "Fearless", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: fuel.id
+)
+Player.create(
+    name: "ChiYo", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: fuel.id
+)
+Player.create(
+    name: "Edison", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: fuel.id
+)
+Player.create(
+    name: "Guriyo", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: fuel.id
+)
+
+## Florida Mayhem
+Player.create(
+    name: "SirMajed", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: mayhem.id
+)
+Player.create(
+    name: "Checkmate", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: mayhem.id
+)
+Player.create(
+    name: "MirroR", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: mayhem.id
+)
+Player.create(
+    name: "Adam", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: mayhem.id
+)
+Player.create(
+    name: "Anamo", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: mayhem.id
+)
+
+## Guanzhou Charge
+Player.create(
+    name: "Eileen", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: charge.id
+)
+Player.create(
+    name: "Rio", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: charge.id
+)
+Player.create(
+    name: "Cr0ng", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: charge.id
+)
+Player.create(
+    name: "ChoiSehwan", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: charge.id
+)
+Player.create(
+    name: "Develop", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: charge.id
+)
+Player.create(
+    name: "Unique", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: charge.id
+)
+Player.create(
+    name: "Molly", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: charge.id
+)
+
+## Hangzhou Spark
+Player.create(
+    name: "Guxue", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: spark.id
+)
+Player.create(
+    name: "Architect", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: spark.id
+)
+Player.create(
+    name: "Shy", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: spark.id
+)
+Player.create(
+    name: "LiGe", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: spark.id
+)
+Player.create(
+    name: "BERNAR", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: spark.id
+)
+Player.create(
+    name: "Pineapple", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: spark.id
+)
+Player.create(
+    name: "AlphaYi", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: spark.id
+)
+Player.create(
+    name: "Irony", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: spark.id
+)
+Player.create(
+    name: "Superich", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: spark.id
+)
+
+##Houston Outlaws
+Player.create(
+    name: "Danteh", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: outlaws.id
+)
+Player.create(
+    name: "PIGGY", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: outlaws.id
+)
+Player.create(
+    name: "Jake", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: outlaws.id
+)
+Player.create(
+    name: "Pelican", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: outlaws.id
+)
+Player.create(
+    name: "Ir1s", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: outlaws.id
+)
+Player.create(
+    name: "Lastro", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: outlaws.id
+)
+Player.create(
+    name: "MER1T", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: outlaws.id
+)
+
+## London Spitfire
+Player.create(
+    name: "SparkR", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: spitfire.id
+)
+Player.create(
+    name: "Shax", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: spitfire.id
+)
+Player.create(
+    name: "Backbone", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: spitfire.id
+)
+Player.create(
+    name: "Hadi", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: spitfire.id
+)
+Player.create(
+    name: "Poko", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: spitfire.id
+)
+Player.create(
+    name: "Provide", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: spitfire.id
+)
+Player.create(
+    name: "Admiral", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: spitfire.id
+)
+
+## Los Angeles Gladiators
+Player.create(
+    name: "SPACE", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: gladiators.id
+)
+Player.create(
+    name: "Kevster", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: gladiators.id
+)
+Player.create(
+    name: "Shu", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: gladiators.id
+)
+Player.create(
+    name: "Skewed", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: gladiators.id
+)
+Player.create(
+    name: "FunnyAstro", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: gladiators.id
+)
+Player.create(
+    name: "ANS", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: gladiators.id
+)
+Player.create(
+    name: "Reiner", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: gladiators.id
+)
+Player.create(
+    name: "Patiphan", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: gladiators.id
+)
+
+## Los Angeles Valiant
+Player.create(
+    name: "Diya", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: valiant.id
+)
+Player.create(
+    name: "Innovation", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: valiant.id
+)
+Player.create(
+    name: "Becky", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: valiant.id
+)
+Player.create(
+    name: "ColdEst", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: valiant.id
+)
+
+## New York Excelsior
+Player.create(
+    name: "Flora", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: excelsior.id
+)
+Player.create(
+    name: "Yaki", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: excelsior.id
+)
+Player.create(
+    name: "Kellan", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: excelsior.id
+)
+Player.create(
+    name: "Gangnamjin", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: excelsior.id
+)
+Player.create(
+    name: "Myunb0ng", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: excelsior.id
+)
+
+## Paris Eternal
+Player.create(
+    name: "Naga", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: eternal.id
+)
+Player.create(
+    name: "Daan", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: eternal.id
+)
+Player.create(
+    name: "Kaan", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: eternal.id
+)
+Player.create(
+    name: "Drido", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: eternal.id
+)
+Player.create(
+    name: "Glister", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: eternal.id
+)
+Player.create(
+    name: "Vestola", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: eternal.id
+)
+
+## Philadelphia Fusion
+Player.create(
+    name: "Carpe", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: fusion.id
+)
+Player.create(
+    name: "MN3", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: fusion.id
+)
+Player.create(
+    name: "ZEST", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: fusion.id
+)
+Player.create(
+    name: "Fury", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: fusion.id
+)
+Player.create(
+    name: "AimGod", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: fusion.id
+)
+
+## San Francisco Shock
+Player.create(
+    name: "Super", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: shock.id
+)
+Player.create(
+    name: "Viol2t", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: shock.id
+)
+Player.create(
+    name: "FiNN", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: shock.id
+)
+Player.create(
+    name: "Kilo", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: shock.id
+)
+Player.create(
+    name: "Proper", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: shock.id
+)
+Player.create(
+    name: "S9mm", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: shock.id
+)
+
+## Seoul Dynasty
+Player.create(
+    name: "FITS", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: dynasty.id
+)
+Player.create(
+    name: "Profit", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: dynasty.id
+)
+Player.create(
+    name: "Creative", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: dynasty.id
+)
+Player.create(
+    name: "Stalk3r", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: dynasty.id
+)
+Player.create(
+    name: "Smurf", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: dynasty.id
+)
+Player.create(
+    name: "JJoNak", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: dynasty.id
+)
+Player.create(
+    name: "Vindaim", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: dynasty.id
+)
+
+## Shanghai Dragons
+Player.create(
+    name: "Izayaki", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: dragons.id
+)
+Player.create(
+    name: "Fleta", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: dragons.id
+)
+Player.create(
+    name: "LIP", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: dragons.id
+)
+Player.create(
+    name: "Void", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: dragons.id
+)
+Player.create(
+    name: "LeeJaeGon", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: dragons.id
+)
+Player.create(
+    name: "Fate", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: dragons.id
+)
+Player.create(
+    name: "WhoRU", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: dragons.id
+)
+
+## Toronto Defiant
+Player.create(
+    name: "Heesu", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: defiant.id
+)
+Player.create(
+    name: "Twilight", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: defiant.id
+)
+Player.create(
+    name: "HOTBA", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: defiant.id
+)
+Player.create(
+    name: "CH0R0NG", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: defiant.id
+)
+Player.create(
+    name: "MuZe", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: defiant.id
+)
+Player.create(
+    name: "Finale", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: defiant.id
+)
+Player.create(
+    name: "ALTHOUGH", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: defiant.id
+)
+
+## Vancouver Titans
+Player.create(
+    name: "Aspire", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: titans.id
+)
+Player.create(
+    name: "sHockWave", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: titans.id
+)
+Player.create(
+    name: "False", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: titans.id
+)
+Player.create(
+    name: "Masaa", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: titans.id
+)
+Player.create(
+    name: "Aztac", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: titans.id
+)
+Player.create(
+    name: "Seicoe", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: titans.id
+)
+Player.create(
+    name: "Skairipa", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: titans.id
+)
+
+## Washington Justice
+Player.create(
+    name: "Decay", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: justice.id
+)
+Player.create(
+    name: "Mag", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: justice.id
+)
+Player.create(
+    name: "Assassin", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: justice.id
+)
+Player.create(
+    name: "Happy", role: "DPS", role_icon: "/images/icons/Icon-Damage.png", team_id: justice.id
+)
+Player.create(
+    name: "Krillin", role: "Support", role_icon: "/images/icons/Icon-Support.png", team_id: justice.id
+)
+Player.create(
+    name: "Kalios", role: "Tank", role_icon: "/images/icons/Icon-Tank.png", team_id: justice.id
+)
+
+
+
+
+
+
+puts "Completed Player Seeding!"
 
 
 puts "Seeding Complete!"

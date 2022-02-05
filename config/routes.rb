@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
   
+  resources :players
+  resources :teams
   resources :maps, only: [:index, :show]
   resources :characters, only: [:index, :show]
   

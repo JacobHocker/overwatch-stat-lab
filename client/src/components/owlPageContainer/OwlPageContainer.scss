@@ -1,0 +1,35 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+//Whole Page Container
+.owl-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.blz-contentstack.com/v3/assets/blt321317473c90505c/blt1cff6b3395ae5728/5f37f2628ea4aa55f232a11b/Textured-Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding-bottom: 50rem;
+}
+
+// OWL Logo
+.ow-league-logo {
+    width: 75%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+// Team Card Container
+.team-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+

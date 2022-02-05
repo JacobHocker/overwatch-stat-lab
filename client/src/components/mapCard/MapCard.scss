@@ -6,6 +6,7 @@
 .map-card{
     width: 15rem;
     background: transparent;
+    overflow: hidden;
     margin-right: 1rem;
     margin-left: 1rem;
     margin-top: 2rem;
@@ -90,10 +91,10 @@
 }
 
 .map-card-information h2{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 
     @include tablet{
-        font-size: 2.15rem;
+        font-size: 2rem;
     }
     @include desktop-small{
         font-size: 2.75rem;

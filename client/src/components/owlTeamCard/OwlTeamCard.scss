@@ -1,0 +1,22 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+//Whole Page Container
+.team-card{
+    width: 10rem;
+    height: 10rem;
+    background: colors.$card-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+
+
+//Team Logo
+.team-logo{
+    width: 8rem;
+    object-fit: cover;
+}

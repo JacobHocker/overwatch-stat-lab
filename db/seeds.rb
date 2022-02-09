@@ -2,8 +2,7 @@ puts "Destroying Data..."
 puts 
 Character.destroy_all 
 Map.destroy_all
-Team.destroy_all 
-Player.destroy_all
+
 
 puts "Begining Seeding Database..."
 puts 

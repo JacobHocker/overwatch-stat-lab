@@ -4,19 +4,50 @@
 
 //Whole Page Container
 .team-card{
-    width: 10rem;
-    height: 10rem;
-    background: colors.$card-color;
+    width: 8rem;
+    height: 8rem;
+    background: rgba(192, 189, 189, 0.644);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0.5rem;
+    &:hover{
+        transform: scale(110%);
+    }
+    @include tablet{
+        width: 10rem;
+        height: 10rem;
+    }
+    @include desktop-small{
+        width: 12rem;
+        height: 12rem;
+    }
+    @include desktop{
+        width: 14rem;
+        height: 14rem;
+    }
+    @include desktop-large{
+        width: 16rem;
+        height: 16rem;
+    }
 }
 
 
 
 //Team Logo
 .team-logo{
-    width: 8rem;
+    width: 5rem;
     object-fit: cover;
+    @include tablet{
+        width: 7rem;
+    }
+    @include desktop-small{
+        width: 9rem;
+    }
+    @include desktop{
+        width: 10rem;
+    }
+    @include desktop-large{
+        width: 12rem;
+    }
 }

@@ -1,0 +1,116 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+//Whole Player List
+.player-list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.player-list-container h2{
+    font-size: 1.5rem;
+    letter-spacing: 0.8px;
+    @include tablet{
+        font-size: 2rem;
+    }
+    @include desktop-small{
+        font-size: 2.5rem;
+    }
+    @include desktop{
+        font-size: 3rem;
+    }
+    @include desktop-large{
+        font-size: 3.5rem;
+    }
+}
+.player-list-container h3{
+    font-size: 1.25rem;
+    @include tablet{
+        font-size: 1.75rem;
+    }
+    @include desktop-small{
+        font-size: 2.25rem;
+    }
+    @include desktop{
+        font-size: 2.75rem;
+    }
+    @include desktop-large{
+        font-size: 3.25rem;
+    }
+}
+
+//List 
+.player-list{
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #9c9c9c;
+}
+  
+th {
+    border: 1px solid white;
+    text-align: center;
+    padding: 8px;
+    @include tablet{
+        padding: 1rem;
+    }
+    @include desktop-small{
+        padding: 2rem;
+    }
+    @include desktop{
+        padding: 3rem;
+    }
+    @include desktop-large{
+        padding: 4rem;
+    }
+}
+
+td {
+    border: 1px solid white;
+    text-align: center;
+    padding: 8px;
+    @include tablet{
+        padding: 1rem;
+    }
+    @include desktop-small{
+        padding: 2rem;
+    }
+    @include desktop{
+        padding: 3rem;
+    }
+    @include desktop-large{
+        padding: 4rem;
+    }
+}
+
+tr {
+      border: 1px solid white;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+
+//Role Icon
+.role-icon{
+    width: 4.5rem;
+    @include tablet{
+        width: 5.5rem;
+    }
+    @include desktop-small{
+        width: 6.5rem;
+    }
+    @include desktop{
+        width: 7.5rem;
+    }
+    @include desktop-large{
+        width: 8.5rem;
+    }
+}

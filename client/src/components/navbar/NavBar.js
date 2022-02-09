@@ -44,7 +44,11 @@ function NavBar() {
                             Overwatch League    
                         </NavLink>
                     </li>
-                    <li className="nav-items">Player Data</li>
+                    <li className="nav-items">
+                        <NavLink to='/player-page' className='link-item'>
+                            Player Stats   
+                        </NavLink>
+                    </li>
                     <li className="nav-items">LFG</li>
                     </ul>
                 )}

@@ -8,6 +8,7 @@ import MapInfoPage from './components/mapInfoPage/MapInfoPage';
 import NavBar from './components/navbar/NavBar';
 import OwlPageContainer from './components/owlPageContainer/OwlPageContainer';
 import OwlTeamPage from './components/owlTeamPage/OwlTeamPage';
+import PlayerDataContainer from './components/playerDataContainer/PlayerDataContainer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='maps/:id' element={<MapInfoPage />} />
         <Route path='overwatch-league' element={<OwlPageContainer />} />
         <Route path='teams/:id' element={<OwlTeamPage />} />
+        <Route path='player-page' element={<PlayerDataContainer />} />
       </Routes>
     </section>
   );

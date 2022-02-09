@@ -4,9 +4,11 @@ import './OwlTeamCard.scss';
 
 function OwlTeamCard({id, logo, name}){
     return( 
-        <div className='team-card'>
+        <div>
             <Link to={`/teams/${id}`}>
-                <img src={logo} className='team-logo' alt={name} />
+                <div className='team-card'>
+                    <img src={logo} className='team-logo' alt={name} />
+                </div>
             </Link>
         </div>
     )

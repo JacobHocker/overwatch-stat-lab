@@ -1,0 +1,106 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+.owl-team-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.blz-contentstack.com/v3/assets/blt321317473c90505c/blt1cff6b3395ae5728/5f37f2628ea4aa55f232a11b/Textured-Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding-bottom: 10rem;
+}
+
+// Team Page Header
+.team-page-header{
+    color: colors.$cta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-page-header h1{
+    font-size: 3.25rem;
+    @include tablet{
+        font-size: 4.5rem;
+    }
+    @include desktop-small{
+        font-size: 5.5rem;
+    }
+    @include desktop{
+        font-size: 6.5rem;
+    }
+    @include desktop-large{
+        font-size: 7.5rem;
+    }
+}
+
+// Team Uniform Display
+.team-uni-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: colors.$blue-text;
+    margin-top: 2rem;
+}
+.team-uni-display h1{
+    font-size: 2.75rem;
+    @include tablet{
+        font-size: 3.5rem;
+    }
+    @include desktop-small{
+        font-size: 4.5rem;
+    }
+    @include desktop{
+        font-size: 5.5rem;
+    }
+    @include desktop-large{
+        font-size: 6.5rem;
+    }
+}
+
+.team-uni{
+    width: 90%;
+}
+
+//Team Roster
+.team-player-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.team-player-container h1{
+    color: colors.$blue-text;
+    font-size: 2.75rem;
+    @include tablet{
+        font-size: 3.5rem;
+    }
+    @include desktop-small{
+        font-size: 4.5rem;
+    }
+    @include desktop{
+        font-size: 5.5rem;
+    }
+    @include desktop-large{
+        font-size: 6.5rem;
+    }
+}
+
+// Team Page Footer
+.team-page-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.team-page-logo{
+    width: 90%;
+}

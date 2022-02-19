@@ -9,7 +9,7 @@ function PlayerDataContainer() {
 
     
     useEffect(() => {
-        fetch('/player/xbl/us/H17SCAN')
+        fetch('/player/xbl/us/Aphrodiite XXX')
         .then((r) => r.json())
         .then((playerStats) => { setPlayerStats(playerStats);
         });
@@ -17,7 +17,7 @@ function PlayerDataContainer() {
 
     
 
-    console.log(playerStats.name)
+    console.log(playerStats)
 
     
     return(

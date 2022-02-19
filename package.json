@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "express": "^4.17.3",
-    "node-sass": "^7.0.1",
+    "node-sass": "^7.0.1"
   }
 }

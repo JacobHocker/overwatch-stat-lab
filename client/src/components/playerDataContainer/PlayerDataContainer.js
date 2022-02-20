@@ -1,28 +1,43 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import PlayerDataSearch from '../playerDataSearch/PlayerDataSearch';
+//import PlayerNotFound from '../playerNotFound/PlayerNotFound';
+import PlayerProfileDisplay from '../playerProfileDisplay/PlayerProfileDisplay';
 import './PlayerDataContainer.scss';
 
 
 
 function PlayerDataContainer() {
-    const [playerStats, setPlayerStats] = useState({});
-
+    const [playerProfile, setPlayerProfile] = useState({});
+    const [battletag, setBattletag] = useState('');
+    const [region, setRegion] = useState('')
+    const [platform, setPlatform] = useState('')
     
-    useEffect(() => {
-        fetch('/player/xbl/us/Aphrodiite XXX')
+    function handleSubmit(e) {
+        e.preventDefault()
+        fetch(`/player/${platform}/${region}/${battletag}`)
         .then((r) => r.json())
-        .then((playerStats) => { setPlayerStats(playerStats);
+        .then((playerProfile) => { setPlayerProfile(playerProfile);
         });
-    }, []);
+    }
+   
 
     
 
-    console.log(playerStats)
+    //console.log(playerProfile)
 
     
     return(
         <div className='player-data-container'>
-            <PlayerDataSearch />
+            <PlayerDataSearch 
+            onPlayerSubmit={handleSubmit}
+            battletag={battletag}
+            setBattletag={setBattletag}
+            region={region}
+            setRegion={setRegion}
+            platform={platform}
+            setPlatform={setPlatform}
+            />
+            <PlayerProfileDisplay player={playerProfile}/>
         </div>
     );
 };

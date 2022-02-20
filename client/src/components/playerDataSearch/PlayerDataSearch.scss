@@ -1,3 +1,152 @@
 @use '../../assets/partials/colors';
 @use '../../assets/partials/typography';
 @import '../../assets/partials/mixins';
+
+
+// Whole Player Search Container
+.player-search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.player-search-container p{
+    font-family: 'Roboto Condensed';
+    font-size: 0.9rem;
+    letter-spacing: 0.04rem;
+    padding-left: 5%;
+}
+.player-search-container h4{
+    font-family: 'Roboto Condensed';
+    font-size: 1.25rem;
+    letter-spacing: 0.04rem;
+    padding-left: 5%;
+}
+
+// Player Search Header
+.player-search-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-search-header h1{
+    font-size: 3rem;
+}
+
+
+
+// Player Search Search Area
+.player-search-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-search-search ul{
+    list-style: none;
+}
+
+.network-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.area-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+// List Active & Inactive
+.platform-active{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    &:hover{
+        cursor: pointer;
+        box-shadow: inset 0 0 2px 4px rgba(0, 0, 0, 0.397);
+        background-color: white;
+    }
+}
+.platform-inactive{
+    border: 1px solid black;
+    color: black;
+    background-color: colors.$primary-one;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    &:hover{
+        cursor: pointer;
+        box-shadow: inset 0 0 2px 4px rgba(0, 0, 0, 0.397);
+        background-color: white;
+    }
+}
+
+.network-logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+.region-active{
+    border: 1px solid black;
+    color: black;
+    background-color: white; 
+    padding: 1.5rem;
+    &:hover{
+        cursor: pointer;
+        box-shadow: inset 0 0 2px 4px rgba(0, 0, 0, 0.397);
+        background-color: white;
+    }
+}
+
+.region-inactive{
+    border: 1px solid black;
+    color: black;
+    background-color: colors.$primary-one;
+    padding: 1.5rem;
+    &:hover{
+        cursor: pointer;
+        box-shadow: inset 0 0 2px 4px rgba(0, 0, 0, 0.397);
+        background-color: white;
+    }
+}
+
+// Input & Form Area
+.search-submit-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background: colors.$primary-one-opacity;
+}
+.player-form{
+    border-bottom: 1px solid white;
+}
+.search-input{
+    font-size: 1.25rem;
+    background: transparent;
+    outline: transparent;
+    border: none;
+    
+}
+
+.player-search-button{
+    font-size: 1.25rem;
+    background: transparent;
+    outline: transparent;
+    border: none;
+}

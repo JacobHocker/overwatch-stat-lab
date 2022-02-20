@@ -1,3 +1,17 @@
 @use '../../assets/partials/colors';
 @use '../../assets/partials/typography';
 @import '../../assets/partials/mixins';
+
+
+.player-data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/t1/T1VN4RZYM4261586452519196.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding-bottom: 75rem;
+}

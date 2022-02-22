@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import PlayerDataSearch from '../playerDataSearch/PlayerDataSearch';
-//import PlayerNotFound from '../playerNotFound/PlayerNotFound';
+import PlayerNotFound from '../playerNotFound/PlayerNotFound';
 import PlayerProfileDisplay from '../playerProfileDisplay/PlayerProfileDisplay';
 import './PlayerDataContainer.scss';
 
@@ -14,30 +14,23 @@ function PlayerDataContainer() {
     
     function handleSubmit(e) {
         e.preventDefault()
-        fetch(`/player/${platform}/${region}/${battletag}`)
+        fetch(`/profile/${platform}/${region}/${battletag}`)
         .then((r) => r.json())
         .then((playerProfile) => { setPlayerProfile(playerProfile);
         });
     }
-   
-
-    
-
-    //console.log(playerProfile)
-
     
     return(
         <div className='player-data-container'>
-            <PlayerDataSearch 
-            onPlayerSubmit={handleSubmit}
-            battletag={battletag}
-            setBattletag={setBattletag}
-            region={region}
-            setRegion={setRegion}
-            platform={platform}
-            setPlatform={setPlatform}
-            />
-            <PlayerProfileDisplay player={playerProfile}/>
+            <div className='player-data-header'>
+                <h1>Player Profile</h1>
+            </div>
+            <div className='search-player-area'>
+                <PlayerDataSearch onPlayerSubmit={handleSubmit} battletag={battletag} setBattletag={setBattletag} region={region} setRegion={setRegion} platform={platform} setPlatform={setPlatform} />
+            </div>
+            <div className='player-profile-area'>
+                { playerProfile.name === undefined ? <PlayerNotFound /> : <PlayerProfileDisplay player={playerProfile}/>}
+            </div>
         </div>
     );
 };

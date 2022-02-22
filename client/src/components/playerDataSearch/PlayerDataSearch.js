@@ -35,11 +35,11 @@ function PlayerDataSearch({ onPlayerSubmit, battletag, setBattletag, region, set
         return(
         <div className='player-search-container'>
             <div className='player-search-header'>
-                <h1>Player Data</h1>
+                <h1>Search</h1>
                 <h4>Disclaimer: Stats will only appear if the players profile is set to public! All three fields must be complete, then click the magnifying glass!</h4>
             </div>
             <div className='player-search-search'>
-                <h4>Input Battletag, Gamertag, or PSN Name.</h4>
+                <h2>Input Battletag, Gamertag, or PSN Name.</h2>
                 <div className='search-submit-container'>
                     <form onSubmit={onPlayerSubmit} className='player-form'>
                         <input 
@@ -57,15 +57,17 @@ function PlayerDataSearch({ onPlayerSubmit, battletag, setBattletag, region, set
                     </form>
                 </div>
                 <p>Note: When looking up a players Battletag use "-" instead of "#" for the break between the Battletag and identifier numbers. If its a name from Xbox or PlayStation that has a "#" just put the the full name with the numbers and do not include the "#".</p>
-                <h4>Select Platform</h4>
+                <h2>Select Platform</h2>
                 <ul className='network-list'>
                     {networkMap}
                 </ul>
-                <h4>Select Region</h4>
+                <h2>Select Region</h2>
                 <ul className='area-list'>
                     {areaMap}
                 </ul>
-                
+                <div className='player-search-footer'>
+
+                </div>
             </div>
         </div>
     );

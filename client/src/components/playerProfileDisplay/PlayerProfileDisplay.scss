@@ -1,0 +1,300 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+// Whole Player Profile Display
+.player-profile-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+// Player Basic Info Container
+.player-basic-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+// Icon & Name
+.icon-name{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.icon-name h1{
+    font-size: 1.75rem;
+
+    @include tablet{
+        font-size: 2.75rem;
+    }
+    @include desktop-small{
+        font-size: 3.75rem;
+    }
+    @include desktop{
+        font-size: 4.75rem;
+    }
+    @include desktop-large{
+        font-size: 5.75rem;
+    }
+}
+.player-icon{
+    width: 4.75rem;
+    margin-right: 1rem;
+    @include tablet{
+        width: 5.75rem;
+        margin-right: 1.25rem;
+    }
+    @include desktop-small{
+        width: 6.75rem;
+        margin-right: 1.5rem;
+    }
+    @include desktop{
+        width: 7.75rem;
+        margin-right: 1.75rem;
+    }
+    @include desktop-large{
+        width: 8.75rem;
+        margin-right: 2rem;
+    }
+}
+
+// Endorsement & Level
+.endorsement-level{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.endorsement{
+    position: relative;
+    left: 17px;
+    @include tablet{
+        font-size: 2rem; 
+        left: 4px;
+    }
+    @include desktop-small{
+        font-size: 2.5rem;
+        left: -8px; 
+    }
+    @include desktop{
+        font-size: 3rem;
+        left: -16px; 
+    }
+    @include desktop-large{
+        font-size: 3.5rem; 
+        left: -28px; 
+    }
+}
+.endorsement-icon{
+    width: 7rem;
+    position: relative;
+    right: -80px;
+    @include tablet{
+        width: 8.5rem; 
+    }
+    @include desktop-small{
+        width: 9.5rem;  
+    }
+    @include desktop{
+        width: 10.5rem;
+    }
+    @include desktop-large{
+        width: 11.5rem;  
+    }
+}
+.level{
+    position: relative;
+    left: 7px;
+    @include tablet{
+        font-size: 2rem; 
+        left: 25px;
+    }
+    @include desktop-small{
+        font-size: 2.5rem; 
+        left: 32px;
+    }
+    @include desktop{
+        font-size: 3rem;
+        left: 46px;
+    }
+    @include desktop-large{
+        font-size: 3.5rem; 
+        left: 56px; 
+    }
+}
+.level-icon{
+    width: 8rem;
+    position: relative;
+    right: -85px;
+    @include tablet{
+        width: 9.5rem; 
+        right: -120px;
+    }
+    @include desktop-small{
+        width: 10.5rem;
+        right: -140px;  
+    }
+    @include desktop{
+        width: 11.5rem;
+        right: -167px; 
+    }
+    @include desktop-large{
+        width: 12.5rem;
+        right: -190px;  
+    }
+}
+.prestige-icon{
+    width: 8rem;
+    position: relative;
+    bottom: -45px;
+    right: 72px;
+    @include tablet{
+        width: 9.5rem; 
+        bottom: -55px;
+        right: 70px;
+    }
+    @include desktop-small{
+        width: 10.5rem;
+        bottom: -60px;
+        right: 75px;  
+    }
+    @include desktop{
+        width: 11.5rem;
+    }
+    @include desktop-large{
+        width: 12.5rem; 
+        bottom: -70px;
+        right: 78px;  
+    }
+}
+
+// Player Ratings Area
+.player-rating-display{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.role-sr-info-display{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+.role-sr-info-display h2{
+    font-size: 1rem;
+    @include tablet{
+        font-size: 2rem;
+    }
+    @include desktop-small{
+        font-size: 3rem;  
+    }
+    @include desktop{
+        font-size: 4rem;
+    }
+    @include desktop-large{
+        font-size: 4.5rem;  
+    }
+}
+.role-sr-info-display:nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.sr-role-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+    @include tablet{
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+    }
+    @include desktop-small{
+        width: 2.5rem;
+        height: 2.5rem;  
+    }
+    @include desktop{
+        width: 3rem;
+        height: 3rem;
+    }
+    @include desktop-large{
+        width: 3.5rem;
+        height: 3.5rem;  
+    }
+}
+.sr-icon{
+    width: 2rem;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+    @include tablet{
+        width: 3rem;
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+    }
+    @include desktop-small{
+        width: 4rem;  
+    }
+    @include desktop{
+        width: 5rem;
+    }
+    @include desktop-large{
+        width: 6rem;  
+    }
+}
+.role-sr-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.role-sr-rank{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.combined-sr-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.combined-sr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.combined-sr-display h2{
+    font-size: 1.25rem;
+    @include tablet{
+        font-size: 2rem;
+    }
+    @include desktop-small{
+        font-size: 3rem;  
+    }
+    @include desktop{
+        font-size: 4rem;
+    }
+    @include desktop-large{
+        font-size: 4.5rem;  
+    }
+}
+.combined-icon{
+    width: 3rem;
+    padding-right: 1rem;
+    @include tablet{
+        width: 4rem;
+    }
+    @include desktop-small{
+        width: 5rem;  
+    }
+    @include desktop{
+        width: 6rem;
+    }
+    @include desktop-large{
+        width: 7rem;  
+    }
+}

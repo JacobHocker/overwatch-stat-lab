@@ -15,3 +15,23 @@
     object-fit: cover;
     padding-bottom: 75rem;
 }
+
+.player-data-header{
+    border-bottom: 1px solid white;
+    border-bottom-width: 80%;
+}
+.player-data-header h1{
+    font-size: 3rem;
+    @include tablet{
+        font-size: 4rem;
+    }
+    @include desktop-small{
+        font-size: 5rem;
+    }
+    @include desktop{
+        font-size: 6rem;
+    }
+    @include desktop-large{
+        font-size: 7rem;
+    }
+}

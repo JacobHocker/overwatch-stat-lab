@@ -298,3 +298,21 @@
         width: 7rem;  
     }
 }
+// Mode Stat List Container
+.mode-stats-list-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.mode-select{
+    font-family: 'Zekton';
+    font-size: 1.25rem;
+    text-align: center;
+    background: colors.$primary-one;
+    color: colors.$blue-text;
+    outline: none;
+    border: none;
+}

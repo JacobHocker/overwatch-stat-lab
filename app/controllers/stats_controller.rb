@@ -2,8 +2,8 @@ require 'byebug'
 require 'dotenv'
 class StatsController < ApplicationController
     
-    def get_heroes 
-        url = "https://ow-api.com/v1/stats/#{params[:platform]}/#{params[:region]}/#{params[:battletag]}/heroes"
+    def get_complete 
+        url = "https://ow-api.com/v1/stats/#{params[:platform]}/#{params[:region]}/#{params[:battletag]}/complete"
         response = HTTParty.get(url) 
         render json: response 
     end

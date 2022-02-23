@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get '/heroes/:platform/:region/:battletag', to: "stats#get_heroes"
+  get '/complete/:platform/:region/:battletag', to: "stats#get_complete"
   get '/profile/:platform/:region/:battletag', to: "stats#get_profile"
   resources :players, only: [:index, :show]
   resources :teams, only: [:index, :show]

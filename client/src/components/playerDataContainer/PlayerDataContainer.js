@@ -14,7 +14,7 @@ function PlayerDataContainer() {
     
     function handleSubmit(e) {
         e.preventDefault()
-        fetch(`/profile/${platform}/${region}/${battletag}`)
+        fetch(`/complete/${platform}/${region}/${battletag}`)
         .then((r) => r.json())
         .then((playerProfile) => { setPlayerProfile(playerProfile);
         });

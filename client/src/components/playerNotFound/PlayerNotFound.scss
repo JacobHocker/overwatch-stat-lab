@@ -1,3 +1,42 @@
 @use '../../assets/partials/colors';
 @use '../../assets/partials/typography';
 @import '../../assets/partials/mixins';
+
+.player-nf-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.player-nf-container h1{
+    font-size: 2.25rem;
+    @include tablet{
+        font-size: 2.75rem;
+    }
+    @include desktop-small{
+        font-size: 3.25rem;
+    }
+    @include desktop{
+        font-size: 3.75rem;
+    }
+    @include desktop-large{
+        font-size: 4.25rem;
+    }
+}
+.player-nf-container p{
+    font-family: 'Roboto Condensed';
+    font-size: 1.2rem;
+    @include tablet{
+        font-size: 1.75rem;
+    }
+    @include desktop-small{
+        font-size: 2.25rem;
+    }
+    @include desktop{
+        font-size: 2.75rem;
+    }
+    @include desktop-large{
+        font-size: 3.25rem;
+    }
+}

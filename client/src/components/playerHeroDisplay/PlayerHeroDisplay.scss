@@ -1,0 +1,59 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+// genji color #abe50b
+// hanzo color #837c46
+// cassidy color #c23f46
+// roadhog color #54515a
+
+//Player Hero Display Container
+.player-hero-display-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.stat-hero-info{
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.stat-hero-info h2{
+    font-size: 2rem;
+}
+.down-arrow{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.up-arrow{
+    font-size: 2em;
+    margin-left: 1rem;
+}
+
+.stat-area ul{
+    list-style: none;
+    font-size: 1.25rem;
+    letter-spacing: 0.075rem;
+}
+
+.thumbnail{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    margin-left: -1.5rem;
+}
+.player-ana{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #7287b4ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+}

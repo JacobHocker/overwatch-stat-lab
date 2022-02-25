@@ -1,0 +1,80 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+// Current Comp Season Container
+.player-competitive-container{
+    margin-top: 2rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+// Player Awards Container
+.player-awards-container{
+    margin-top: 2rem;
+    width:100%;
+    background: rgba(112, 3, 200, 0.671);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.493); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player-awards-header{
+    border-bottom: 1px solid white;
+    border-bottom-width: 50%;
+    font-size: 1.25rem;
+    @include desktop {
+        font-size: 2.5rem;
+    }
+    @include desktop-large{
+        font-size: 3rem;
+    }
+}
+.player-awards{
+    letter-spacing: 0.5px;
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.5rem;
+    }
+}
+// Current Comp Games Container
+.comp-games-container{
+    margin-top: 2rem;
+    width:100%;
+    background: rgba(112, 3, 200, 0.671);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.493); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comp-games-header{
+    border-bottom: 1px solid white;
+    border-bottom-width: 50%;
+    font-size: 1.25rem;
+    @include desktop {
+        font-size: 2.5rem;
+    }
+    @include desktop-large{
+        font-size: 3rem;
+    }
+}
+.match-stats{
+    letter-spacing: 0.5px;
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.5rem;
+    }
+}
+.player-comp-hero-display{
+    width: 100%;
+}

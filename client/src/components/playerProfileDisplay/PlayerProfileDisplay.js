@@ -5,13 +5,12 @@ import PlayerCareerComp from '../playerCareerComp/PlayerCareerComp';
 import './PlayerProfileDisplay.scss';
 
 function PlayerProfileDisplay({ player }){
-    const [activeMode, setActiveMode] = useState("n/a");
+    const [activeMode, setActiveMode] = useState("comp");
     const modes = 
     [
-        {id: 1, name: 'n/a', title: 'N/A'},
-        {id: 2, name: 'quickplay', title: 'Quick Play'},
-        {id: 3, name: 'comp', title: 'Current Competitive Season'},
-        {id: 4, name: 'careercomp', title: 'Career Competitive Stats'}
+        {id: 1, name: 'quickplay', title: 'Quick Play'},
+        {id: 2, name: 'comp', title: 'Current Competitive Season'},
+        {id: 3, name: 'careercomp', title: 'Career Competitive Stats'}
     ];
     
     
@@ -29,7 +28,7 @@ function PlayerProfileDisplay({ player }){
     ));
 
     const compStats = player.competitiveStats   
-    console.log(player)
+    
     return(
         <div className="player-profile-container">
             <div className="player-basic-info-container">
@@ -63,7 +62,6 @@ function PlayerProfileDisplay({ player }){
                         </option>
                     ))}
                 </select>
-                {activeMode === 'n/a' ? <h1>Select from dropdown to view stats</h1> : <div></div>}
                 {activeMode === 'quickplay' ? <PlayerQuickPlay quickplay={player.quickPlayStats} /> : <div></div>}
                 {activeMode === 'comp' ? <PlayerCompetitive currentStats={player.competitiveStats} /> : <div></div>}
                 {activeMode === 'careercomp' ? <PlayerCareerComp careerStats={compStats.careerStats}/> : <div></div>}

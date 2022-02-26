@@ -5,47 +5,72 @@ import './PlayerHeroDisplay.scss';
 
 function PlayerHeroDisplay({ heroes }) {
     const [anaShow, setAnaShow] = useState(false);
-    const [asheShow, setAsheShow] = useState(false);
-    const [bapShow, setBapShow] = useState(false);
-    const [cassShow, setCassShow] = useState(false);
-    const [dvaShow, setDvaShow] = useState(false);
-    const [echoShow, setEchoShow] = useState(false);
-    const [genjiShow, setGenjiShow] = useState(false);
-    const [hanzoShow, setHanzoShow] = useState(false);
-    const [junkShow, setJunkShow] = useState(false);
-    const [lucioShow, setLucioShow] = useState(false);
-    const [orisaShow, setOrisaShow] = useState(false);
-    const [pharahShow, setPharahShow] = useState(false);
-    const [reaperShow, setReaperShow] = useState(false);
-    const [reinShow, setReinShow] = useState(false);
-    const [hogShow, setHogShow] = useState(false);
-    const [sigShow, setSigShow] = useState(false);
-    const [soldierShow, setSoldierShow] = useState(false);
-    const [symShow, setSymShow] = useState(false);
-    const [torbShow, setTorbShow] = useState(false);
-    const [tracerShow, setTracerShow] = useState(false);
-    const [widowShow, setWidowShow] = useState(false);
-    const [winstonShow, setWinstonShow] = useState(false);
-    const [ballShow, setBallShow] = useState(false);
-    const [zarShow, setZarShow] = useState(false);
-    const [zenShow, setZenShow] = useState(false);
-    const [moiraShow, setMoiraShow] = useState(false);
-    const [bastionShow, setBastionShow] = useState(false);
-    const [doomShow, setDoomShow] = useState(false);
-    const [brigShow, setBrigShow] = useState(false);
-    const [mercyShow, setMercyShow] = useState(false);
-    const [meiShow, setMeiShow] = useState(false);
-    const [sombraShow, setSombraShow] = useState(false);
+     const [asheShow, setAsheShow] = useState(false);
+    // const [bapShow, setBapShow] = useState(false);
+    // const [cassShow, setCassShow] = useState(false);
+    // const [dvaShow, setDvaShow] = useState(false);
+    // const [echoShow, setEchoShow] = useState(false);
+    // const [genjiShow, setGenjiShow] = useState(false);
+    // const [hanzoShow, setHanzoShow] = useState(false);
+    // const [junkShow, setJunkShow] = useState(false);
+    // const [lucioShow, setLucioShow] = useState(false);
+    // const [orisaShow, setOrisaShow] = useState(false);
+    // const [pharahShow, setPharahShow] = useState(false);
+    // const [reaperShow, setReaperShow] = useState(false);
+    // const [reinShow, setReinShow] = useState(false);
+    // const [hogShow, setHogShow] = useState(false);
+    // const [sigShow, setSigShow] = useState(false);
+    // const [soldierShow, setSoldierShow] = useState(false);
+    // const [symShow, setSymShow] = useState(false);
+    // const [torbShow, setTorbShow] = useState(false);
+    // const [tracerShow, setTracerShow] = useState(false);
+    // const [widowShow, setWidowShow] = useState(false);
+    // const [winstonShow, setWinstonShow] = useState(false);
+    // const [ballShow, setBallShow] = useState(false);
+    // const [zarShow, setZarShow] = useState(false);
+    // const [zenShow, setZenShow] = useState(false);
+    // const [moiraShow, setMoiraShow] = useState(false);
+    // const [bastionShow, setBastionShow] = useState(false);
+    // const [doomShow, setDoomShow] = useState(false);
+    // const [brigShow, setBrigShow] = useState(false);
+    // const [mercyShow, setMercyShow] = useState(false);
+    // const [meiShow, setMeiShow] = useState(false);
+    // const [sombraShow, setSombraShow] = useState(false);
+    const ana = heroes.ana 
+     const ashe = heroes.ashe 
+    // const baptiste = heroes.baptiste
+    // const bastion = heroes.bastion 
+    // const brig = heroes.brigitte
+    // const cassidy = heroes.cassidy
+    // const dva = heroes.dVa 
+    // const doomfist = heroes.doomfist 
+    // const echo = heroes.echo 
+    // const genji = heroes.genji
+    // const hanzo = heroes.hanzo 
+    // const junkrat = heroes.junkrat 
+    // const lucio = heroes.lucio 
+    // const mei = heroes.mei 
+    // const mercy = heroes.mercy 
+    // const moira = heroes.moira 
+    // const orisa = heroes.orisa 
+    // const pharah = heroes.pharah
+    // const reaper = heroes.reaper
+    // const rein = heroes.reinhardt
+    // const hog = heroes.roadhog
+    // const sigma = heroes.sigma 
+    // const soldier = heroes.soldier76 
+    // const sombra = heores.sombra 
+    // const sym = heroes.symmetra 
+    // const torb = heroes.torbjorn
+    // const tracer = heroes.tracer 
+    // const widow = heroes.widowmaker
+    // const winston = heroes.winston 
+    // const ball = heroes.wreckingBall
+    // const zen = heroes.zenyatta
     
-
-
-
-
-    
-    console.log(heroes)
     return(
         <div className="player-hero-display-container">
-            {heroes.ana ? 
+            {ana ? 
             <div className="player-ana">
                 <div className="stat-hero-info">
                     <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000013B.png" className="thumbnail" alt='hero-thumbnail' />
@@ -53,14 +78,46 @@ function PlayerHeroDisplay({ heroes }) {
                     {anaShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setAnaShow(!anaShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setAnaShow(!anaShow)}/>}
                 </div>
                 {anaShow === true ?<div className="stat-area">
-                    <ul className="player-stat-list">
-                        <li className="player-stat-item">Time Played: {heroes.ana.timePlayed}</li>
-                        <li className="player-stat-item">Games Won: {heroes.ana.gamesWon}</li>
-                        <li className="player-stat-item">Multi-Kills Best: {heroes.ana.multiKillBest}</li>
-                        <li className="player-stat-item">Weapon Accuracy: {heroes.ana.weaponAccuracy}%</li>
-                        <li className="player-stat-item">Win Percentage: {heroes.ana.winPercentage}%</li>
-                        <li className="player-stat-item">Objective Kills: {heroes.ana.objectiveKills}</li>
-                        <li className="player-stat-item">Eliminations Per Life: {heroes.ana.eliminationsPerLife}</li>
+                    <h3>Match Stats</h3>
+                    <ul className="player-stat-list"> 
+                        <li className="player-stat-item">Time Played: {ana.game.timePlayed}</li>
+                        <li className="player-stat-item">Games Played: {ana.game.gamesPlayed}</li>
+                        <li className="player-stat-item">Games Won: {ana.game.gamesWon}</li>
+                        <li className="player-stat-item">Games Lost: {ana.game.gamesLost}</li>
+                        <li className="player-stat-item">Games Tied: {ana.game.gamesTied}</li>
+                        <li className="player-stat-item">Win Percentage: {ana.game.winPercentage}</li>
+                    </ul>
+                    <h3>Average / 10 Min</h3>
+                    <ul className="player-stat-list"> 
+                        <li className="player-stat-item">Healing Done: {ana.average.healingDoneAvgPer10Min}</li>
+                        <li className="player-stat-item">Hero Damage: {ana.average.heroDamageDoneAvgPer10Min}</li>
+                        <li className="player-stat-item">Eliminations: {ana.average.eliminationsAvgPer10Min}</li>
+                        <li className="player-stat-item">Eliminations Per Life: {ana.average.eliminationsPerLife}</li>
+                        <li className="player-stat-item">Objective Kills: {ana.average.objectiveKillsAvgPer10Min}</li>
+                        <li className="player-stat-item">Objective Time: {ana.average.objectiveTimeAvgPer10Min}</li>
+                        <li className="player-stat-item">Time On Fire: {ana.average.timeSpentOnFireAvgPer10Min}</li>
+                        <li className="player-stat-item">Enemies Slept: {ana.heroSpecific.enemiesSleptAvgPer10Min}</li>
+                        <li className="player-stat-item">Nano Boost Applied: {ana.heroSpecific.nanoBoostsAppliedAvgPer10Min}</li>
+                    </ul>
+                    <h3>Hero Specific</h3>
+                    <ul className="player-stat-list"> 
+                        <li className="player-stat-item">Scoped Accuracy: {ana.heroSpecific.scopedAccuracy}</li>
+                        <li className="player-stat-item">Scoped Accuracy Best: {ana.heroSpecific.scopedAccuracyBestInGame}</li>
+                        <li className="player-stat-item">Unscoped Accuracy: {ana.heroSpecific.unscopedAccuracy}</li>
+                        <li className="player-stat-item">Unscoped Accuracy Best: {ana.heroSpecific.unscopedAccuracyBestInGame}</li>
+                        <li className="player-stat-item">Enemies Slept: {ana.heroSpecific.enemiesSlept}</li>
+                        <li className="player-stat-item">Enemies Slept Best: {ana.heroSpecific.enemiesSleptMostInGame}</li>
+                        <li className="player-stat-item">Biotic Grenade Kills: {ana.heroSpecific.bioticGrenadeKills}</li>
+                    </ul>
+                    <h3>Combat Totals</h3>
+                    <ul className="player-stat-list"> 
+                        <li className="player-stat-item">All Damage Done: {ana.combat.damageDone}</li>
+                        <li className="player-stat-item">Hero Damage: {ana.combat.heroDamageDone}</li>
+                        <li className="player-stat-item">Eliminations: {ana.combat.eliminations}</li>
+                        <li className="player-stat-item">Final Blows: {ana.combat.finalBlows}</li>
+                        <li className="player-stat-item">Objective Kills: {ana.combat.objectiveKills}</li>
+                        <li className="player-stat-item">Deaths: {ana.combat.deaths}</li>
+                        <li className="player-stat-item">Time On Fire: {ana.combat.timeSpentOnFire}</li>
                     </ul>
                 </div> 
                 : 
@@ -73,20 +130,53 @@ function PlayerHeroDisplay({ heroes }) {
                     {asheShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setAsheShow(!asheShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setAsheShow(!asheShow)}/>}
                 </div>
                 {asheShow === true ?<div className="stat-area">
-                    <ul className="player-stat-list">
-                        <li className="player-stat-item">Time Played: {heroes.ashe.timePlayed}</li>
-                        <li className="player-stat-item">Games Won: {heroes.ashe.gamesWon}</li>
-                        <li className="player-stat-item">Multi-Kills Best: {heroes.ashe.multiKillBest}</li>
-                        <li className="player-stat-item">Weapon Accuracy: {heroes.ashe.weaponAccuracy}%</li>
-                        <li className="player-stat-item">Win Percentage: {heroes.ashe.winPercentage}%</li>
-                        <li className="player-stat-item">Objective Kills: {heroes.ashe.objectiveKills}</li>
-                        <li className="player-stat-item">Eliminations Per Life: {heroes.ashe.eliminationsPerLife}</li>
+                    <h3>Match Stats</h3>
+                    <ul className="player-stat-list"> 
+                        <li className="player-stat-item">Time Played: {ashe.game.timePlayed}</li>
+                        <li className="player-stat-item">Games Played: {ashe.game.gamesPlayed}</li>
+                        <li className="player-stat-item">Games Won: {ashe.game.gamesWon}</li>
+                        <li className="player-stat-item">Games Lost: {ashe.game.gamesLost}</li>
+                        <li className="player-stat-item">Games Tied: {ashe.game.gamesTied}</li>
+                        <li className="player-stat-item">Win Percentage: {ashe.game.winPercentage}</li>
+                    </ul>
+                    <h3>Average / 10 Min</h3>
+                    <ul className="player-stat-list"> 
+                        <li className="player-stat-item">Hero Damage: {ashe.average.heroDamageDoneAvgPer10Min}</li>
+                        <li className="player-stat-item">Eliminations: {ashe.average.eliminationsAvgPer10Min}</li>
+                        <li className="player-stat-item">Eliminations Per Life: {ashe.average.eliminationsPerLife}</li>
+                        <li className="player-stat-item">Objective Kills: {ashe.average.objectiveKillsAvgPer10Min}</li>
+                        <li className="player-stat-item">Solo Kills: {ashe.average.soloKillsAvgPer10Min}</li>
+                        <li className="player-stat-item">Final Blows: {ashe.average.finalBlowsAvgPer10Min}</li>
+                        <li className="player-stat-item">Deaths: {ashe.average.deathsAvgPer10Min}</li>
+                        <li className="player-stat-item">Scoped Critical Hits: {ashe.heroSpecific.scopedCriticalHitsAvgPer10Min}</li>
+                        <li className="player-stat-item">Scoped Critical Kills: {ashe.heroSpecific.scopedCriticalHitsKillsAvgPer10Min}</li>
+                        <li className="player-stat-item">Bob Kills: {ashe.heroSpecific.bobKillsAvgPer10Min}</li>
+                    </ul>
+                    <h3>Hero Specific</h3>
+                    <ul className="player-stat-list"> 
+                        <li className="player-stat-item">Scoped Accuracy: {ashe.heroSpecific.scopedAccuracy}</li>
+                        <li className="player-stat-item">Scoped Accuracy Best: {ashe.heroSpecific.scopedAccuracyBestInGame}</li>
+                        <li className="player-stat-item">Unscoped Accuracy: {ashe.heroSpecific.unscopedAccuracy}</li>
+                        <li className="player-stat-item">Unscoped Accuracy Best: {ashe.heroSpecific.unscopedAccuracyBestInGame}</li>
+                        <li className="player-stat-item">Enemies Slept: {ashe.heroSpecific.enemiesSlept}</li>
+                        <li className="player-stat-item">Enemies Slept Best: {ashe.heroSpecific.enemiesSleptMostInGame}</li>
+                        <li className="player-stat-item">Biotic Grenade Kills: {ashe.heroSpecific.bioticGrenadeKills}</li>
+                    </ul>
+                    <h3>Combat Totals</h3>
+                    <ul className="player-stat-list"> 
+                        <li className="player-stat-item">All Damage Done: {ashe.combat.damageDone}</li>
+                        <li className="player-stat-item">Hero Damage: {ashe.combat.heroDamageDone}</li>
+                        <li className="player-stat-item">Eliminations: {ashe.combat.eliminations}</li>
+                        <li className="player-stat-item">Final Blows: {ashe.combat.finalBlows}</li>
+                        <li className="player-stat-item">Objective Kills: {ashe.combat.objectiveKills}</li>
+                        <li className="player-stat-item">Deaths: {ashe.combat.deaths}</li>
+                        <li className="player-stat-item">Time On Fire: {ashe.combat.timeSpentOnFire}</li>
                     </ul>
                 </div>
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.baptiste ? <div className="player-bap">
+            {/*{heroes.baptiste ? <div className="player-bap">
                 <div className="stat-hero-info">
                     <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000221.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Baptiste</h2>
@@ -126,10 +216,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.dVa ? <div className="player-dva" onClick={() => setDvaShow(!dvaShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000007A.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.dVa ? <div className="player-dva">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000007A.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>D.Va</h2>
+                    {dvaShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setDvaShow(!dvaShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setDvaShow(!dvaShow)}/>}
                 </div>
                 {dvaShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -145,10 +236,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.echo ? <div className="player-echo" onClick={() => setEchoShow(!echoShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000206.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.echo ? <div className="player-echo">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000206.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Echo</h2>
+                    {echoShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setEchoShow(!echoShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setEchoShow(!echoShow)}/>}
                 </div>
                 {echoShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -164,10 +256,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.genji ? <div className="player-genji" onClick={() => setGenjiShow(!genjiShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000029.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.genji ? <div className="player-genji">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000029.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Genji</h2>
+                    {genjiShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setGenjiShow(!genjiShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setGenjiShow(!genjiShow)}/>}
                 </div>
                 {genjiShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -183,12 +276,13 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.hanzo ? <div className="player-hanzo" onClick={() => setHanzoShow(!hanzoShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000005.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.hanzo ? <div className="player-hanzo">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000005.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Hanzo</h2>
+                    {hanzoShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setHanzoShow(!hanzoShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setHanzoShow(!hanzoShow)}/>}
                 </div>
-                {genjiShow === true ?<div className="stat-area">
+                {hanzoShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
                         <li className="player-stat-item">Time Played: {heroes.hanzo.timePlayed}</li>
                         <li className="player-stat-item">Games Won: {heroes.hanzo.gamesWon}</li>
@@ -202,10 +296,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.junkrat ? <div className="player-junk" onClick={() => setJunkShow(!junkShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000065.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.junkrat ? <div className="player-junk">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000065.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Junkrat</h2>
+                    {junkShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setJunkShow(!junkShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setJunkShow(!junkShow)}/>}
                 </div>
                 {junkShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -221,10 +316,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.lucio ? <div className="player-lucio" onClick={() => setLucioShow(!lucioShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000079.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.lucio ? <div className="player-lucio">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000079.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Lucio</h2>
+                    {lucioShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setLucioShow(!lucioShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setLucioShow(!lucioShow)}/>}
                 </div>
                 {lucioShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -240,10 +336,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.orisa ? <div className="player-orisa" onClick={() => setOrisaShow(!orisaShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000013E.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.orisa ? <div className="player-orisa">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000013E.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Orisa</h2>
+                    {orisaShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setOrisaShow(!orisaShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setOrisaShow(!orisaShow)}/>}
                 </div>
                 {orisaShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -259,10 +356,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.pharah ? <div className="player-pharah" onClick={() => setPharahShow(!pharahShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000008.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.pharah ? <div className="player-pharah">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000008.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Pharah</h2>
+                    {pharahShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setPharahShow(!pharahShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setPharahShow(!pharahShow)}/>}
                 </div>
                 {pharahShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -278,10 +376,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.reaper ? <div className="player-reaper" onClick={() => setReaperShow(!reaperShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000002.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.reaper ? <div className="player-reaper">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000002.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Reaper</h2>
+                    {reaperShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setReaperShow(!reaperShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setReaperShow(!reaperShow)}/>}
                 </div>
                 {reaperShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -297,10 +396,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.reinhardt ? <div className="player-rein" onClick={() => setReinShow(!reinShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000007.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.reinhardt ? <div className="player-rein">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000007.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Reinhardt</h2>
+                    {reinShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setReinShow(!reinShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setReinShow(!reinShow)}/>}
                 </div>
                 {reinShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -316,10 +416,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.roadhog ? <div className="player-hog" onClick={() => setHogShow(!hogShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000040.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.roadhog ? <div className="player-hog">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000040.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Roadhog</h2>
+                    {hogShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setHogShow(!hogShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setHogShow(!hogShow)}/>}
                 </div>
                 {hogShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -335,10 +436,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.sigma ? <div className="player-sigma" onClick={() => setSigShow(!sigShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000023B.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.sigma ? <div className="player-sigma">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000023B.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Sigma</h2>
+                    {sigShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setSigShow(!sigShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setSigShow(!sigShow)}/>}
                 </div>
                 {sigShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -354,10 +456,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.soldier76 ? <div className="player-soldier" onClick={() => setSoldierShow(!soldierShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000006E.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.soldier76 ? <div className="player-soldier">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000006E.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Soldier 76</h2>
+                    {soldierShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setSoldierShow(!soldierShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setSoldierShow(!soldierShow)}/>}
                 </div>
                 {soldierShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -373,10 +476,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.sombra ? <div className="player-sombra" onClick={() => setSombraShow(!sombraShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000012E.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.sombra ? <div className="player-sombra">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000012E.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Sombra</h2>
+                    {sombraShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setSombraShow(!sombraShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setSombraShow(!sombraShow)}/>}
                 </div>
                 {sombraShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -392,10 +496,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.symmetra ? <div className="player-sym" onClick={() => setSymShow(!symShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000016.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.symmetra ? <div className="player-sym">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000016.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Symmetra</h2>
+                    {symShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setSymShow(!symShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setSymShow(!symShow)}/>}
                 </div>
                 {symShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -411,10 +516,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.torbjorn ? <div className="player-torb" onClick={() => setTorbShow(!torbShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000006.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.torbjorn ? <div className="player-torb">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000006.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Torbjorn</h2>
+                    {torbShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setTorbShow(!torbShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setTorbShow(!torbShow)}/>}
                 </div>
                 {torbShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -430,10 +536,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.tracer ? <div className="player-tracer" onClick={() => setTracerShow(!tracerShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000003.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.tracer ? <div className="player-tracer">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000003.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Tracer</h2>
+                    {tracerShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setTracerShow(!tracerShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setTracerShow(!tracerShow)}/>}
                 </div>
                 {tracerShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -449,10 +556,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.widowmaker ? <div className="player-widow" onClick={() => setWidowShow(!widowShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000000A.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.widowmaker ? <div className="player-widow">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000000A.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Widowmaker</h2>
+                    {widowShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setWidowShow(!widowShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setWidowShow(!widowShow)}/>}
                 </div>
                 {widowShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -468,10 +576,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.winston ? <div className="player-winston" onClick={() => setWinstonShow(!winstonShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000009.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.winston ? <div className="player-winston">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000009.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Winston</h2>
+                    {winstonShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setWinstonShow(!winstonShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setWinstonShow(!winstonShow)}/>}
                 </div>
                 {winstonShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -487,10 +596,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.wreckingBall ? <div className="player-ball" onClick={() => setBallShow(!ballShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E00000000001CA.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.wreckingBall ? <div className="player-ball">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E00000000001CA.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Wrecking Ball</h2>
+                    {ballShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setBallShow(!ballShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setBallShow(!ballShow)}/>}
                 </div>
                 {ballShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -506,10 +616,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.zarya ? <div className="player-zarya" onClick={() => setZarShow(!zarShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000068.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.zarya ? <div className="player-zarya">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000068.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Zarya</h2>
+                    {zarShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setZarShow(!zarShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setZarShow(!zarShow)}/>}
                 </div>
                 {zarShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -525,10 +636,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.zenyatta ? <div className="player-zen" onClick={() => setZenShow(!zenShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000020.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.zenyatta ? <div className="player-zen">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000020.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Zenyatta</h2>
+                    {zenShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setZenShow(!zenShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setZenShow(!zenShow)}/>}
                 </div>
                 {zenShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -544,10 +656,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.mercy ? <div className="player-mercy" onClick={() => setMercyShow(!mercyShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000004.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.mercy ? <div className="player-mercy">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000004.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Mercy</h2>
+                    {mercyShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setMercyShow(!mercyShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setMercyShow(!mercyShow)}/>}
                 </div>
                 {mercyShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -563,10 +676,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.brigitte ? <div className="player-brig" onClick={() => setBrigShow(!brigShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000195.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.brigitte ? <div className="player-brig">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000195.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Brigitte</h2>
+                    {brigShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setBrigShow(!brigShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setBrigShow(!brigShow)}/>}
                 </div>
                 {brigShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -582,10 +696,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.bastion ? <div className="player-bastion" onClick={() => setBastionShow(!bastionShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000015.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.bastion ? <div className="player-bastion">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000015.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Bastion</h2>
+                    {bastionShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setBastionShow(!bastionShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setBastionShow(!bastionShow)}/>}
                 </div>
                 {bastionShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -601,10 +716,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.mei ? <div className="player-mei" onClick={() => setMeiShow(!meiShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E00000000000DD.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.mei ? <div className="player-mei">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E00000000000DD.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Mei</h2>
+                    {meiShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setMeiShow(!meiShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setMeiShow(!meiShow)}/>}
                 </div>
                 {meiShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -620,10 +736,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.doomfist ? <div className="player-doom" onClick={() => setDoomShow(!doomShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000012F.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.doomfist ? <div className="player-doom">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000012F.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Doomfist</h2>
+                    {doomShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setDoomShow(!doomShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setDoomShow(!doomShow)}/>}
                 </div>
                 {doomShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -639,10 +756,11 @@ function PlayerHeroDisplay({ heroes }) {
                 :
                 <div></div>}
             </div>: <div></div>}
-            {heroes.moira ? <div className="player-moira" onClick={() => setMoiraShow(!moiraShow)}>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E00000000001A2.png" className="thumbnail" alt='hero-thumbnail' />
+            {heroes.moira ? <div className="player-moira">
                 <div className="stat-hero-info">
+                    <img src="https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E00000000001A2.png" className="thumbnail" alt='hero-thumbnail' />
                     <h2>Moira</h2>
+                    {moiraShow === false ? <BsCaretDownSquareFill className='down-arrow' onClick={() => setDoomShow(!moiraShow)}/> : <BsCaretUpSquareFill className='up-arrow' onClick={() => setMoiraShow(!moiraShow)}/>}
                 </div>
                 {moiraShow === true ?<div className="stat-area">
                     <ul className="player-stat-list">
@@ -657,7 +775,7 @@ function PlayerHeroDisplay({ heroes }) {
                 </div>
                 :
                 <div></div>}
-            </div>: <div></div>}
+            </div>: <div></div>} */}
         </div>
     );
 };

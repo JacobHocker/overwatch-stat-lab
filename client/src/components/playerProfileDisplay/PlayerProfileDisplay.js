@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import PlayerQuickPlay from '../playerQuickPlay/PlayerQuickPlay';
 import PlayerCompetitive from '../playerCompetitive/PlayerCompetitive';
-import PlayerCareerComp from '../playerCareerComp/PlayerCareerComp';
 import './PlayerProfileDisplay.scss';
 
 function PlayerProfileDisplay({ player }){
@@ -10,7 +9,6 @@ function PlayerProfileDisplay({ player }){
     [
         {id: 1, name: 'quickplay', title: 'Quick Play'},
         {id: 2, name: 'comp', title: 'Current Competitive Season'},
-        {id: 3, name: 'careercomp', title: 'Career Competitive Stats'}
     ];
     
     
@@ -27,7 +25,7 @@ function PlayerProfileDisplay({ player }){
         </div>
     ));
 
-    const compStats = player.competitiveStats   
+       
     
     return(
         <div className="player-profile-container">
@@ -63,8 +61,7 @@ function PlayerProfileDisplay({ player }){
                     ))}
                 </select>
                 {activeMode === 'quickplay' ? <PlayerQuickPlay quickplay={player.quickPlayStats} /> : <div></div>}
-                {activeMode === 'comp' ? <PlayerCompetitive currentStats={player.competitiveStats} /> : <div></div>}
-                {activeMode === 'careercomp' ? <PlayerCareerComp careerStats={compStats.careerStats}/> : <div></div>}
+                {activeMode === 'comp' ? <PlayerCompetitive currentStats={player.competitiveStats.careerStats} /> : <div></div>}
             </div>
         </div>
     );

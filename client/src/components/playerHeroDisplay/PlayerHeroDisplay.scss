@@ -2,10 +2,6 @@
 @use '../../assets/partials/typography';
 @import '../../assets/partials/mixins';
 
-// genji color #abe50b
-// hanzo color #837c46
-// cassidy color #c23f46
-// roadhog color #54515a
 
 //Player Hero Display Container
 .player-hero-display-container{
@@ -22,38 +18,1054 @@
     align-items: center; 
 }
 .stat-hero-info h2{
-    font-size: 2rem;
+    color: black;
+    font-size: 1.5rem;
+    @include tablet {
+        font-size: 2rem;
+    }
+    @include desktop-small{
+        font-size: 2.5rem;
+    }
+    @include desktop {
+        font-size: 3rem;
+    }
+    @include desktop-large{
+        font-size: 3.5rem;
+    }
 }
 .down-arrow{
-    font-size: 2rem;
+    color: black;
+    font-size: 1.5rem;
     margin-left: 1rem;
+    border-radius: 2px;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 4px 1px rgba(197, 2, 197, 0.795);  
+    }
+    @include tablet {
+        font-size: 2rem;
+    }
+    @include desktop-small{
+        font-size: 3rem;
+    }
+    @include desktop {
+        font-size: 3.5rem;
+    }
+    @include desktop-large{
+        font-size: 4rem;
+    }
 }
 .up-arrow{
-    font-size: 2em;
+    color: black;
+    font-size: 1.5rem;
     margin-left: 1rem;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 4px 1px rgba(197, 2, 197, 0.795); 
+    }
+    @include tablet {
+        font-size: 2rem;
+    }
+    @include desktop-small{
+        font-size: 2.5rem;
+    }
+    @include desktop {
+        font-size: 3rem;
+    }
+    @include desktop-large{
+        font-size: 3.5rem;
+    }
+}
+.stat-area h3{
+    font-size: 1.5rem;
+    color: black;
+    margin-top: -0.5rem;
+    @include tablet {
+        font-size: 2rem;
+    }
+    @include desktop-small{
+        font-size: 2.5rem;
+    }
+    @include desktop {
+        font-size: 3rem;
+    }
+    @include desktop-large{
+        font-size: 3.5rem;
+    }
 }
 
 .stat-area ul{
+    font-family: 'Roboto Condensed';
+    color: black;
     list-style: none;
     font-size: 1.25rem;
-    letter-spacing: 0.075rem;
+    margin-top: -1rem;
+    width: 100%;
+    @include tablet {
+        font-size: 1.5rem;
+    }
+    @include desktop-small{
+        font-size: 1.75rem;
+    }
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.25rem;
+    }
+}
+.player-stat-item{
+    margin-top: 0.5rem;
 }
 
 .thumbnail{
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     margin: 1rem;
     border-radius: 10px;
     margin-left: -1.5rem;
+    @include tablet {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    @include desktop-small{
+        width: 4rem;
+        height: 4rem;
+    }
+    @include desktop {
+        width: 5rem;
+        height: 5rem;
+    }
+    @include desktop-large{
+        width: 6rem;
+        height: 6rem;
+    }
 }
 .player-ana{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     background: #7287b4ef;
     border-radius: 5px;
     box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-ashe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #68696def;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-bap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #51b0c4ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-cass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #a85c5fef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-dva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #e99ac9ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-echo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #9dc7efef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-genji{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #94ef46ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-hanzo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #b6b389ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-junk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #eabf50ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-lucio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #85c75cef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-orisa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #4b944aef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-pharah{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #3a7ac7ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-reaper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #7a3d51ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-rein{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #939badef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-hog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #b68f55ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-sigma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #929fa5ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-soldier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #6e7894ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-sombra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #7159b3ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-sym{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #8ebdcaef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-torb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #bb777cef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-tracer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #d0944fef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-widow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #a068a2ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-winston{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #9da2b4ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-ball{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #dd924aef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-zarya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #ec85baef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-zen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #eae58aef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-mercy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #ebe7c1ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-brig{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #865d5bef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-bastion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #798a77ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-mei{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #6fa3e0ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-doom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #824e4fef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.player-moira{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    background: #9673e9ef;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.589);
+    @include tablet {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+    @include desktop-small{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    @include desktop {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    @include desktop-large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }

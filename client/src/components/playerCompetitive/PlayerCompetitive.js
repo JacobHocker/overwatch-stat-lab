@@ -25,7 +25,7 @@ function PlayerCompetitive({ currentStats }) {
         
     
        
-    console.log(currentStats)
+    
     
     return(
         <div className="player-competitive-container">

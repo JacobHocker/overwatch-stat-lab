@@ -60,7 +60,7 @@ function PlayerProfileDisplay({ player }){
                         </option>
                     ))}
                 </select>
-                {activeMode === 'quickplay' ? <PlayerQuickPlay quickplay={player.quickPlayStats} /> : <div></div>}
+                {activeMode === 'quickplay' ? <PlayerQuickPlay currentStats={player.quickPlayStats} /> : <div></div>}
                 {activeMode === 'comp' ? <PlayerCompetitive currentStats={player.competitiveStats.careerStats} /> : <div></div>}
             </div>
         </div>

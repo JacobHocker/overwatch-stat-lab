@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   
+  
+  resources :respnses
+  resources :comments
+  resources :posts
+  resources :users
   get '/complete/:platform/:region/:battletag', to: "stats#get_complete"
   get '/profile/:platform/:region/:battletag', to: "stats#get_profile"
   resources :players, only: [:index, :show]

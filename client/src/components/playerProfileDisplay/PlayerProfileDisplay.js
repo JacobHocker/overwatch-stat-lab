@@ -35,11 +35,26 @@ function PlayerProfileDisplay({ player }){
                     <h1>{player.name}</h1>
                 </div>
                 <div className="endorsement-level">
-                    <img src={player.endorsementIcon} className='endorsement-icon' alt={`${player.name}-endorsement`} />
-                    <h2 className="endorsement">{player.endorsement}</h2>
-                    <img src={player.levelIcon} className='level-icon' alt={`${player.name}-level`} />
-                    <h2 className="level">{player.level}</h2>
-                    <img src={player.prestigeIcon} className='prestige-icon' alt={`${player.name}-prestige`} />
+                    <div className="endorsement-container">
+                        <div className="endorsement-icon-div">
+                            <img src={player.endorsementIcon} className='endorsement-icon' alt={`${player.name}-endorsement`} />
+                        </div>
+                        <div className="endorsement-div">
+                            <h2 className="endorsement">{player.endorsement}</h2>
+                        </div>
+                    </div>
+                    <div className="level-container">
+                        <div className="level-icon-div">
+                            <img src={player.levelIcon} className='level-icon' alt={`${player.name}-level`} />
+                        </div>
+                        <div className="level-div">
+                            <h2 className="level">{player.level}</h2>
+                        </div>
+                        {player.prestigeIcon ? 
+                        <div className="prestige-div"> 
+                            <img src={player.prestigeIcon} className='prestige-icon' alt={`${player.name}-prestige`} /> 
+                        </div> : <div></div>}
+                    </div>
                 </div>
             </div>
             <div className="player-rating-display">

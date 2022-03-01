@@ -33,23 +33,23 @@ function NavBar() {
                <nav>
                {(toggleMenu || screenWidth > 600) && (
                     <ul className="nav-list">
-                    <li className="nav-items">
-                        <NavLink to='/heroes' className='link-item'>Hero Gallery</NavLink>    
-                    </li>
-                    <li className="nav-items">
-                        <NavLink to='/maps' className='link-item'>Maps</NavLink>
-                    </li>
-                    <li className="nav-items">
-                        <NavLink to='/overwatch-league' className='link-item'>
-                            Overwatch League    
-                        </NavLink>
-                    </li>
-                    <li className="nav-items">
-                        <NavLink to='/player-page' className='link-item'>
-                            Player Stats   
-                        </NavLink>
-                    </li>
-                    <li className="nav-items">LFG</li>
+                        <li className="nav-items">
+                            <NavLink to='/player-page' className='link-item'>
+                                Player Stats   
+                            </NavLink>
+                        </li>
+                        <li className="nav-items">LFG</li>
+                        <li className="nav-items">
+                            <NavLink to='/heroes' className='link-item'>Hero Gallery</NavLink>    
+                        </li>
+                        <li className="nav-items">
+                            <NavLink to='/maps' className='link-item'>Maps</NavLink>
+                        </li>
+                        <li className="nav-items">
+                            <NavLink to='/overwatch-league' className='link-item'>
+                                Overwatch League    
+                            </NavLink>
+                        </li>
                     </ul>
                 )}
                    <button className="nav-btn" onClick={toggleNav}>

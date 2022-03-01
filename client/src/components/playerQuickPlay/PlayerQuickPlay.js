@@ -3,7 +3,6 @@ import PlayerHeroDisplay from "../playerHeroDisplay/PlayerHeroDisplay";
 import './PlayerQuickPlay.scss';
 
 function PlayerQuickPlay({ currentStats }) {
-    console.log(currentStats)
     const [activeStatDisplay, setActiveStatDisplay] = useState('average');
     const statSections = [
         { id:0, name: 'assists', title: 'Assists'},
@@ -29,7 +28,7 @@ function PlayerQuickPlay({ currentStats }) {
     
     
     return(
-        <div className="player-competitive-container">
+        <div className="player-qp-container">
             <h1>Select Set Of Stats</h1>
             <select className="section-select" name="mode" value={activeStatDisplay} onChange={(e) => setActiveStatDisplay(e.target.value)}>
                 {statSections.map((section) => (
@@ -38,8 +37,8 @@ function PlayerQuickPlay({ currentStats }) {
                     </option>
                 ))}
             </select>
-            {activeStatDisplay === 'combat'? <div className="comp-combat-container">
-                <div className="comp-combat-header">
+            {activeStatDisplay === 'combat'? <div className="qp-combat-container">
+                <div className="qp-combat-header">
                     <h1>All Combat Totals</h1>
                 </div>
                 <div className="combat-stats">
@@ -78,8 +77,8 @@ function PlayerQuickPlay({ currentStats }) {
                     </div>
                 </div>
             </div> : <div></div>}
-            {activeStatDisplay === 'assists'? <div className="comp-assists-container">
-                <div className="comp-assists-header">
+            {activeStatDisplay === 'assists'? <div className="qp-assists-container">
+                <div className="qp-assists-header">
                     <h1>Assists</h1>
                 </div>
                 <div className="assists-stats">
@@ -97,8 +96,8 @@ function PlayerQuickPlay({ currentStats }) {
                     </div>
                 </div>
             </div>  : <div></div>}
-            {activeStatDisplay === 'average'? <div className="comp-average-container">
-                <div className="comp-average-header">
+            {activeStatDisplay === 'average'? <div className="qp-average-container">
+                <div className="qp-average-header">
                     <h1>Averages / 10 Min</h1>
                 </div>
                 <div className="average-stats">
@@ -137,8 +136,8 @@ function PlayerQuickPlay({ currentStats }) {
                     </div>
                 </div>
             </div>   : <div></div>}
-            {activeStatDisplay === 'best'? <div className="comp-best-container">
-                <div className="comp-best-header">
+            {activeStatDisplay === 'best'? <div className="qp-best-container">
+                <div className="qp-best-header">
                     <h1>Best In A Match</h1>
                 </div>
                 <div className="best-stats">
@@ -183,8 +182,8 @@ function PlayerQuickPlay({ currentStats }) {
                     </div>
                 </div>
             </div>    : <div></div>}
-            {activeStatDisplay === 'games'? <div className="comp-games-container">
-                <div className="comp-games-header">
+            {activeStatDisplay === 'games'? <div className="qp-games-container">
+                <div className="qp-games-header">
                     <h1>Match Stats</h1>
                 </div>
                 <div className="match-stats">
@@ -227,7 +226,7 @@ function PlayerQuickPlay({ currentStats }) {
                     </div>
                 </div>
             </div> : <div></div>}
-            <div className="player-comp-hero-display">
+            <div className="player-qp-hero-display">
                 <h1>See Hero Stats Below</h1>
             <PlayerHeroDisplay heroes={currentStats.careerStats}/>
             </div>

@@ -1,0 +1,256 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+// Current Comp Season Container
+.player-qp-container{
+    margin-top: 2rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+// Player Awards Container
+.player-awards-container{
+    margin-top: 2rem;
+    width:100%;
+    background: rgba(112, 3, 200, 0.671);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.493); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player-awards-header{
+    border-bottom: 1px solid white;
+    border-bottom-width: 50%;
+    font-size: 1.25rem;
+    @include desktop {
+        font-size: 2.5rem;
+    }
+    @include desktop-large{
+        font-size: 3rem;
+    }
+}
+.player-awards{
+    letter-spacing: 0.5px;
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.5rem;
+    }
+}
+// Current Comp Games Container
+.qp-games-container{
+    margin-top: 2rem;
+    width:100%;
+    background: rgba(112, 3, 200, 0.671);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.493); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qp-games-header{
+    border-bottom: 1px solid white;
+    border-bottom-width: 50%;
+    font-size: 1.25rem;
+    @include desktop {
+        font-size: 2.5rem;
+    }
+    @include desktop-large{
+        font-size: 3rem;
+    }
+}
+.match-stats{
+    letter-spacing: 0.5px;
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.5rem;
+    }
+}
+// Comp Average Container
+.qp-average-container{
+    margin-top: 2rem;
+    width:100%;
+    background: rgba(112, 3, 200, 0.671);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.493); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qp-average-header{
+    border-bottom: 1px solid white;
+    border-bottom-width: 50%;
+    font-size: 1.25rem;
+    @include desktop {
+        font-size: 2.5rem;
+    }
+    @include desktop-large{
+        font-size: 3rem;
+    }
+}
+.average-stats{
+    letter-spacing: 0.5px;
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.5rem;
+    }
+}
+// Comp Assists Container
+.qp-combat-container{
+    margin-top: 2rem;
+    width:100%;
+    background: rgba(112, 3, 200, 0.671);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.493); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qp-combat-header{
+    border-bottom: 1px solid white;
+    border-bottom-width: 50%;
+    font-size: 1.25rem;
+    @include desktop {
+        font-size: 2.5rem;
+    }
+    @include desktop-large{
+        font-size: 3rem;
+    }
+}
+.combat-stats{
+    letter-spacing: 0.5px;
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.5rem;
+    }
+}
+// Comp Assists Container
+.qp-best-container{
+    margin-top: 2rem;
+    width:100%;
+    background: rgba(112, 3, 200, 0.671);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.493); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qp-best-header{
+    border-bottom: 1px solid white;
+    border-bottom-width: 50%;
+    font-size: 1.25rem;
+    @include desktop {
+        font-size: 2.5rem;
+    }
+    @include desktop-large{
+        font-size: 3rem;
+    }
+}
+.combat-stats{
+    letter-spacing: 0.5px;
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.5rem;
+    }
+}
+// Comp Assists Container
+.qp-assists-container{
+    margin-top: 2rem;
+    width:100%;
+    background: rgba(112, 3, 200, 0.671);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.493); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qp-assists-header{
+    border-bottom: 1px solid white;
+    border-bottom-width: 50%;
+    font-size: 1.25rem;
+    @include desktop {
+        font-size: 2.5rem;
+    }
+    @include desktop-large{
+        font-size: 3rem;
+    }
+}
+.assists-stats{
+    letter-spacing: 0.5px;
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.5rem;
+    }
+}
+// Player Comp Hero Display
+.player-qp-hero-display{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border-top: 1px solid white;
+}
+.player-qp-hero-display h1{
+    font-size: 2.25rem;
+    @include tablet {
+        font-size: 2.5rem;
+    }
+    @include desktop-small{
+        font-size: 3.25rem;
+    }
+    @include desktop {
+        font-size: 3.75rem;
+    }
+    @include desktop-large{
+        font-size: 4.25rem;
+    }
+}
+
+.section-select{
+    font-family: 'Zekton';
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    text-align: center;
+    background: colors.$primary-one;
+    color: colors.$blue-text;
+    outline: none;
+    border: none;
+    &:hover{
+        box-shadow: inset 0 0 1px 2px rgba(0, 162, 255, 0.603);
+    }
+    @include tablet{
+        font-size: 1.75rem;
+    }
+    @include desktop-small{
+        font-size: 2.5rem;  
+    }
+    @include desktop{
+        font-size: 3.25rem;
+    }
+    @include desktop-large{
+        font-size: 3.75rem; 
+    }
+}

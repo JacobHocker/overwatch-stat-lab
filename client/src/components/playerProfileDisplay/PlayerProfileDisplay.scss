@@ -65,33 +65,88 @@
 // Endorsement & Level
 .endorsement-level{
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+.endorsement-container{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 7rem; 
 }
-.endorsement{
-    position: relative;
-    left: 17px;
+.endorsement-div{
+    margin-top: -5.75rem;
     @include tablet{
-        font-size: 2rem; 
-        left: 4px;
+        margin-top: -7rem; 
     }
     @include desktop-small{
-        font-size: 2.5rem;
-        left: -8px; 
+        margin-top: -8.5rem; 
     }
     @include desktop{
-        font-size: 3rem;
-        left: -16px; 
+        margin-top: -9.75rem; 
     }
     @include desktop-large{
-        font-size: 3.5rem; 
-        left: -28px; 
+        margin-top: -11.25rem;  
+    }
+}
+.level-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    
+}
+.level-div{
+    margin-top: -6.25rem;
+    @include tablet{
+        margin-top: -7.75rem; 
+    }
+    @include desktop-small{
+        margin-top: -9rem; 
+    }
+    @include desktop{
+        margin-top: -10.5rem; 
+    }
+    @include desktop-large{
+        margin-top: -11.5rem;  
+    }
+}
+.prestige-div{
+    margin-top: -1.25rem;
+    @include tablet{
+        margin-top: -1.75rem; 
+    }
+    @include desktop-small{
+        margin-top: -2.25rem; 
+    }
+    @include desktop{
+        margin-top: -2.75rem; 
+    }
+    @include desktop-large{
+        margin-top: -3.25rem;  
+    }
+}
+.endorsement{
+    font-size: 1.5rem;
+    @include tablet{
+        font-size: 2rem; 
+    }
+    @include desktop-small{
+        font-size: 2.5rem; 
+    }
+    @include desktop{
+        font-size: 3rem; 
+    }
+    @include desktop-large{
+        font-size: 3.5rem;  
     }
 }
 .endorsement-icon{
     width: 7rem;
-    position: relative;
-    right: -80px;
     @include tablet{
         width: 8.5rem; 
     }
@@ -106,68 +161,49 @@
     }
 }
 .level{
-    position: relative;
-    left: 7px;
+    font-size: 1.5rem;
+    
     @include tablet{
         font-size: 2rem; 
-        left: 25px;
     }
     @include desktop-small{
         font-size: 2.5rem; 
-        left: 32px;
     }
     @include desktop{
         font-size: 3rem;
-        left: 46px;
     }
     @include desktop-large{
-        font-size: 3.5rem; 
-        left: 56px; 
+        font-size: 3.5rem;  
     }
 }
 .level-icon{
     width: 8rem;
-    position: relative;
-    right: -85px;
     @include tablet{
-        width: 9.5rem; 
-        right: -120px;
+        width: 9.5rem;  
     }
     @include desktop-small{
-        width: 10.5rem;
-        right: -140px;  
+        width: 10.5rem;  
     }
     @include desktop{
-        width: 11.5rem;
-        right: -167px; 
+        width: 11.5rem; 
     }
     @include desktop-large{
-        width: 12.5rem;
-        right: -190px;  
+        width: 12.5rem; 
     }
 }
 .prestige-icon{
     width: 8rem;
-    position: relative;
-    bottom: -45px;
-    right: 72px;
     @include tablet{
-        width: 9.5rem; 
-        bottom: -55px;
-        right: 70px;
+        width: 9.5rem;  
     }
     @include desktop-small{
-        width: 10.5rem;
-        bottom: -60px;
-        right: 75px;  
+        width: 10.5rem; 
     }
     @include desktop{
         width: 11.5rem;
     }
     @include desktop-large{
-        width: 12.5rem; 
-        bottom: -70px;
-        right: 78px;  
+        width: 12.5rem;   
     }
 }
 

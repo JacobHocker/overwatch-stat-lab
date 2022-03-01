@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import AllHeroCardContainer from './components/allHeroCardContainer/AllHeroCardContainer';
 import HeroInfoPageContainer from './components/heroInfoPageContainer/HeroInfoPageContainer';
 import Home from './components/home/Home';
+import LfgContainer from './components/lfg-container/LfgContainer';
 import MapCardContainer from './components/mapCardContainer/MapCardContainer';
 import MapInfoPage from './components/mapInfoPage/MapInfoPage';
 import NavBar from './components/navbar/NavBar';
@@ -23,6 +24,7 @@ function App() {
         <Route path='overwatch-league' element={<OwlPageContainer />} />
         <Route path='teams/:id' element={<OwlTeamPage />} />
         <Route path='player-page' element={<PlayerDataContainer />} />
+        <Route path='looking-for-group' element={<LfgContainer />} />
       </Routes>
     </section>
   );

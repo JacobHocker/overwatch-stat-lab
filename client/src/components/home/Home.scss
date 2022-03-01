@@ -2,6 +2,8 @@
 @use '../../assets/partials/typography';
 @import '../../assets/partials/mixins';
 
+
+// HOME PAGE CONTAINER
 .home-page-container {
     display: flex;
     flex-direction: column;
@@ -63,6 +65,14 @@
     align-items: center;
     width: 100%;
 }
+// FEATURES HEADER
+.features-header{
+    width: 80%;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .features-header h2{
     font-size: 3rem;
     @include tablet{
@@ -78,14 +88,82 @@
         font-size: 5rem;
     }
 }
-.features-player-stats{
+//FEATURE CONTAINER
+.header-rank{
+    width: 2.5rem;
+    @include tablet{
+        width: 4.5rem;
+    }
+    @include desktop-small{
+        width: 6.5rem;
+    }
+    @include desktop{
+        width: 8.5rem;
+    }
+    @include desktop-large{
+        width: 10.5rem;
+    }
+}
+.feature-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.features-player-stats h3{
+.feature-container h3{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @include tablet{
+        font-size: 3rem;
+    }
+    @include desktop-small{
+        font-size: 3.5rem;
+    }
+    @include desktop{
+        font-size: 4rem;
+    }
+    @include desktop-large{
+        font-size: 4.5rem;
+    }
+}
+.feature-container h4{
+    font-size: 1.25rem;
+    @include tablet{
+        font-size: 1.75rem;
+    }
+    @include desktop-small{
+        font-size: 2.25rem;
+    }
+    @include desktop{
+        font-size: 2.75rem;
+    }
+    @include desktop-large{
+        font-size: 3.25rem;
+    }
+}
+.feature-container p{
+    font-family: 'Roboto Condensed';
+    font-size: 1.25rem;
+    @include tablet{
+        font-size: 1.5rem;
+    }
+    @include desktop-small{
+        font-size: 1.75rem;
+    }
+    @include desktop{
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.25rem;
+    }
+    
+}
+.feature-header{
+    display: flex;
+    align-items: center;
+    color: white;
     font-size: 2.5rem;
     @include tablet{
         font-size: 3rem;
@@ -100,11 +178,67 @@
         font-size: 4.5rem;
     }
 }
-player-stats-body p{
-    font-family: 'Roboto Condensed';
-    font-size: 1.2rem;
+.feature-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+}
+.home-section-link{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1rem;
+    &:visited{
+        color: white;
+    }
+}
+.home-owl-logo{
+    width: 4rem;
+    @include tablet{
+        width: 5.5rem;
+    }
+    @include desktop-small{
+        width: 6rem;
+    }
+    @include desktop{
+        width: 7rem;
+    }
+    @include desktop-large{
+        width: 8rem;
+    }
+}
+.home-page-link{
+    font-size: 1.25rem;
+    font-family: 'Zekton';
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    background: rgba(79, 2, 167, 0.849);
+    &:hover{
+        cursor: pointer;
+        box-shadow: inset 0 0 1px 4px rgb(155, 68, 255);
+    }
+    @include tablet{
+        font-size: 1.75rem;
+    }
+    @include desktop-small{
+        font-size: 2.5rem;
+    }
+    @include desktop{
+        font-size: 3.25rem;
+    }
+    @include desktop-large{
+        font-size: 4rem;
+    }
 }
 
-.header-rank{
-    width: 3rem;
-}
+

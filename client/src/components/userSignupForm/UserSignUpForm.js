@@ -5,7 +5,7 @@ function UserSignUpForm({ onLogin }){
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirmation, setPasswordConfirmation] = useState("");
-    const [userImage, setUserImage] = useState("");
+    const [userImage, setUserImage] = useState(null);
     const [errors, setErrors] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -13,24 +13,20 @@ function UserSignUpForm({ onLogin }){
         e.preventDefault();
         setErrors([]);
         setIsLoading(true);
+
+        const formData = new FormData()
+        formData.append('username', username)
+        formData.append('password', password)
+        formData.append('password_confirmation', passwordConfirmation)
+        formData.append('user_image', userImage)
         fetch("/signup", {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            username,
-            password,
-            password_confirmation: passwordConfirmation,
-            user_image: userImage,
-          }),
+          body: formData
         }).then((r) => {
           setIsLoading(false);
           if (r.ok) {
             r.json().then((user) => onLogin(user));
-          } else {
-            r.json().then((err) => setErrors(err.errors));
-          }
+           } 
         });
       }
     return(
@@ -75,14 +71,10 @@ function UserSignUpForm({ onLogin }){
                     </div>
                     <div>
                     <label htmlFor="imageUrl"></label>
-                    <input
-                        className="sign-up-input"
-                        placeholder="Enter Profile Picture"
-                        type="text"
-                        id="imageUrl"
-                        value={userImage}
-                        onChange={(e) => setUserImage(e.target.value)}
-                    />
+                    <input 
+                      type='file'
+                      accept='image/*'
+                      onChange={(e) => setUserImage(e.target.files[0])} />
                     </div>
                     <div>
                     <button className="sign-up-button" type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>

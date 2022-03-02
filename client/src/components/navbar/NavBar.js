@@ -33,23 +33,31 @@ function NavBar() {
                <nav>
                {(toggleMenu || screenWidth > 600) && (
                     <ul className="nav-list">
-                        <li className="nav-items">
-                            <NavLink to='/player-page' className='link-item'>
+                        <NavLink to='/player-page' className='link-item'>
+                            <li className="nav-items">
                                 Player Stats   
-                            </NavLink>
-                        </li>
-                        <li className="nav-items">LFG</li>
-                        <li className="nav-items">
-                            <NavLink to='/heroes' className='link-item'>Hero Gallery</NavLink>    
-                        </li>
-                        <li className="nav-items">
-                            <NavLink to='/maps' className='link-item'>Maps</NavLink>
-                        </li>
-                        <li className="nav-items">
-                            <NavLink to='/overwatch-league' className='link-item'>
+                            </li>
+                        </NavLink>
+                        <NavLink to='/looking-for-group' className='link-item'>
+                            <li className="nav-items">
+                                LFG   
+                            </li>
+                        </NavLink>
+                       <NavLink to='/heroes' className='link-item'> 
+                            <li className="nav-items">
+                                Hero Gallery    
+                            </li>
+                        </NavLink>
+                        <NavLink to='/maps' className='link-item'>
+                            <li className="nav-items">
+                                Maps
+                            </li>
+                        </NavLink>
+                        <NavLink to='/overwatch-league' className='link-item'>
+                            <li className="nav-items">
                                 Overwatch League    
-                            </NavLink>
-                        </li>
+                            </li>
+                        </NavLink>
                     </ul>
                 )}
                    <button className="nav-btn" onClick={toggleNav}>

@@ -14,6 +14,7 @@ import PlayerDataContainer from './components/playerDataContainer/PlayerDataCont
 
 function App() {
   const [user, setUser] = useState(null);
+  
 
   useEffect(() => {
     // auto-login
@@ -37,7 +38,7 @@ function App() {
         <Route path='overwatch-league' element={<OwlPageContainer />} />
         <Route path='teams/:id' element={<OwlTeamPage />} />
         <Route path='player-page' element={<PlayerDataContainer />} />
-        <Route path='looking-for-group' element={<LfgContainer />} />
+        <Route path='looking-for-group' element={<LfgContainer user={user} />} />
       </Routes>
     </section>
   );

@@ -3,7 +3,7 @@ import UserLoginForm from '../userLoginForm/UserLoginForm';
 import UserSignUpForm from '../userSignupForm/UserSignUpForm';
 import './UserLogin.scss';
 
-function UserLogin({ onLogin}){
+function UserLogin({ onLogin }){
     const [showLogin, setShowLogin] = useState(true);
     return(
         <div className='user-login-container'>

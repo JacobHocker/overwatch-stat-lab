@@ -4,7 +4,7 @@ import './LfgContainer.scss';
 function LfgContainer() {
     return(
         <div className='lfg-page-container'>
-
+            
         </div>
     );
 };

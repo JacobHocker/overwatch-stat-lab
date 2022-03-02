@@ -1,0 +1,28 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+// USER LOGIN CONTAINER 
+.user-login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://wallpaperboat.com/wp-content/uploads/2019/10/royalty-free-background-image-17.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+// Login Header
+.login-container-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15rem;
+}
+.login-container-logo{
+    width: 15rem;
+}

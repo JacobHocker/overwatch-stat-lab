@@ -23,7 +23,7 @@ function UserLoginForm({ onLogin }){
           } else {
             r.json().then((err) => setErrors(err.errors));
           }
-        });
+        }); 
       }
     return(
         <div className='user-login-form-container'>

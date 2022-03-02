@@ -2,11 +2,17 @@ import React, { useState } from 'react';
 import UserLoginForm from '../userLoginForm/UserLoginForm';
 import UserSignUpForm from '../userSignupForm/UserSignUpForm';
 import './UserLogin.scss';
+import owLogo from  '../../assets/srcImages/ow-one-circle.png';
 
 function UserLogin({ onLogin }){
     const [showLogin, setShowLogin] = useState(true);
     return(
         <div className='user-login-container'>
+            <div className='login-container-header'>
+                <img src={owLogo} alt='ow-logo' className='login-container-logo' />
+                <h1>OverHub</h1>
+            </div>
+            
             <div className='login-area'>
                 {showLogin ? (
                 <>

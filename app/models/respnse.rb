@@ -1,2 +1,0 @@
-class Respnse < ApplicationRecord
-end

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import UserLogin from './components/userLogin/UserLogin';
 import AllHeroCardContainer from './components/allHeroCardContainer/AllHeroCardContainer';
 import HeroInfoPageContainer from './components/heroInfoPageContainer/HeroInfoPageContainer';
 import Home from './components/home/Home';
@@ -12,9 +13,21 @@ import OwlTeamPage from './components/owlTeamPage/OwlTeamPage';
 import PlayerDataContainer from './components/playerDataContainer/PlayerDataContainer';
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    // auto-login
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+  if (!user) return <UserLogin onLogin={setUser} />;
   return (
     <section className='app'>
-      <NavBar />
+      <NavBar user={user} setUser={setUser}/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='heroes' element={<AllHeroCardContainer />} />

@@ -27,7 +27,7 @@ function UserLoginForm({ onLogin }){
       }
     return(
         <div className='user-login-form-container'>
-            <form onSubmit={handleSubmit} className="login-form">
+            <form onSubmit={handleSubmit} className="user-login-form">
                 <div className="username-login">
                     <label htmlFor="username"></label>
                     <input
@@ -52,8 +52,8 @@ function UserLoginForm({ onLogin }){
                     onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
-                <div>
-                    <button  type="submit" className="login-button">
+                <div className='button-container'>
+                    <button  type="submit" className="user-login-button">
                     {isLoading ? "Loading..." : "Login"}
                     </button>
                 </div>

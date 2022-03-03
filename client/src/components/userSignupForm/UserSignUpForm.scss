@@ -1,3 +1,93 @@
 @use '../../assets/partials/colors';
 @use '../../assets/partials/typography';
 @import '../../assets/partials/mixins';
+// SIGN UP INPUT
+.sign-up-input{
+    color: colors.$blue-text;
+    font-size: 1.35rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-family: 'Zekton';
+    background: colors.$primary-one;
+    border-radius: 8px;
+    border: none;
+    &:hover{
+        box-shadow: inset 0 0 1px 2px rgba(255, 230, 0, 0.87);
+    }
+    @include tablet {
+        font-size: 1.5rem;
+    }
+    @include desktop-small{
+        font-size: 1.75rem;
+    }
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.25rem;
+    }
+}
+.user-sign-up-button{
+    color: colors.$blue-text;
+    font-size: 1.35rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.5rem;
+    font-family: 'Zekton';
+    background: colors.$primary-one;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    &:hover{
+        box-shadow: inset 0 0 1px 2px rgba(255, 230, 0, 0.87);
+        cursor: pointer;
+    }
+    @include tablet {
+        font-size: 1.5rem;
+    }
+    @include desktop-small{
+        font-size: 1.75rem;
+    }
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.25rem;
+    }
+}
+input[type='file']{
+    display: none;
+}
+.label{
+    color: colors.$blue-text;
+    font-size: 1.35rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-family: 'Zekton';
+    background: colors.$primary-one;
+    border-radius: 8px;
+    border: none;
+    &:hover{
+        box-shadow: inset 0 0 1px 2px rgba(255, 230, 0, 0.87);
+        cursor: pointer;
+    }
+    @include tablet {
+        font-size: 1.5rem;
+    }
+    @include desktop-small{
+        font-size: 1.75rem;
+    }
+    @include desktop {
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.25rem;
+    }
+}
+.upload-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

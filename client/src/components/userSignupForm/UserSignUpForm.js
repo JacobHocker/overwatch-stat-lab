@@ -69,15 +69,21 @@ function UserSignUpForm({ onLogin }){
                         autoComplete="current-password"
                     />
                     </div>
-                    <div>
-                    <label htmlFor="imageUrl"></label>
-                    <input 
-                      type='file'
-                      accept='image/*'
-                      onChange={(e) => setUserImage(e.target.files[0])} />
+                    <div className='upload-container'>
+                      <label className='label' for='upload'>
+                      <input 
+                        className='upload-image'
+                        name='upload'
+                        id='upload'
+                        type='file'
+                        accept='image/*'
+                        onChange={(e) => setUserImage(e.target.files[0])} />
+                        Choose Profile Picture
+                      </label>
                     </div>
-                    <div>
-                    <button className="sign-up-button" type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>
+                    
+                    <div className='button-container'>
+                    <button className="user-sign-up-button" type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>
                     </div>
                     <div>
                     {errors.map((err) => (

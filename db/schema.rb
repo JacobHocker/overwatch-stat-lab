@@ -95,9 +95,11 @@ ActiveRecord::Schema.define(version: 2022_03_02_160713) do
   create_table "comments", force: :cascade do |t|
     t.string "comment_content"
     t.bigint "post_id"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["post_id"], name: "index_comments_on_post_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "maps", force: :cascade do |t|
@@ -127,6 +129,15 @@ ActiveRecord::Schema.define(version: 2022_03_02_160713) do
 
   create_table "posts", force: :cascade do |t|
     t.string "post_content"
+    t.string "game_mode"
+    t.integer "group_size"
+    t.string "rank_one"
+    t.string "rank_two"
+    t.string "platform"
+    t.string "region"
+    t.string "require_mic"
+    t.string "roles"
+    t.integer "likes"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -136,9 +147,11 @@ ActiveRecord::Schema.define(version: 2022_03_02_160713) do
   create_table "responses", force: :cascade do |t|
     t.string "response_content"
     t.bigint "comment_id"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["comment_id"], name: "index_responses_on_comment_id"
+    t.index ["user_id"], name: "index_responses_on_user_id"
   end
 
   create_table "teams", force: :cascade do |t|

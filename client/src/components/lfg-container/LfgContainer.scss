@@ -1,0 +1,18 @@
+@use '../../assets/partials/colors';
+@use '../../assets/partials/typography';
+@import '../../assets/partials/mixins';
+
+
+// LFG PAGE CONTAINER
+.lfg-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://www.pngmagic.com/product_images/website-background-image-size-psd-vector-photo.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding-bottom: 50rem;
+}

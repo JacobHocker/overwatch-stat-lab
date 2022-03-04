@@ -138,4 +138,18 @@ ul {
         display: none;
     }
 }
+.user-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.user-image{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid colors.$blue-text;
+    margin-right: 0.5rem;
+}

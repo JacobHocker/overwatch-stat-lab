@@ -4,7 +4,7 @@ import { Spin as Hamburger } from 'hamburger-react';
 import './NavBar.scss';
 import owLogo from  '../../assets/srcImages/ow-one-circle.png';
 
-function NavBar() {
+function NavBar({ user }) {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     
@@ -58,6 +58,10 @@ function NavBar() {
                                 Overwatch League    
                             </li>
                         </NavLink>
+                        <li className="user-info">
+                            <img src={user.user_image} alt={`${user.username}-profile`} className='user-image' />
+                            {user.username}
+                        </li>
                     </ul>
                 )}
                    <button className="nav-btn" onClick={toggleNav}>

@@ -70,7 +70,7 @@ function UserSignUpForm({ onLogin }){
                     />
                     </div>
                     <div className='upload-container'>
-                      <label className='label' for='upload'>
+                      <label className='label' htmlFor='upload'>
                       <input 
                         className='upload-image'
                         name='upload'

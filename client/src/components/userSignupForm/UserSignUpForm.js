@@ -5,7 +5,7 @@ function UserSignUpForm({ onLogin }){
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirmation, setPasswordConfirmation] = useState("");
-    const [userImage, setUserImage] = useState(null);
+    const [userImageUrl, setUserImageUrl] = useState("")
     const [errors, setErrors] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -13,20 +13,24 @@ function UserSignUpForm({ onLogin }){
         e.preventDefault();
         setErrors([]);
         setIsLoading(true);
-
-        const formData = new FormData()
-        formData.append('username', username)
-        formData.append('password', password)
-        formData.append('password_confirmation', passwordConfirmation)
-        formData.append('user_image', userImage)
         fetch("/signup", {
           method: "POST",
-          body: formData
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username: username,
+            password: password,
+            password_confirmation: passwordConfirmation,
+            user_image_url: userImageUrl,
+          }),
         }).then((r) => {
           setIsLoading(false);
           if (r.ok) {
             r.json().then((user) => onLogin(user));
-           } 
+          } else {
+            r.json().then((err) => setErrors(err.errors));
+          }
         });
       }
     return(
@@ -69,19 +73,18 @@ function UserSignUpForm({ onLogin }){
                         autoComplete="current-password"
                     />
                     </div>
-                    <div className='upload-container'>
-                      <label className='label' htmlFor='upload'>
-                      <input 
-                        className='upload-image'
-                        name='upload'
-                        id='upload'
-                        type='file'
-                        accept='image/*'
-                        onChange={(e) => setUserImage(e.target.files[0])} />
-                        Choose Profile Picture
-                      </label>
+                    <div>
+                    <label htmlFor="image-url"></label>
+                    <input
+                        placeholder="Profile Picture URL"
+                        className="sign-up-input"
+                        type="text"
+                        id="image-url"
+                        value={userImageUrl}
+                        onChange={(e) => setUserImageUrl(e.target.value)}
+                        autoComplete="off"
+                    />
                     </div>
-                    
                     <div className='button-container'>
                     <button className="user-sign-up-button" type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>
                     </div>

@@ -19,8 +19,9 @@ function LfgContainer({ user }) {
     }, []);
     const createToggle = () => setShowCreatePost(!showCreatePost);
 
-    const postsMap = posts.map((post) => (
+    const postsMap =  posts.map((post) => (
         <LfgPostDisplay
+            id={post.id}
             key={post.id}
             user={post.user}
             comments={post.comments}
@@ -34,6 +35,7 @@ function LfgContainer({ user }) {
             likes={post.likes}
             groupSize={post.group_size}
             gameMode={post.game_mode}
+            createdAt={post.created_at}
             />
     ))
     function handleAddPost(newPost) {
@@ -43,7 +45,9 @@ function LfgContainer({ user }) {
    
     return(
         <div className='lfg-page-container'>
-            
+            <div className='lfg-post-display-container'>
+                {postsMap}
+            </div>
             <div className='create-post-main-container'>
                 <div className='create-post-toggle-button'>
                     <button onClick={createToggle} className={showCreatePost === false ? 'create-post-button-show' : 'create-post-button-hidden' }>

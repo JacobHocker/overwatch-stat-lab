@@ -59,7 +59,7 @@ function NavBar({ user, setUser }) {
                             </li>
                         </NavLink>
                         <li className="user-info">
-                            <img src={user.user_image} alt={`${user.username}-profile`} className='user-image' />
+                            <img src={user.user_image_url} alt={`${user.username}-profile`} className='user-image' />
                             {user.username}
                             <button className='log-out-button' onClick={() => setUser(!user)}>Log Out</button>
                         </li>

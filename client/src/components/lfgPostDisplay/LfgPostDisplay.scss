@@ -1,3 +1,59 @@
 @use '../../assets/partials/colors';
 @use '../../assets/partials/typography';
 @import '../../assets/partials/mixins';
+
+// LFG SINGLE POST DISPLAY
+.lfg-single-post-display-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(142, 3, 177);
+    width: 17.5rem;
+    margin: 1rem;
+}
+// POST DISPLAY HEADER
+.post-display-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-image-post{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid colors.$blue-text;
+}
+//POST DISPLAY BODY
+.post-display-body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.post-ranks-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-ranks-display{
+    width: 2rem;
+}
+.post-role-icon{
+    width: 2rem;
+}
+//POST DISPLAY POST CONTENT
+.post-display-post-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// POST DISPLAY FOOTER CONTAINER
+.post-display-footer-container{
+    display: flex;
+    align-items: center;
+}

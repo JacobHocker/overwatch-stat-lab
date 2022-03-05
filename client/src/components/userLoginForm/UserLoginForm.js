@@ -9,7 +9,9 @@ function UserLoginForm({ onLogin }){
 
     function handleSubmit(e) {
         e.preventDefault();
+        setErrors([]);
         setIsLoading(true);
+
         fetch("/login", {
           method: "POST",
           headers: {
@@ -59,7 +61,7 @@ function UserLoginForm({ onLogin }){
                 </div>
                 <div>
                     {errors.map((err) => (
-                    <h1>{err}</h1>
+                    <error key={err}>{err}</error>
                     ))}
                 </div>
             </form>

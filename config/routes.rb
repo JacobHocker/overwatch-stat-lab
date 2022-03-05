@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   
-  resources :responses
+  
   resources :comments
   resources :posts
   get '/complete/:platform/:region/:battletag', to: "stats#get_complete"

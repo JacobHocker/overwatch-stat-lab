@@ -16,6 +16,14 @@
     object-fit: cover;
     padding-bottom: 70rem;
 }
+// LFG POST DISPLAY AREA
+.lfg-post-display-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 // CREATE POST SECTION 
 .create-post-main-container{

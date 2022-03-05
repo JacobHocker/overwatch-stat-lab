@@ -15,6 +15,7 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
     const [requireMic, setRequireMic] = useState("N/A");
     const [roles, setRoles] = useState("N/A");
     const [roleDisplay, setRoleDisplay] = useState(false);
+    const [likes, setLikes] = useState(0)
 
     const handleCheck = () => setRoleDisplay(!roleDisplay);
     const gameModeOptions = [
@@ -74,6 +75,7 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
 
     function handleSubmit(event) {
         event.preventDefault()
+        setLikes(0)
         fetch("/posts", {
             method: "POST",
             headers: {
@@ -89,6 +91,7 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
                 region: region,
                 require_mic: requireMic,
                 roles: roles,
+                likes: likes,
                 user_id: userId,
             }),
         })

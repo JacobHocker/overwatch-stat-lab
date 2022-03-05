@@ -4,7 +4,6 @@ Character.destroy_all
 Map.destroy_all
 Player.destroy_all 
 Team.destroy_all 
-Response.destroy_all
 Comment.destroy_all
 Post.destroy_all
 User.destroy_all

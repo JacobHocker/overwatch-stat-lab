@@ -7,7 +7,7 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
     const [userId, setUserId] = useState(null);
     const [postContent, setPostContent] = useState(" ");
     const [gameMode, setGameMode] = useState("N/A");
-    const [groupSize, setGroupSize] = useState(0);
+    const [groupSize, setGroupSize] = useState("N/A");
     const [rankOne, setRankOne] = useState("N/A");
     const [rankTwo, setRankTwo] = useState("N/A");
     const [platform, setPlatform] = useState("N/A");
@@ -18,6 +18,15 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
     const [likes, setLikes] = useState(0)
 
     const handleCheck = () => setRoleDisplay(!roleDisplay);
+    const groupSizeOptions = [
+        {id: 0, value: 'Select Group Size'},
+        {id: 1, value: 2},
+        {id: 2, value: 3},
+        {id: 3, value: 4},
+        {id: 4, value: 5},
+        {id: 5, value: 6},
+
+    ]
     const gameModeOptions = [
         {id: 0, name: 'Select Game Mode'},
         {id: 1, name: 'Quickplay'},
@@ -26,7 +35,7 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
         {id: 4, name: 'Custom Games'}
     ]
     const micOptions = [
-        {id: 0, response: 'Select Mic Option'},
+        {id: 0, response: 'Set Mic Requirement'},
         {id: 1, response: 'Yes'},
         {id: 2, response: 'No'}, 
         {id: 3, response: 'Optional'}
@@ -101,7 +110,7 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
     return(
         <div className="lfg-create-post-container">
             <div className="lfg-create-post-header">
-                <h1>{user.username}'s New Post</h1>
+                <h1>{user.username}'s Post</h1>
                 <div className={showCreatePost === true ? 'close-post-button-show' : 'close-post-button-hidden' }>
                     <button onClick={onCreateToggle} className="close-create-post">
                         <AiOutlineCloseSquare />
@@ -111,7 +120,6 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
             <div className="form-container">
                 <form onSubmit={handleSubmit} className='create-post-form'>
                     <div className="game-mode-post-select">
-                        <h3>Game Mode:</h3>
                         <select 
                         id="select"
                         className="post-select"
@@ -126,37 +134,40 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
                     </div>
                     {gameMode === 'Competitive'? 
                     <div className="rank-post-select-container">
-                        <h3>Rank Range:</h3>
-                        <div className="rank-one-select">
-                            <select 
-                            id="select"
-                            className="post-select"
-                            name="rank-one"
-                            value={rankOne}
-                            onChange={(e) => setRankOne(e.target.value)}
-                            >
-                                {rankOptions.map((rank) => (
-                                    <option key={rank.id} className='post-option' value={rank.image}>{rank.name}</option>
-                                ))}
-                            </select>
+                        <div className="rank-range-header">
+                            <p>Rank Range:</p>
                         </div>
-                        <h3>To</h3>
-                        <div className="rank-two-select">
-                            <select 
-                            id="select"
-                            className="post-select"
-                            name="rank-two"
-                            value={rankTwo}
-                            onChange={(e) => setRankTwo(e.target.value)}
-                            >
-                                {rankOptions.map((rank) => (
-                                    <option key={rank.id} className='post-option' value={rank.image}>{rank.name}</option>
-                                ))}
-                            </select>
+                        <div className="rank-range-container">
+                            <div className="rank-one-select">
+                                <select 
+                                id="select"
+                                className="post-select"
+                                name="rank-one"
+                                value={rankOne}
+                                onChange={(e) => setRankOne(e.target.value)}
+                                >
+                                    {rankOptions.map((rank) => (
+                                        <option key={rank.id} className='post-option' value={rank.image}>{rank.name}</option>
+                                    ))}
+                                </select>
+                            </div>
+                            <p>To</p>
+                            <div className="rank-two-select">
+                                <select 
+                                id="select"
+                                className="post-select"
+                                name="rank-two"
+                                value={rankTwo}
+                                onChange={(e) => setRankTwo(e.target.value)}
+                                >
+                                    {rankOptions.map((rank) => (
+                                        <option key={rank.id} className='post-option' value={rank.image}>{rank.name}</option>
+                                    ))}
+                                </select>
+                            </div>
                         </div>
                     </div>: <div></div>}
                     <div className="require-mic-select">
-                        <h3>Mic Required?</h3>
                         <select
                         id="select"
                         className="post-select"
@@ -169,18 +180,20 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
 
                         </select>
                     </div>
-                    <div className="group-size-input">
-                        <h3>Desired Group Size:</h3>
-                        <input 
-                        type='number'
-                        className='post-input'
+                    <div className="group-size-select">
+                        <select 
+                        id="select"
+                        className="post-select"
                         name="group-size"
                         value={groupSize}
                         onChange={(e) => setGroupSize(e.target.value)}
-                        />
+                        >
+                            {groupSizeOptions.map((group) => (
+                                <option key={group.id} className='post-option' value={group.value}>{group.value}</option>
+                            ))}
+                        </select>
                     </div>
                     <div className="platform-post-select">
-                        <h3>What Platform?</h3>
                         <select
                         id="select"
                         className="post-select"
@@ -194,7 +207,6 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
                         </select>
                     </div>
                     <div className="region-post-select">
-                        <h3>What Region?</h3>
                         <select
                         id="select"
                         className="post-select"
@@ -214,7 +226,6 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
                         </label>
                         {roleDisplay === true ?
                         <div className="region-post-select">
-                            <h3>What Role?</h3>
                             <select
                             id="select"
                             className="post-select"

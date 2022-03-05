@@ -29,7 +29,21 @@
 .create-post-main-container{
     position: fixed;
     bottom: 2rem;
-    width: 100%;
+    width: 90%;
+}
+.create-post-button-show{
+    font-size: 3rem;
+    position: fixed;
+    bottom: 2rem;
+    left: 8rem;
+    background: transparent;
+    color: rgb(1, 219, 1);
+    outline: none;
+    border: none;
+    &:hover{
+        cursor: pointer;
+        color: greenyellow;
+    }
 }
 .create-post-button-hidden{
     display: none;

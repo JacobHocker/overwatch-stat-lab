@@ -9,7 +9,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: colors.$primary-one;
+    background: rgba(94, 0, 94, 0.973);
+    border-radius: 10px;
 }
 
 
@@ -23,6 +24,117 @@
         cursor: pointer;
     }
 } 
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.create-post-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .close-post-button-hidden{
     display: none;
 }
+// RANK SECTION
+.rank-post-select-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.rank-range-container{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+//
+// INPUT & SELECT & POST CREATE
+.post-input{
+    font-family: 'Zekton';
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    text-align: center;
+    background: colors.$primary-one;
+    color: colors.$blue-text;
+    outline: none;
+    border: none;
+    resize: none;
+    &:hover{
+        box-shadow: inset 0 0 1px 2px rgba(0, 162, 255, 0.603);
+    }
+    @include tablet{
+        font-size: 1rem;
+    }
+    @include desktop-small{
+        font-size: 1.25rem;  
+    }
+    @include desktop{
+        font-size: 1.5rem;
+    }
+    @include desktop-large{
+        font-size: 1.75rem; 
+    }
+}
+.post-select{
+    font-family: 'Zekton';
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background: colors.$primary-one;
+    color: colors.$blue-text;
+    outline: none;
+    border: none;
+    &:hover{
+        box-shadow: inset 0 0 1px 2px rgba(0, 162, 255, 0.603);
+    }
+    @include tablet{
+        font-size: 1rem;
+    }
+    @include desktop-small{
+        font-size: 1.25rem;  
+    }
+    @include desktop{
+        font-size: 1.5rem;
+    }
+    @include desktop-large{
+        font-size: 1.75rem; 
+    }
+}
+.post-submit-button{
+    font-family: 'Zekton';
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    text-align: center;
+    background: colors.$primary-one;
+    color: colors.$blue-text;
+    outline: none;
+    border: none;
+    &:hover{
+        box-shadow: inset 0 0 1px 2px rgba(0, 162, 255, 0.603);
+    }
+    @include tablet{
+        font-size: 1rem;
+    }
+    @include desktop-small{
+        font-size: 1.25rem;  
+    }
+    @include desktop{
+        font-size: 1.5rem;
+    }
+    @include desktop-large{
+        font-size: 1.75rem; 
+    }
+}
+//

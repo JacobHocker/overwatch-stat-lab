@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import LfgCreatePost from '../lfgCreatePost/LfgCreatePost';
 import LfgPostDisplay from '../lfgPostDisplay/LfgPostDisplay';
-import { IoIosCreate } from 'react-icons/io';
+import { AiFillPlusSquare } from 'react-icons/ai';
 import './LfgContainer.scss';
 
 function LfgContainer({ user }) {
@@ -51,7 +51,7 @@ function LfgContainer({ user }) {
             <div className='create-post-main-container'>
                 <div className='create-post-toggle-button'>
                     <button onClick={createToggle} className={showCreatePost === false ? 'create-post-button-show' : 'create-post-button-hidden' }>
-                        <IoIosCreate />
+                        <AiFillPlusSquare />
                     </button>
                 </div>
                 <div className={showCreatePost === true ? 'create-post-show' : 'create-post-hidden' }>

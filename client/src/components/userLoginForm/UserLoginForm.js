@@ -59,7 +59,7 @@ function UserLoginForm({ onLogin }){
                 </div>
                 <div>
                     {errors.map((err) => (
-                    <error key={err}>{err}</error>
+                    <h1>{err}</h1>
                     ))}
                 </div>
             </form>

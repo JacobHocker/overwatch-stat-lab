@@ -4,7 +4,7 @@ import { Spin as Hamburger } from 'hamburger-react';
 import './NavBar.scss';
 import owLogo from  '../../assets/srcImages/ow-one-circle.png';
 
-function NavBar({ user }) {
+function NavBar({ user, setUser }) {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     
@@ -61,6 +61,7 @@ function NavBar({ user }) {
                         <li className="user-info">
                             <img src={user.user_image} alt={`${user.username}-profile`} className='user-image' />
                             {user.username}
+                            <button className='log-out-button' onClick={() => setUser(!user)}>Log Out</button>
                         </li>
                     </ul>
                 )}

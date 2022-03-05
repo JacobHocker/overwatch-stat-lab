@@ -14,10 +14,15 @@
     background-position: center;
     background-size: cover;
     object-fit: cover;
-    padding-bottom: 50rem;
+    padding-bottom: 70rem;
 }
 
 // CREATE POST SECTION 
+.create-post-main-container{
+    position: fixed;
+    bottom: 2rem;
+    width: 100%;
+}
 .create-post-button-hidden{
     display: none;
 }

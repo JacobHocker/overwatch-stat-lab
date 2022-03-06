@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  
+  patch 'post/:id/likes', to: "posts#add_likes"
   
   resources :comments
   resources :posts

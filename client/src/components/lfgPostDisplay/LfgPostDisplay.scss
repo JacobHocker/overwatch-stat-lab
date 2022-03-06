@@ -21,7 +21,7 @@
     font-size: 1rem;
 }
 // POST DISPLAY HEADER
-.post-display-header{
+.post-display-user-info{
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -109,6 +109,10 @@
     justify-content: center;
     border-right: 1px solid white;
     width: 25%;
+    &:hover{
+        box-shadow: inset 0 0 1px 2px colors.$blue-text;
+        cursor: pointer;
+    }
 }
 .comment-section{
     display: flex;
@@ -116,6 +120,10 @@
     justify-content: center;
     border-right: 1px solid white;
     width: 25%;
+    &:hover{
+        box-shadow: inset 0 0 1px 2px colors.$blue-text;
+        cursor: pointer;
+    }
 }
 .edit-section{
     display: flex;
@@ -123,27 +131,30 @@
     justify-content: center;
     border-right: 1px solid white;
     width: 25%;
+    &:hover{
+        box-shadow: inset 0 0 1px 2px colors.$blue-text;
+        cursor: pointer;
+    }
 }
 .delete-section{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 25%;
+    &:hover{
+        box-shadow: inset 0 0 1px 2px colors.$blue-text;
+        cursor: pointer;
+    }
 }
 .trash{
     background: transparent;
     font-size: 1.5rem;
     font-family: 'Zekton';
-    
     padding: 0.5rem;
     text-align: center;
     color: colors.$blue-text;
     outline: none;
     border: none;
-    &:hover{
-        cursor: pointer;
-        
-    }
     @include tablet{
         font-size: 1rem;
     }
@@ -161,16 +172,11 @@
     background: transparent;
     font-size: 1.5rem;
     font-family: 'Zekton';
-    
     padding: 0.5rem;
     text-align: center;
     color: colors.$blue-text;
     outline: none;
     border: none;
-    &:hover{
-        cursor: pointer;
-        
-    }
     @include tablet{
         font-size: 1rem;
     }
@@ -188,16 +194,11 @@
     background: transparent;
     font-size: 1.5rem;
     font-family: 'Zekton';
-    
     padding: 0.5rem;
     text-align: center;
     color: colors.$blue-text;
     outline: none;
     border: none;
-    &:hover{
-        cursor: pointer;
-        
-    }
     @include tablet{
         font-size: 1rem;
     }
@@ -215,16 +216,11 @@
     background: transparent;
     font-size: 1.5rem;
     font-family: 'Zekton';
-    
     padding: 0.5rem;
     text-align: center;
     color: colors.$blue-text;
     outline: none;
     border: none;
-    &:hover{
-        cursor: pointer;
-        
-    }
     @include tablet{
         font-size: 1rem;
     }
@@ -237,4 +233,8 @@
     @include desktop-large{
         font-size: 1.75rem; 
     }
+}
+.post-edit-comment-container{
+    width: 100%;
+    background-color: rgba(77, 1, 77, 0.897);
 }

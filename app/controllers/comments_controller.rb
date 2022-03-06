@@ -5,7 +5,7 @@ class CommentsController < ApplicationController
         render :json => comments.to_json( :include => [:responses, :user] )
     end
 
-    #POST /commentss
+    #POST /comments
     def create 
         comment = Comment.create(comment_params)
         render json: comment, status: :created

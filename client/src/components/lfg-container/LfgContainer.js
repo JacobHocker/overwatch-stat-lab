@@ -17,6 +17,26 @@ function LfgContainer({ user }) {
         .then((posts) => { setPosts(posts);
         });
     }, []);
+
+    function handleDeletePost(id) {
+        const updatedPosts = posts.filter((post) => post.id !== id);
+        setPosts(updatedPosts);
+    }
+
+    function handleUpdateLikes(updatedPost) {
+        setPosts((posts) =>
+            posts.map((post) => {
+                return post.id === updatedPost.id ? updatedPost : post; 
+            })
+        );
+    };
+    function handleUpdatePost(updatedPost) {
+        setPosts((posts) =>
+            posts.map((post) => {
+                return post.id === updatedPost.id ? updatedPost : post; 
+            })
+        );
+    };
     const createToggle = () => setShowCreatePost(!showCreatePost);
 
     const postsMap =  posts.map((post) => (
@@ -24,18 +44,11 @@ function LfgContainer({ user }) {
             id={post.id}
             key={post.id}
             user={post.user}
+            post={post}
             comments={post.comments}
-            postContent={post.post_content}
-            rankOne={post.rank_one}
-            rankTwo={post.rank_two}
-            region={post.region}
-            platform={post.platform}
-            requireMic={post.require_mic}
-            roles={post.roles}
-            likes={post.likes}
-            groupSize={post.group_size}
-            gameMode={post.game_mode}
-            createdAt={post.created_at}
+            onDeletePost={handleDeletePost}
+            onAddLike={handleUpdateLikes}
+            onEditPost={handleUpdatePost}
             />
     ))
     function handleAddPost(newPost) {

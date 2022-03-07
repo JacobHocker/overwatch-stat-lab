@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BiMicrophone } from 'react-icons/bi';
 import { AiFillLike } from 'react-icons/ai';
 import { FaTrash } from 'react-icons/fa';
@@ -6,13 +6,31 @@ import { AiFillEdit } from 'react-icons/ai';
 import { BiCommentAdd } from 'react-icons/bi';
 import './LfgPostDisplay.scss';
 import LfgPostEdit from "../lfgPostEdit/LfgPostEdit";
+import LfgCommentDisplay from "../lfgCommentDisplay/LfgCommentDisplay";
+import LfgCommentCreate from "../lfgCommentCreate/LfgCommentCreate";
 
 
-function LfgPostDisplay({user, comments, onDeletePost, onAddLike, onEditPost, id, post}) {
+function LfgPostDisplay({user, currentUser, comments, onDeletePost, onAddLike, onEditPost, id, post}) {
     const [displayEdit, setDisplayEdit] = useState(false);
     const [displayComment, setDisplayComment] = useState(false);
+    const [postComments, setPostComments] = useState([])
+
+    useEffect(() => {
+        setPostComments(comments)
+    }, [comments]);
+
     const toggleEdit = () => setDisplayEdit(!displayEdit)
+    const toggleComment = () => setDisplayComment(!displayComment)
     
+    function handleAddComments(newComment) {
+        const updatedComments = [...postComments, newComment]
+        setPostComments(updatedComments)
+    }
+
+    function handleDeleteComment(id) {
+        const updatedComments = postComments.filter((comment) => comment.id !== id);
+        setPostComments(updatedComments);
+    }
     function handleDeleteClick() {
         fetch(`/posts/${id}`, {
             method: "DELETE",
@@ -91,10 +109,10 @@ function LfgPostDisplay({user, comments, onDeletePost, onAddLike, onEditPost, id
             </div>
             <div className="post-display-footer-container">
                 <div className="likes-section">
-                    <button className="likes" type='submit' onClick={handleLikeUpdate}>{post.likes}<AiFillLike  /></button>
+                    <button className="likes" type='submit' onClick={handleLikeUpdate}>{post.likes} <AiFillLike  /></button>
                 </div>
                 <div className="comment-section">
-                    <button className="comment-icon"><BiCommentAdd  /></button>
+                    <button className="comment-icon" onClick={toggleComment}><BiCommentAdd  /></button>
                 </div>
                 <div className="edit-section">
                     <button className='edit' onClick={toggleEdit}><AiFillEdit  /></button>
@@ -105,7 +123,8 @@ function LfgPostDisplay({user, comments, onDeletePost, onAddLike, onEditPost, id
             </div>
             <div className="post-edit-comment-container">
             {displayEdit === true ? <LfgPostEdit displayEdit={displayEdit} setDisplayEdit={setDisplayEdit} onEditPost={onEditPost} id={id}/> : <div></div>}
-            
+            {displayComment === true ? post?.comments && postComments.map((comment) => (<LfgCommentDisplay  key={comment.id} comment={comment} onDeleteComment={handleDeleteComment}/>)) : <div></div>}
+            {displayComment === true ? <LfgCommentCreate   onAddComment={handleAddComments}  postId={id} user={currentUser} /> : <div></div>}
             </div>
         </div>
     );

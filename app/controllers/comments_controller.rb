@@ -1,10 +1,19 @@
 class CommentsController < ApplicationController
      #GET /comments
-     def index 
-        comments = Comment.all.order(:created_at)
-        render :json => comments.to_json( :include => [:responses, :user] )
+    def index 
+        comments = Comment.all.order(created_at: :desc)
+        render :json => comments.to_json( :include => [ :user] )
     end
 
+    #GET /comments/:id
+    def show 
+        comment = Comment.find_by(id: params[:id])
+        if comment
+            render :json => comment.to_json(:include => [:user])
+        else  
+            render json: { error: "Comment Not Found" }, status: :not_found
+        end
+    end
     #POST /comments
     def create 
         comment = Comment.create(comment_params)
@@ -36,6 +45,6 @@ class CommentsController < ApplicationController
 
     private 
     def comment_params 
-        params.permit(:comment_content, :post_id)
+        params.permit(:comment_content, :post_id, :user_id)
     end
 end

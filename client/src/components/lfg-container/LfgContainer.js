@@ -7,7 +7,7 @@ import './LfgContainer.scss';
 function LfgContainer({ user }) {
     const [posts, setPosts] = useState([]);
     const [showCreatePost, setShowCreatePost] = useState(false);
-
+ 
     
     console.log(posts)
     
@@ -39,18 +39,7 @@ function LfgContainer({ user }) {
     };
     const createToggle = () => setShowCreatePost(!showCreatePost);
 
-    const postsMap =  posts.map((post) => (
-        <LfgPostDisplay
-            id={post.id}
-            key={post.id}
-            user={post.user}
-            post={post}
-            comments={post.comments}
-            onDeletePost={handleDeletePost}
-            onAddLike={handleUpdateLikes}
-            onEditPost={handleUpdatePost}
-            />
-    ))
+    
     function handleAddPost(newPost) {
         const updatedPosts = [...posts, newPost]
         setPosts(updatedPosts)
@@ -59,7 +48,19 @@ function LfgContainer({ user }) {
     return(
         <div className='lfg-page-container'>
             <div className='lfg-post-display-container'>
-                {postsMap}
+               { posts.map((post) => (
+                    <LfgPostDisplay
+                        id={post.id}
+                        key={post.id}
+                        currentUser={user}
+                        user={post.user}
+                        post={post}
+                        comments={post.comments}
+                        onDeletePost={handleDeletePost}
+                        onAddLike={handleUpdateLikes}
+                        onEditPost={handleUpdatePost}
+                        />
+                ))}
             </div>
             <div className='create-post-main-container'>
                 <div className='create-post-toggle-button'>

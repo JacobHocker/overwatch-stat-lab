@@ -253,7 +253,6 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
                     <div className="post-submit">
                         <button className="post-submit-button" onClick={() => setUserId(user.id)}>Post</button>
                     </div>
-
                 </form>
             </div>
         </div>

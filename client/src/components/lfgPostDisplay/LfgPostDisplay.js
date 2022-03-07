@@ -109,16 +109,16 @@ function LfgPostDisplay({user, currentUser, comments, onDeletePost, onAddLike, o
             </div>
             <div className="post-display-footer-container">
                 <div className="likes-section">
-                    <button className="likes" type='submit' onClick={handleLikeUpdate}>{post.likes} <AiFillLike  /></button>
+                    <button className="likes" title="Like" type='submit' onClick={handleLikeUpdate}>{post.likes} <AiFillLike  /></button>
                 </div>
                 <div className="comment-section">
-                    <button className="comment-icon" onClick={toggleComment}><BiCommentAdd  /></button>
+                    <button className="comment-icon" title='Comment' onClick={toggleComment}><BiCommentAdd  /></button>
                 </div>
                 <div className="edit-section">
-                    <button className='edit' onClick={toggleEdit}><AiFillEdit  /></button>
+                    <button className='edit' title="Edit" onClick={toggleEdit}><AiFillEdit  /></button>
                 </div>
                 <div className="delete-section">
-                    <button className="trash" onClick={handleDeleteClick}><FaTrash  /></button>
+                    <button className="trash" title='Delete'onClick={handleDeleteClick}><FaTrash  /></button>
                 </div>
             </div>
             <div className="post-edit-comment-container">

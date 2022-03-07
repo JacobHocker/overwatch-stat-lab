@@ -26,13 +26,14 @@ function LfgCommentDisplay({ comment, onDeleteComment }) {
         <div className='comment-display-container'>
             {user?.username && 
             <div className='comment-header'>
-                <p>{user.username}</p>
+                <h4>{user.username}</h4>
             </div>}
             <div className='comment-body'>
                 <p>{singleComment.comment_content}</p>
             </div>
             <div className='posted-at-comment'>
-                <p>{singleComment.created_at}</p><button className='trash' onClick={handleDeleteComment}><FaTrash  /></button>
+                <p>{singleComment.created_at} <button className='trash' title='Delete Comment' onClick={handleDeleteComment}><FaTrash  /></button></p>
+                
             </div>
         </div>
     );

@@ -69,18 +69,18 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
         {id: 7, name: 'Grandmaster', image: 'https://d1u1mce87gyfbn.cloudfront.net/game/rank-icons/rank-GrandmasterTier.png'},
         {id: 8, name: 'Top500', image: 'https://overwatchanimatedshorts.files.wordpress.com/2017/07/cropped-competitive-rank-icons.png?w=200'}
     ]
-    // function clearState() {
-    //     setPostContent("")
-    //     setGameMode("")
-    //     setGroupSize("")
-    //     setRankOne("")
-    //     setRankTwo("")
-    //     setPlatform("")
-    //     setRequireMic("")
-    //     setRegion("")
-    //     setUserId(null)
-    //     setRoles("")
-    // }
+    function clearState() {
+        setPostContent("")
+        setGameMode("")
+        setGroupSize("")
+        setRankOne("")
+        setRankTwo("")
+        setPlatform("")
+        setRequireMic("")
+        setRegion("")
+        setUserId(null)
+        setRoles("")
+    }
 
     function handleSubmit(event) {
         event.preventDefault()
@@ -106,6 +106,7 @@ function LfgCreatePost({onCreateToggle, showCreatePost, user, onAddPost}) {
         })
         .then((r) => r.json())
         .then((newPost) => onAddPost(newPost))
+        .then(clearState())
     }
     return(
         <div className="lfg-create-post-container">

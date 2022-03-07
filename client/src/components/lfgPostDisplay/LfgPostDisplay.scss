@@ -12,13 +12,64 @@
     border-radius: 10px;
     width: 17.5rem;
     margin: 1rem;
+    @include tablet{
+        width: 25.5rem;
+    }
+    @include desktop-small{
+        width: 32.5rem; 
+    }
+    @include desktop{
+        width: 37.5rem;
+    }
+    @include desktop-large{
+        width: 44.5rem; 
+    }
+}
+.lfg-single-post-display-container h1{
+    font-size: 1.5rem;
+    @include tablet{
+        font-size: 1.75rem;
+    }
+    @include desktop-small{
+        font-size: 2rem;  
+    }
+    @include desktop{
+        font-size: 2.25rem;
+    }
+    @include desktop-large{
+        font-size: 2.5rem; 
+    }
 }
 .lfg-single-post-display-container p{
     font-family: 'Roboto Condensed';
     letter-spacing: 0.08px;
+    @include tablet{
+        font-size: 1.25rem;
+    }
+    @include desktop-small{
+        font-size: 1.5rem; 
+    }
+    @include desktop{
+        font-size: 1.75rem;
+    }
+    @include desktop-large{
+        font-size: 2rem; 
+    }
 }
 .lfg-single-post-display-container h3{
     font-size: 1rem;
+    @include tablet{
+        font-size: 1.5rem;
+    }
+    @include desktop-small{
+        font-size: 2rem; 
+    }
+    @include desktop{
+        font-size: 2.25rem;
+    }
+    @include desktop-large{
+        font-size: 2.75rem; 
+    }
 }
 // POST DISPLAY HEADER
 .post-display-user-info{
@@ -36,6 +87,22 @@
     object-position: center;
     border-radius: 50%;
     border: 1px solid colors.$blue-text;
+    @include tablet{
+        width: 3rem;
+        height: 3rem;
+    }
+    @include desktop-small{
+        width: 3.5rem;
+        height: 3.5rem; 
+    }
+    @include desktop{
+        width: 4rem;
+        height: 4rem;
+    }
+    @include desktop-large{
+        width: 4.5rem;
+        height: 4.5rem; 
+    }
 }
 //POST DISPLAY BODY
 .post-display-body-container{
@@ -45,10 +112,11 @@
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid white;
+    border-radius: 10px;
     background-color: rgba(117, 2, 117, 0.897);
 }
 .microphone{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: gold;
 }
 .mic-group-size-container{
@@ -76,6 +144,18 @@
 }
 .post-ranks-display{
     width: 2rem;
+    @include tablet{
+        width: 3rem;
+    }
+    @include desktop-small{
+        width: 4rem;
+    }
+    @include desktop{
+        width: 5rem;
+    }
+    @include desktop-large{
+        width: 5.5rem;
+    }
 }
 .post-role-icon{
     width: 2rem;
@@ -157,18 +237,19 @@
     border: none;
     &:hover{
         cursor: pointer;
+        color: red;
     }
     @include tablet{
-        font-size: 1rem;
+        font-size: 1.75rem;
     }
     @include desktop-small{
-        font-size: 1.25rem;  
+        font-size: 2rem;  
     }
     @include desktop{
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
     @include desktop-large{
-        font-size: 1.75rem; 
+        font-size: 2.5rem; 
     }
 }
 .edit {
@@ -182,18 +263,19 @@
     border: none;
     &:hover{
         cursor: pointer;
+        color: gold;
     }
     @include tablet{
-        font-size: 1rem;
+        font-size: 1.75rem;
     }
     @include desktop-small{
-        font-size: 1.25rem;  
+        font-size: 2rem;  
     }
     @include desktop{
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
     @include desktop-large{
-        font-size: 1.75rem; 
+        font-size: 2.5rem; 
     }
 }
 .comment-icon{
@@ -207,18 +289,19 @@
     border: none;
     &:hover{
         cursor: pointer;
+        color: aqua;
     }
     @include tablet{
-        font-size: 1rem;
+        font-size: 1.75rem;
     }
     @include desktop-small{
-        font-size: 1.25rem;  
+        font-size: 2rem;  
     }
     @include desktop{
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
     @include desktop-large{
-        font-size: 1.75rem; 
+        font-size: 2.5rem; 
     }
 }
 .likes {
@@ -232,18 +315,19 @@
     border: none;
     &:hover{
         cursor: pointer;
+        color: greenyellow;
     }
     @include tablet{
-        font-size: 1rem;
+        font-size: 1.75rem;
     }
     @include desktop-small{
-        font-size: 1.25rem;  
+        font-size: 2rem;  
     }
     @include desktop{
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
     @include desktop-large{
-        font-size: 1.75rem; 
+        font-size: 2.5rem; 
     }
 }
 .post-edit-comment-container{

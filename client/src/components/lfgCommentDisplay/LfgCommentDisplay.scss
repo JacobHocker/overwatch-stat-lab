@@ -1,3 +1,58 @@
 @use '../../assets/partials/colors';
 @use '../../assets/partials/typography';
 @import '../../assets/partials/mixins';
+.comment-display-container{
+    border-top: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(46, 0, 46);
+}
+.comment-header{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comment-display-container p{
+    font-family: 'Roboto Condensed';
+    letter-spacing: 0.08px;
+    @include tablet{
+        font-size: 1.25rem;
+    }
+    @include desktop-small{
+        font-size: 1.5rem; 
+    }
+    @include desktop{
+        font-size: 1.75rem;
+    }
+    @include desktop-large{
+        font-size: 2rem; 
+    }
+}
+.comment-display-container h4{
+    font-size: 1.25;
+    @include tablet{
+        font-size: 1.5rem;
+    }
+    @include desktop-small{
+        font-size: 1.75rem; 
+    }
+    @include desktop{
+        font-size: 2rem;
+    }
+    @include desktop-large{
+        font-size: 2.25rem; 
+    }
+}
+.post-at-comment{
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}

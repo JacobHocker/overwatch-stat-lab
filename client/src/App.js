@@ -11,6 +11,7 @@ import NavBar from './components/navbar/NavBar';
 import OwlPageContainer from './components/owlPageContainer/OwlPageContainer';
 import OwlTeamPage from './components/owlTeamPage/OwlTeamPage';
 import PlayerDataContainer from './components/playerDataContainer/PlayerDataContainer';
+import Footer from './components/footer/Footer';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -40,6 +41,7 @@ function App() {
         <Route path='player-page' element={<PlayerDataContainer />} />
         <Route path='looking-for-group' element={<LfgContainer user={user} />} />
       </Routes>
+      <Footer />
     </section>
   );
 }

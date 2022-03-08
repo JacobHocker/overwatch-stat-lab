@@ -1,0 +1,96 @@
+@use '../../assets/partials/colors';
+@import '../../assets/partials/mixins';
+
+.footer-container{
+    width: 100%;
+    background: colors.$primary-two;
+    display: flex;
+    letter-spacing: 0.3px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 3px solid colors.$cta;
+} 
+.footer-container h3{
+    font-size: 0.75rem;
+    @include tablet{
+        font-size: 1.5rem;
+    }
+
+    @include desktop-small{
+        font-size: 1.75rem;
+    }
+
+    @include desktop{
+        font-size: 2rem;
+    }
+
+    @include desktop-large{
+        font-size: 2.25rem;
+    }
+}
+.blizzard-logo-container{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.blizz-logo{
+    width: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @include tablet{
+        width: 8rem;
+    }
+
+    @include desktop-small{
+        width: 11rem;
+    }
+
+    @include desktop{
+        width: 14rem;
+    }
+
+    @include desktop-large{
+        width: 17rem;
+    }
+}
+.creator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+}
+.contact-icons-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-icons{
+    color: white;
+}
+.icon{
+    color: white;
+    font-size: 1.5rem;
+    &:visited {
+        color: white;
+    }
+    @include tablet{
+        font-size: 3rem;
+    }
+
+    @include desktop-small{
+        font-size: 4.5rem;
+    }
+
+    @include desktop{
+        font-size: 6rem;
+    }
+
+    @include desktop-large{
+        font-size: 7.5rem;
+    }
+}

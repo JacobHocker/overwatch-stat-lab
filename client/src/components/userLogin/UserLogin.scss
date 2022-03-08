@@ -14,6 +14,7 @@
     background-size: cover;
     object-fit: cover;
     height: 100vh;
+    overflow-x: scroll;
     @include tablet {
         height: 100%;
     }
@@ -33,10 +34,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -1rem;
+    
 }
 .login-container-logo{
-    width: 15rem;
+    width: 10rem;
 }
 .login-container-header h1{
     font-size: 3.5rem;

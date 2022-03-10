@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './LfgCommentCreate.scss';
 
 function LfgCommentCreate({postId, user, onAddComment}) {
     const [commentContent, setCommentContent] = useState("");
-    const [commentPostId, setCommentPostId] = useState(null)
-    const [userId, setUserId] = useState(null)
+    const [commentPostId, setCommentPostId] = useState("")
+    const [userId, setUserId] = useState("")
     
-    function handleSubmit(event) {
-        event.preventDefault()
+    useEffect(() =>{
         setCommentPostId(postId)
         setUserId(user.id)
+    }, [user.id, postId])
+    function handleSubmit(event) {
+        event.preventDefault()
 
         fetch("/comments", {
             method: "POST",

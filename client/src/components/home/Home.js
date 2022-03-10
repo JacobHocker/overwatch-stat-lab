@@ -11,7 +11,7 @@ function Home() {
     return(
         <section className='home-page-container'>
             <div className='home-page-title'>
-                <h1>Overwatch Stat Lab</h1>
+                <h1>OverStat Lab</h1>
             </div>
             <div className='home-page-img-area-one'>
                 <img src={tracer} className='tracer' alt='tracer' />

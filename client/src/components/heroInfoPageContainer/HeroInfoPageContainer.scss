@@ -28,9 +28,7 @@
 }
 .hero-info-page-header h1{
     font-size: 3rem;
-    background: -webkit-linear-gradient(0.45turn, colors.$cta , colors.$white, colors.$cta);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: colors.$blue-text;
     @include tablet{
         font-size: 4.5rem;
     }
@@ -48,6 +46,7 @@
 //Hero Page Text Area
 .hero-page-text-area{
     display: flex;
+    
 }
 
 // Hero Page Footer

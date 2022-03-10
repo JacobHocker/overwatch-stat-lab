@@ -16,8 +16,8 @@ function LfgPostDisplay({user, currentUser, comments, onDeletePost, onAddLike, o
     const [postComments, setPostComments] = useState([])
 
     useEffect(() => {
-        setPostComments(comments)
-    }, [comments]);
+        setPostComments(post.comments)
+    }, [post.comments]);
 
     const toggleEdit = () => setDisplayEdit(!displayEdit)
     const toggleComment = () => setDisplayComment(!displayComment)
@@ -124,7 +124,7 @@ function LfgPostDisplay({user, currentUser, comments, onDeletePost, onAddLike, o
             <div className="post-edit-comment-container">
             {displayEdit === true ? <LfgPostEdit displayEdit={displayEdit} setDisplayEdit={setDisplayEdit} onEditPost={onEditPost} id={id}/> : <div></div>}
             {displayComment === true ? post?.comments && postComments.map((comment) => (<LfgCommentDisplay  key={comment.id} comment={comment} onDeleteComment={handleDeleteComment}/>)) : <div></div>}
-            {displayComment === true ? <LfgCommentCreate   onAddComment={handleAddComments}  postId={id} user={currentUser} /> : <div></div>}
+            {displayComment === true ? <LfgCommentCreate   onAddComment={handleAddComments}  postId={post.id} user={currentUser} /> : <div></div>}
             </div>
         </div>
     );

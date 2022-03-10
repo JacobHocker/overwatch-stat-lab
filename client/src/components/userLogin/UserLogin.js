@@ -10,7 +10,7 @@ function UserLogin({ onLogin }){
         <div className='user-login-container'>
             <div className='login-container-header'>
                 <img src={owLogo} alt='ow-logo' className='login-container-logo' />
-                <h1>Overwatch Stat Lab</h1>
+                <h1>OverStat Lab</h1>
             </div>
             
             <div className='login-area-container'>

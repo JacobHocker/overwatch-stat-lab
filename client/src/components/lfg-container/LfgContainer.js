@@ -9,7 +9,7 @@ function LfgContainer({ user }) {
     const [showCreatePost, setShowCreatePost] = useState(false);
  
     
-    console.log(posts)
+    
     
     useEffect(() => {
         fetch("/posts")

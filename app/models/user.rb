@@ -1,8 +1,9 @@
 class User < ApplicationRecord
-    has_many :posts
-    has_many :comments, through: :posts
+    has_many :comments
+    has_many :posts, through: :comments
+    has_many :user_posts, class_name: "Post", foreign_key: "user_id"
     
-    #has_secure_password 
+
     
 
     validates :username, presence: true, uniqueness: true 
